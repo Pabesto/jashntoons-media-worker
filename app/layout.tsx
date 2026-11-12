@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import {pageMetadata,siteDescription,siteOrigin} from "@/lib/seo";
 import "./growth.css";
 import "./jashntoons.css";
@@ -35,6 +35,9 @@ import "./editor-workbench.css";
 import "./reels-viewer.css";
 import "./celebration-theme.css";
 import "./reel-platform.css";
+import "./mobile-app.css";
+
+export const viewport: Viewport = {width:'device-width',initialScale:1,viewportFit:'cover',themeColor:'#fff8f2'};
 
 export const metadata: Metadata = {
   ...pageMetadata("AI Invitation Maker — 2 Free Reel Credits | Jashntoons",siteDescription,"/"),
