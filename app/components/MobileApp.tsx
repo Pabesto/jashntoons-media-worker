@@ -8,7 +8,7 @@ import {BrandMark} from './BrandLogo';
 
 export type AppTab='home'|'reels'|'plans'|'creators'|'help';
 export type AppReelIntent={id?:string;category?:string;browse?:boolean;key:number};
-type Props={tab:AppTab;onTab:(tab:AppTab)=>void;intent:AppReelIntent;openReels:(intent?:Omit<AppReelIntent,'key'>)=>void;create:(t:Template)=>void;openLibrary:()=>void;active:boolean;name?:string;credits?:number;resume?:{title:string;open:()=>void}};
+type Props={tab:AppTab;onTab:(tab:AppTab)=>void;intent:AppReelIntent;openReels:(intent?:Omit<AppReelIntent,'key'>)=>void;create:(t:Template)=>void;openLibrary:()=>void;active:boolean;name?:string;credits?:number;signout?:{url:string;clear:()=>void};resume?:{title:string;open:()=>void}};
 const occasions=['Wedding','Birthday','Haldi & Mehendi','Engagement','Baby shower','Party'];
 const example=(category:string)=>reelFeed.find(r=>getTemplate(r.templateId).category===category)??reelFeed[0];
 const duration=(r:ReelFeedItem)=>Math.round(r.seconds)+'s';
@@ -27,7 +27,7 @@ export function MobileApp(p:Props){
    <section className="app-three-steps" aria-label="How it works">{[[Clapperboard,'Pick a reel'],[Heart,'Add your people'],[Sparkles,'Make it yours']].map(([Icon,label],i)=>{const I=Icon as typeof Heart;return <div key={String(label)}><span><I size={19}/></span><small>0{i+1}</small><strong>{String(label)}</strong></div>})}</section>
    <button className="app-wallet-card" onClick={()=>p.onTab('plans')}><span><Coins size={22}/></span><div><small>YOUR CREATIVE WALLET</small><strong>{p.credits!==undefined?p.credits+' credits ready':'Start with 2 free credits'}</strong><p>Review the cost before you create.</p></div><ArrowRight size={18}/></button>
    <button className="app-community-card" onClick={()=>p.onTab('creators')}><span><Heart size={20}/></span><div><small>THE CREATOR SPOTLIGHT</small><strong>Real people. Their big moments.</strong><p>See before & after reels from the community.</p></div><ArrowUpRight size={18}/></button>
-   <div className="app-help-links"><button onClick={()=>p.onTab('help')}>Help & FAQs</button><button onClick={p.openLibrary}>My reels & avatars</button><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+   <div className="app-help-links"><button onClick={()=>p.onTab('help')}>Help & FAQs</button><button onClick={p.openLibrary}>My reels & avatars</button><a href="/privacy">Privacy</a><a href="/terms">Terms</a>{p.signout&&<a href={p.signout.url} target="_top" onClick={p.signout.clear}>Sign out</a>}</div>
   </main>}
   {(reelsOpened||p.tab==='reels')&&<div hidden={p.tab!=='reels'}><MobileReels key={p.intent.key} intent={p.intent} create={p.create} active={p.active&&p.tab==='reels'}/></div>}
   <nav className={'app-bottom-nav'+(p.tab==='reels'?' app-bottom-dark':'')} aria-label="App navigation" hidden={!p.active}>
