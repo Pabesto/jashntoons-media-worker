@@ -1,80 +1,66 @@
-'use client';
-import {useCallback,useEffect,useRef,useState} from 'react';
-import {ArrowLeft,ArrowUpRight,Bookmark,Check,ChevronDown,ChevronUp,Info,LoaderCircle,Pause,Play,Share2,Volume2,VolumeX,X} from 'lucide-react';
-import {reelFeed} from '@/lib/reel-feed';
+﻿'use client';
+import {useCallback,useEffect,useLayoutEffect,useRef,useState,type KeyboardEvent} from 'react';
+import {ArrowLeft,ArrowUpRight,Bookmark,Check,ChevronDown,ChevronUp,Heart,Info,LoaderCircle,Maximize2,Music2,Pause,Play,Share2,Volume2,VolumeX,X} from 'lucide-react';
+import {reelFeed,type ReelFeedItem} from '@/lib/reel-feed';
+import {reelIndexAt,reelPlaybackSource,reelWindow} from '@/lib/reel-playback';
 import {getTemplate,type Template} from '@/lib/templates';
 import {BrandMark} from './BrandLogo';
-
-const savedKey='jashntoons-saved-film-styles';
-const time=(n:number)=>`${Math.floor(n/60)}:${String(Math.floor(n%60)).padStart(2,'0')}`;
-
-export function ReferencePlayer({film,onClose,create}:{film:{id:string};onClose:()=>void;create:(t:Template)=>void}){
- const [index,setIndex]=useState(Math.max(0,reelFeed.findIndex(f=>f.id===film.id)));
- const [muted,setMuted]=useState(true),[playing,setPlaying]=useState(false),[position,setPosition]=useState(0),[length,setLength]=useState(reelFeed.find(f=>f.id===film.id)?.seconds??30);
- const [failed,setFailed]=useState(false),[buffering,setBuffering]=useState(true),[details,setDetails]=useState(false),[saved,setSaved]=useState<string[]>([]),[notice,setNotice]=useState(''),[direction,setDirection]=useState(1);
- const dialog=useRef<HTMLDialogElement>(null),video=useRef<HTMLVideoElement>(null),stage=useRef<HTMLDivElement>(null),detailsButton=useRef<HTMLButtonElement>(null),sheetClose=useRef<HTMLButtonElement>(null);
- const touch=useRef<{x:number;y:number}|null>(null),wheel=useRef({sum:0,last:0,moved:0}),close=useRef(onClose),detailsOpen=useRef(details),wasDetailsOpen=useRef(false);close.current=onClose;detailsOpen.current=details;
- const current=reelFeed[index],isSaved=saved.includes(current.id);
- const move=useCallback((by:number)=>{setDirection(by);setIndex(i=>(i+by+reelFeed.length)%reelFeed.length);setDetails(false);setNotice('')},[]);
-
- useEffect(()=>{
-  const el=dialog.current!,old=document.body.style.overflow;el.showModal();document.body.style.overflow='hidden';document.querySelectorAll('video').forEach(v=>{if(v!==video.current)v.pause()});
-  const cancel=(e:Event)=>{e.preventDefault();if(detailsOpen.current)setDetails(false);else close.current()};
-  const key=(e:KeyboardEvent)=>{
-   if(detailsOpen.current||(e.target as HTMLElement).closest('input,textarea,select,[contenteditable=true]'))return;
-   if(e.key==='ArrowDown'||e.key==='ArrowRight'){e.preventDefault();move(1)}
-   if(e.key==='ArrowUp'||e.key==='ArrowLeft'){e.preventDefault();move(-1)}
-   if(e.code==='Space'&&!(e.target as HTMLElement).closest('button')){e.preventDefault();const v=video.current;if(v){if(v.paused)void v.play().catch(()=>{});else v.pause()}}
-  };
-  el.addEventListener('cancel',cancel);el.addEventListener('keydown',key);
-  try{const value=JSON.parse(localStorage.getItem(savedKey)||'[]');if(Array.isArray(value))setSaved(value.filter((id:unknown)=>typeof id==='string'&&reelFeed.some(f=>f.id===id)))}catch{}
-  return()=>{el.removeEventListener('cancel',cancel);el.removeEventListener('keydown',key);el.close();document.body.style.overflow=old};
- },[move]);
- useEffect(()=>{
-  const el=video.current;if(!el)return;setPosition(0);setLength(current.seconds);setPlaying(false);setFailed(false);setBuffering(true);
-  if(!matchMedia('(prefers-reduced-motion: reduce)').matches)void el.play().catch(()=>{setPlaying(false);setBuffering(false)});
-  const visibility=()=>{if(document.hidden)el.pause()};document.addEventListener('visibilitychange',visibility);return()=>{el.pause();document.removeEventListener('visibilitychange',visibility)};
- },[current.id,current.seconds]);
- useEffect(()=>{
-  const el=stage.current;if(!el)return;
-  const scroll=(e:WheelEvent)=>{
-   if(e.ctrlKey||detailsOpen.current||Math.abs(e.deltaX)>Math.abs(e.deltaY)||(e.target as HTMLElement).closest('input,button:not(.reels-tap-zone)'))return;
-   e.preventDefault();const now=Date.now(),w=wheel.current;if(now-w.last>180)w.sum=0;w.last=now;
-   if(now-w.moved<700)return;w.sum+=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?innerHeight:1);
-   if(Math.abs(w.sum)>55){w.moved=now;move(w.sum>0?1:-1);w.sum=0;}
-  };
-  el.addEventListener('wheel',scroll,{passive:false});return()=>el.removeEventListener('wheel',scroll);
- },[move]);
+const savedKey='jashntoons-saved-film-styles',likedKey='jashntoons-liked-reels';
+const time=(n:number)=>Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0');
+type Props={film:{id:string};onClose:()=>void;create:(t:Template)=>void;items?:ReelFeedItem[];embedded?:boolean;active?:boolean;onExpand?:(film:{id:string})=>void};
+export function ReferencePlayer({film,onClose,create,items=reelFeed,embedded=false,active=true,onExpand}:Props){
+ const [index,setIndex]=useState(Math.max(0,items.findIndex(r=>r.id===film.id))),[height,setHeight]=useState(0),[visible,setVisible]=useState(!embedded),[foreground,setForeground]=useState(true),[saveData,setSaveData]=useState(false);
+ const [muted,setMuted]=useState(true),[playing,setPlaying]=useState(false),[position,setPosition]=useState(0),[length,setLength]=useState(items[index]?.seconds??30),[buffering,setBuffering]=useState(true),[failed,setFailed]=useState(false),[details,setDetails]=useState(false),[saved,setSaved]=useState<string[]>([]),[liked,setLiked]=useState<string[]>([]),[notice,setNotice]=useState(''),[heart,setHeart]=useState(0),[fallback,setFallback]=useState<string[]>([]);
+ const dialog=useRef<HTMLDialogElement>(null),root=useRef<HTMLDivElement>(null),viewport=useRef<HTMLDivElement>(null),videos=useRef(new Map<string,HTMLVideoElement>()),currentIndex=useRef(index),currentId=useRef(items[index]?.id),detailsButton=useRef<HTMLButtonElement>(null),sheetClose=useRef<HTMLButtonElement>(null),manualPause=useRef(false),clickTimer=useRef<ReturnType<typeof setTimeout>|null>(null),lastTap=useRef({at:0,id:''}),wasDetailsOpen=useRef(false),closeRef=useRef(onClose),detailsRef=useRef(details),settle=useRef<ReturnType<typeof setTimeout>|null>(null);
+ currentIndex.current=index;closeRef.current=onClose;detailsRef.current=details;const current=items[index]??items[0];currentId.current=current.id;const range=reelWindow(index,items.length),isSaved=saved.includes(current.id),isLiked=liked.includes(current.id),enabled=active&&visible&&foreground&&!details;
+ const playingVideo=()=>videos.current.get(currentId.current!);
+ const move=useCallback((by:number)=>{const el=viewport.current;if(!el)return;const n=Math.max(0,Math.min(items.length-1,currentIndex.current+by));el.scrollTo({top:n*el.clientHeight,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});},[items.length]);
+ useEffect(()=>{for(const [key,set]of [[savedKey,setSaved],[likedKey,setLiked]] as const){try{const ids=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(ids))set(ids.filter((id:unknown)=>typeof id==='string'&&reelFeed.some(r=>r.id===id)))}catch{}}
+  const connection=(navigator as Navigator&{connection?:{saveData?:boolean;effectiveType?:string}}).connection;setSaveData(!!connection?.saveData||connection?.effectiveType==='2g'||connection?.effectiveType==='slow-2g');const visibility=()=>setForeground(!document.hidden);visibility();document.addEventListener('visibilitychange',visibility);return()=>{document.removeEventListener('visibilitychange',visibility);if(clickTimer.current)clearTimeout(clickTimer.current);if(settle.current)clearTimeout(settle.current);videos.current.forEach(v=>v.pause())};
+ },[]);
+ useLayoutEffect(()=>{if(embedded)return;const el=dialog.current!,old=document.body.style.overflow;el.showModal();document.body.style.overflow='hidden';document.querySelectorAll('video').forEach(v=>{if(!el.contains(v))v.pause()});const cancel=(e:Event)=>{e.preventDefault();if(detailsRef.current)setDetails(false);else closeRef.current()};el.addEventListener('cancel',cancel);return()=>{el.removeEventListener('cancel',cancel);el.close();document.body.style.overflow=old};},[embedded]);
+ useLayoutEffect(()=>{const el=viewport.current;if(!el)return;const resize=()=>{const h=el.clientHeight;setHeight(h);};resize();const observer=new ResizeObserver(resize);observer.observe(el);return()=>{observer.disconnect();videos.current.forEach(v=>v.pause())};},[]);
+ useLayoutEffect(()=>{if(height&&viewport.current)viewport.current.scrollTop=currentIndex.current*height;},[height]);
+ useEffect(()=>{if(!embedded)return;const el=root.current!;const observer=new IntersectionObserver(([entry])=>setVisible(entry.isIntersecting&&entry.intersectionRatio>=.5),{threshold:[0,.5,1]});observer.observe(el);return()=>observer.disconnect();},[embedded]);
+ useEffect(()=>{setPosition(0);setLength(current.seconds);setFailed(false);setBuffering(true);setPlaying(false);setNotice('');manualPause.current=false;},[current.id,current.seconds]);
+ useEffect(()=>{const v=videos.current.get(current.id);videos.current.forEach((other,id)=>{if(id!==current.id)other.pause()});if(!v)return;if(!enabled){v.pause();return;}setBuffering(v.readyState<3);if(!manualPause.current&&!matchMedia('(prefers-reduced-motion: reduce)').matches)void v.play().catch(()=>{if(currentId.current===current.id){setPlaying(false);setBuffering(false)}});},[current.id,enabled,fallback]);
  useEffect(()=>{if(details)sheetClose.current?.focus();else if(wasDetailsOpen.current)detailsButton.current?.focus({preventScroll:true});wasDetailsOpen.current=details},[details]);
- useEffect(()=>{if(!notice)return;const timer=setTimeout(()=>setNotice(''),3000);return()=>clearTimeout(timer)},[notice]);
-
- function toggle(){const el=video.current;if(!el)return;if(el.paused)void el.play().catch(()=>setPlaying(false));else el.pause()}
- function save(){const next=isSaved?saved.filter(id=>id!==current.id):[...saved,current.id];try{localStorage.setItem(savedKey,JSON.stringify(next));setSaved(next);setNotice(isSaved?'Removed from saved styles':'Style saved on this device')}catch{setNotice('Saving is unavailable in this browser')}}
- async function share(){const url=new URL('/',location.origin);url.searchParams.set('watch',current.id);try{if(navigator.share)await navigator.share({title:current.name+' · Jashntoons',url:url.href});else{await navigator.clipboard.writeText(url.href);setNotice('Reel link copied')}}catch(e){if((e as Error).name!=='AbortError')setNotice('Could not share this reel. Please try again.')}}
- function choose(){onClose();create(getTemplate(current.templateId))}
- function closeDetails(){setDetails(false)}
-
- return <dialog ref={dialog} className="reels-viewer" aria-label="Invitation reels" onClick={e=>{if(e.target===dialog.current)onClose()}}>
-  <div className="reels-shell" inert={details}>
-   <header className="reels-header"><button onClick={onClose} aria-label="Back to website"><ArrowLeft size={20}/><span>Reels</span></button><span className="reels-header-brand">JASHNTOONS <BrandMark/></span><button onClick={onClose} aria-label="Close film viewer"><X size={23}/></button></header>
-   <main className="reels-stage" ref={stage} aria-label="Swipe up or down to explore invitation reels" onTouchStart={e=>{touch.current=(e.target as HTMLElement).closest('button:not(.reels-tap-zone),input')?null:{x:e.touches[0].clientX,y:e.touches[0].clientY}}} onTouchEnd={e=>{const start=touch.current;touch.current=null;if(!start)return;const dy=start.y-e.changedTouches[0].clientY,dx=start.x-e.changedTouches[0].clientX;if(Math.abs(dy)>60&&Math.abs(dy)>Math.abs(dx)*1.2){e.preventDefault();move(dy>0?1:-1)}}} onTouchCancel={()=>{touch.current=null}}>
-    <div className="reels-frame" key={current.id} data-direction={direction>0?'next':'previous'}>
-     <div className="reels-backdrop" style={{backgroundImage:`url("${current.poster}")`}}/>
-     <video ref={video} src={current.video} poster={current.poster} playsInline muted={muted} loop preload="metadata" aria-label={current.name+' original style reference'} onLoadedMetadata={e=>setLength(e.currentTarget.duration||current.seconds)} onCanPlay={()=>setBuffering(false)} onWaiting={()=>setBuffering(true)} onTimeUpdate={e=>setPosition(e.currentTarget.currentTime)} onPlay={()=>setPlaying(true)} onPlaying={()=>setBuffering(false)} onPause={()=>setPlaying(false)} onError={()=>{setFailed(true);setBuffering(false)}}/>
-     <button className="reels-tap-zone" onClick={toggle} aria-label={playing?'Pause film':'Play film'}>{!playing&&!buffering&&!failed&&<span><Play size={34} fill="currentColor"/></span>}</button>
-     <span className="reels-reference-label">{current.kind==='template'?'TEMPLATE PREVIEW':'ORIGINAL INVITATION'}</span>
-     <span className="reels-counter" aria-live="polite">{index+1} / {reelFeed.length}</span>
-     {buffering&&!failed&&<div className="reels-buffering" role="status" aria-label="Loading reel"><LoaderCircle size={30}/></div>}
-     {failed&&<div className="reels-error"><p>This reel could not load.</p><button onClick={()=>{setFailed(false);setBuffering(true);video.current?.load();void video.current?.play().catch(()=>setBuffering(false))}}>Try again</button><button onClick={()=>move(1)}>Next reel</button></div>}
-     <div className="reels-caption"><div className="reels-creator"><span><BrandMark/></span><strong>jashntoons</strong><Check size={12}/><small>Invitation studio</small></div><h2>{current.name}</h2><p>{current.tag} <span>· {Math.round(length)}s</span></p><button className="reels-use-style" onClick={choose}>Use this reel <ArrowUpRight size={16}/></button></div>
-     <div className="reels-actions" aria-label="Reel actions"><button aria-label={muted?'Turn sound on':'Mute film'} onClick={()=>setMuted(v=>!v)}>{muted?<VolumeX/>:<Volume2/>}<span>{muted?'Sound':'Mute'}</span></button><button aria-label={isSaved?'Unsave this style':'Save this style on this device'} aria-pressed={isSaved} onClick={save}><Bookmark fill={isSaved?'currentColor':'none'}/><span>{isSaved?'Saved':'Save'}</span></button><button aria-label="Share this reel" onClick={()=>void share()}><Share2/><span>Share</span></button><button ref={detailsButton} aria-label="About this invitation style" aria-expanded={details} onClick={()=>setDetails(true)}><Info/><span>Details</span></button></div>
-     <div className="reels-progress"><button aria-label={playing?'Pause reel playback':'Play reel playback'} onClick={toggle}>{playing?<Pause size={15}/>:<Play size={15}/>}</button><span>{time(position)}</span><input type="range" min="0" max={length||1} step="0.1" value={Math.min(position,length||1)} aria-label="Film playback position" onChange={e=>{const n=Number(e.target.value);if(video.current)video.current.currentTime=n;setPosition(n)}}/><span>{time(length)}</span></div>
+ useEffect(()=>{if(!notice)return;const timer=setTimeout(()=>setNotice(''),2500);return()=>clearTimeout(timer)},[notice]);
+ useEffect(()=>{if(!heart)return;const timer=setTimeout(()=>setHeart(0),650);return()=>clearTimeout(timer)},[heart]);
+ function toggle(){const v=playingVideo();if(!v)return;manualPause.current=!v.paused;if(v.paused)void v.play().catch(()=>{setPlaying(false);setBuffering(false)});else v.pause()}
+ function tap(){const now=Date.now();if(clickTimer.current)clearTimeout(clickTimer.current);if(lastTap.current.id===current.id&&now-lastTap.current.at<300){lastTap.current={at:0,id:''};like(true);return;}lastTap.current={at:now,id:current.id};clickTimer.current=setTimeout(toggle,300)}
+ function persistList(key:string,next:string[],set:(v:string[])=>void){try{localStorage.setItem(key,JSON.stringify(next));set(next)}catch{setNotice('Device storage is unavailable.')}}
+ function like(force=false){const next=isLiked&&!force?liked.filter(id=>id!==current.id):[...new Set([...liked,current.id])];persistList(likedKey,next,setLiked);if(force||!isLiked)setHeart(Date.now());}
+ function save(){persistList(savedKey,isSaved?saved.filter(id=>id!==current.id):[...saved,current.id],setSaved);setNotice(isSaved?'Removed from saved styles':'Style saved on this device')}
+ async function share(){const url=new URL('/',location.origin);url.searchParams.set('watch',current.id);try{if(navigator.share)await navigator.share({title:current.name+' · Jashntoons',url:url.href});else{await navigator.clipboard.writeText(url.href);setNotice('Reel link copied')}}catch(e){if((e as Error).name!=='AbortError')setNotice('Could not share this reel.')}}
+ function choose(){playingVideo()?.pause();if(!embedded)onClose();create(getTemplate(current.templateId))}
+ function key(e:KeyboardEvent){if(details||(e.target as HTMLElement).closest('input,textarea,select,[contenteditable=true]'))return;if(['ArrowDown','ArrowRight','ArrowUp','ArrowLeft'].includes(e.key)){e.preventDefault();move(['ArrowDown','ArrowRight'].includes(e.key)?1:-1)}if(e.code==='Space'&&!(e.target as HTMLElement).closest('button')){e.preventDefault();toggle()}}
+ function scroll(){const el=viewport.current;if(!el?.clientHeight)return;const n=reelIndexAt(el.scrollTop,el.clientHeight,items.length);if(n!==currentIndex.current){currentIndex.current=n;setIndex(n)}if(settle.current)clearTimeout(settle.current);settle.current=setTimeout(()=>{const next=reelIndexAt(el.scrollTop,el.clientHeight,items.length);if(next!==currentIndex.current){currentIndex.current=next;setIndex(next)}},100)}
+ function loadError(r:ReelFeedItem){if(r.id!==currentId.current)return;if(reelPlaybackSource(r.video)!==r.video&&!fallback.includes(r.id)){setFallback(old=>[...old,r.id]);return;}setFailed(true);setBuffering(false)}
+ const shell=<div className={'reels-shell'+(embedded?' reels-embedded':'')} ref={root} onKeyDown={key}>
+  <div className="reels-main" inert={details}>
+   <header className="reels-header"><button onClick={onClose} aria-label={embedded?'Show template grid':'Back to website'}><ArrowLeft size={20}/><span>Reels</span></button><div className="reels-header-tools"><button aria-label={muted?'Turn sound on':'Mute reel'} onClick={()=>setMuted(v=>!v)}>{muted?<VolumeX size={20}/>:<Volume2 size={20}/>}</button>{embedded?<button aria-label="Open full-screen reels" onClick={()=>onExpand?.(current)}><Maximize2 size={20}/></button>:<button onClick={onClose} aria-label="Close film viewer"><X size={23}/></button>}</div></header>
+   <div className="reels-stage"><div className="reels-frame">
+    <div className="reels-scroll-viewport" style={{visibility:height?'visible':'hidden'}} ref={viewport} onScroll={scroll} tabIndex={0} aria-label="Invitation reels. Swipe up or down, or use the arrow keys.">
+     {range.start>0&&<div aria-hidden="true" style={{height:range.start*height}}/>}
+     {items.slice(range.start,range.end).map((r,offset)=>{const i=range.start+offset,selected=i===index,warm=enabled&&(selected||!saveData&&i===index+1),src=fallback.includes(r.id)?r.video:reelPlaybackSource(r.video);return <article key={r.id} className="reels-page" style={height?{height}:undefined} aria-label={r.name} aria-hidden={!selected} inert={!selected}>
+      <div className="reels-backdrop" style={{backgroundImage:'url("'+r.poster+'")'}}/>
+      <video ref={el=>{if(el)videos.current.set(r.id,el);else videos.current.delete(r.id)}} src={src} poster={r.poster} playsInline muted={!selected||muted} loop preload={warm?'auto':selected?'metadata':'none'} aria-label={r.name+' invitation reel'} onLoadedMetadata={e=>{if(selected)setLength(e.currentTarget.duration||r.seconds)}} onCanPlay={()=>{if(selected)setBuffering(false)}} onWaiting={()=>{if(selected)setBuffering(true)}} onTimeUpdate={e=>{if(selected)setPosition(e.currentTarget.currentTime)}} onPlay={()=>{if(selected)setPlaying(true)}} onPlaying={()=>{if(selected)setBuffering(false)}} onPause={()=>{if(selected)setPlaying(false)}} onError={()=>loadError(r)}/>
+      <button className="reels-tap-zone" onClick={tap} tabIndex={selected?0:-1} aria-label={playing&&selected?'Pause film. Double tap to like.':'Play film. Double tap to like.'}>{selected&&!playing&&!buffering&&!failed&&<span><Play size={33} fill="currentColor"/></span>}</button>
+      <div className="reels-caption"><div className="reels-creator"><span><BrandMark/></span><strong>jashntoons</strong><Check size={12}/></div><h2>{r.name}</h2><p>{r.tag} <span>· {Math.round(r.seconds)}s</span></p><button className="reels-use-style" onClick={choose} tabIndex={selected?0:-1}>Use this reel <ArrowUpRight size={16}/></button><div className="reels-audio"><Music2 size={13}/><span>Original reel · Jashntoons</span></div></div>
+     </article>})}
+     {range.end<items.length&&<div aria-hidden="true" style={{height:(items.length-range.end)*height}}/>}
     </div>
-    <nav className="reels-pagination" aria-label="Browse invitation reels"><button aria-label="Previous film" onClick={()=>move(-1)}><ChevronUp/></button><button aria-label="Next film" onClick={()=>move(1)}><ChevronDown/></button><span>Scroll to explore</span></nav>
-   </main>
-   <span className="reels-swipe-hint"><ChevronUp size={13}/> Swipe up for the next invitation</span>
+    <span className="reels-counter" aria-live="polite">{index+1} / {items.length}</span>
+    {heart>0&&<div className="reels-heart-burst" key={heart} aria-hidden="true"><Heart fill="currentColor"/></div>}
+    {buffering&&!failed&&<div className="reels-buffering" role="status" aria-label="Loading reel"><LoaderCircle size={28}/></div>}
+    {failed&&<div className="reels-error"><p>This reel could not load.</p><button onClick={()=>{setFailed(false);setBuffering(true);const v=playingVideo();v?.load();void v?.play().catch(()=>setBuffering(false))}}>Try again</button><button onClick={()=>move(1)}>Next reel</button></div>}
+    <div className="reels-actions" aria-label="Reel actions"><button aria-label={isLiked?'Unlike this reel':'Like this reel on this device'} aria-pressed={isLiked} onClick={()=>like()} className={isLiked?'reel-liked':''}><Heart fill={isLiked?'currentColor':'none'}/><span>Like</span></button><button aria-label="Share this reel" onClick={()=>void share()}><Share2/><span>Share</span></button><button aria-label={isSaved?'Unsave this style':'Save this style on this device'} aria-pressed={isSaved} onClick={save}><Bookmark fill={isSaved?'currentColor':'none'}/><span>{isSaved?'Saved':'Save'}</span></button><button ref={detailsButton} aria-label="About this invitation style" aria-expanded={details} onClick={()=>setDetails(true)}><Info/><span>Details</span></button><span className={'reels-record'+(playing?' is-playing':'')}><BrandMark/></span></div>
+    <div className="reels-progress"><button aria-label={playing?'Pause reel playback':'Play reel playback'} onClick={toggle}>{playing?<Pause size={15}/>:<Play size={15}/>}</button><span>{time(position)}</span><input type="range" min="0" max={length||1} step="0.1" value={Math.min(position,length||1)} aria-label="Film playback position" onChange={e=>{const n=Number(e.target.value),v=playingVideo();if(v)v.currentTime=n;setPosition(n)}}/><span>{time(length)}</span></div>
+   </div><nav className="reels-pagination" aria-label="Browse invitation reels"><button aria-label="Previous film" disabled={index===0} onClick={()=>move(-1)}><ChevronUp/></button><button aria-label="Next film" disabled={index===items.length-1} onClick={()=>move(1)}><ChevronDown/></button></nav></div>
   </div>
   {notice&&<div className="reels-notice" role="status">{notice}</div>}
-  {details&&<div className="reels-details-layer"><button className="reels-details-dismiss" aria-label="Close style details" onClick={closeDetails}/><section className="reels-details" aria-label="Invitation style details"><button ref={sheetClose} className="reels-sheet-close" aria-label="Back to reel" onClick={closeDetails}><X/></button><span>{current.tag}</span><h2>{current.name}</h2><p>{current.description}</p>{current.shots.length>0&&<ol>{current.shots.map((shot,i)=><li key={shot}><b>0{i+1}</b>{shot}</li>)}</ol>}<p className="reels-details-note">{current.note}</p><button className="reels-use-style" onClick={choose}>Use this reel <ArrowUpRight size={17}/></button><small>Review credits before creating your invitation.</small></section></div>}
- </dialog>;
+  {details&&<div className="reels-details-layer"><button className="reels-details-dismiss" aria-label="Close style details" onClick={()=>setDetails(false)}/><section className="reels-details" aria-label="Invitation style details"><button ref={sheetClose} className="reels-sheet-close" aria-label="Back to reel" onClick={()=>setDetails(false)}><X/></button><span>{current.tag}</span><h2>{current.name}</h2><p>{current.description}</p><p className="reels-details-note">{current.note}</p><button className="reels-use-style" onClick={choose}>Use this reel <ArrowUpRight size={17}/></button><small>Likes and saved styles stay on this device. Review credits before creating.</small></section></div>}
+ </div>;
+ return embedded?<section className="reels-inline" aria-label="Swipe invitation reels">{shell}</section>:<dialog ref={dialog} className="reels-viewer" aria-label="Invitation reels">{shell}</dialog>;
 }
