@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: jashntoons-media
+    runtime: docker
+    region: singapore
+    plan: 1c-2g
+    dockerfilePath: ./Dockerfile
+    numInstances: 1
+    envVars:
+      - key: SITE_ORIGIN
+        value: https://jashntoons.ai
+      - key: MEDIA_WORKER_SECRET
+        sync: false
