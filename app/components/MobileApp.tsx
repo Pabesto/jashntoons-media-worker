@@ -5,9 +5,10 @@ import {reelFeed,type ReelFeedItem} from '@/lib/reel-feed';
 import {getTemplate,type Template} from '@/lib/templates';
 import {ReferencePlayer} from './ReferencePlayer';
 import {BrandMark} from './BrandLogo';
+import {StudioSpotlight,type SpotlightIntent} from './StudioSpotlight';
 
 export type AppTab='home'|'reels'|'plans'|'creators'|'help';
-export type AppReelIntent={id?:string;category?:string;browse?:boolean;key:number};
+export type AppReelIntent=SpotlightIntent&{key:number};
 type Props={tab:AppTab;onTab:(tab:AppTab)=>void;intent:AppReelIntent;openReels:(intent?:Omit<AppReelIntent,'key'>)=>void;create:(t:Template)=>void;openLibrary:()=>void;active:boolean;name?:string;credits?:number;signout?:{url:string;clear:()=>void};resume?:{title:string;open:()=>void}};
 const occasions=['Wedding','Birthday','Haldi & Mehendi','Engagement','Baby shower','Party'];
 const example=(category:string)=>reelFeed.find(r=>getTemplate(r.templateId).category===category)??reelFeed[0];
@@ -21,7 +22,7 @@ export function MobileApp(p:Props){
    <button className="app-search" onClick={()=>p.openReels({browse:true})}><Search size={19}/><span>Find your invitation reel</span><span className="app-search-key"><Sparkles size={14}/></span></button>
    <section className="app-occasions" aria-label="Choose your celebration">{occasions.map(c=><button key={c} onClick={()=>p.openReels({category:c})}><span><img src={example(c).poster} alt="" loading="lazy"/></span><strong>{c==='Haldi & Mehendi'?'Haldi':c==='Baby shower'?'Baby':c}</strong></button>)}</section>
    {p.resume&&<button className="app-resume" onClick={p.resume.open}><span><FolderHeart size={20}/></span><div><small>PICK UP WHERE YOU LEFT OFF</small><strong>{p.resume.title||'Your invitation'}</strong></div><ArrowRight size={17}/></button>}
-   <button className="app-feature" onClick={()=>p.openReels({id:reelFeed[0].id})} aria-label="Watch the featured vintage invitation reel"><img src={reelFeed[0].poster} alt=""/><span className="app-feature-label"><Sparkles size={12}/> THE STUDIO EDIT</span><span className="app-feature-play"><Play size={24} fill="currentColor"/></span><span className="app-feature-copy"><small>YOUR PEOPLE. A WHOLE NEW WORLD.</small><strong>A little extra.<br/>A lot of you.</strong><span>Watch & personalise <ArrowUpRight size={18}/></span></span></button>
+   <StudioSpotlight onExplore={p.openReels} active={p.active&&p.tab==='home'}/>
    <section className="app-picks" aria-labelledby="app-picks-title"><div className="app-section-heading"><div><span>FIND YOUR NEXT FAVOURITE</span><h2 id="app-picks-title">Made for your moment</h2></div><button onClick={()=>p.openReels({browse:true})} aria-label="See all invitation reels"><ArrowRight size={20}/></button></div><div className="app-picks-track">{[example('Wedding'),example('Birthday'),example('Engagement'),example('Baby shower')].map(r=><button className="app-pick" key={r.id} onClick={()=>p.openReels({id:r.id})}><div><img src={r.poster} alt="" loading="lazy"/><span><Play size={11} fill="currentColor"/> {duration(r)}</span><i><ArrowUpRight size={16}/></i></div><small>{getTemplate(r.templateId).category}</small><strong>{r.name}</strong></button>)}</div></section>
    <button className="app-long-reel" onClick={()=>p.openReels({id:reelFeed.find(r=>r.seconds>=45)?.id})}><span><Layers3 size={23}/></span><div><small>ONE INVITATION. EVERY FUNCTION.</small><strong>From haldi to happily ever after.</strong><p>Bring the whole celebration into one reel.</p></div><ArrowUpRight size={18}/></button>
    <section className="app-three-steps" aria-label="How it works">{[[Clapperboard,'Pick a reel'],[Heart,'Add your people'],[Sparkles,'Make it yours']].map(([Icon,label],i)=>{const I=Icon as typeof Heart;return <div key={String(label)}><span><I size={19}/></span><small>0{i+1}</small><strong>{String(label)}</strong></div>})}</section>
@@ -41,7 +42,7 @@ export function MobileApp(p:Props){
 }
 
 function MobileReels({intent,create,active}:{intent:AppReelIntent;create:Props['create'];active:boolean}){
- const [category,setCategory]=useState(intent.category??'All'),[query,setQuery]=useState(''),[selected,setSelected]=useState(intent.id??reelFeed[0].id),[browse,setBrowse]=useState(!!intent.browse),[long,setLong]=useState(false),[savedOnly,setSavedOnly]=useState(false),[saved,setSaved]=useState<string[]>([]),[limit,setLimit]=useState(12);
+ const [category,setCategory]=useState(intent.category??'All'),[query,setQuery]=useState(''),[selected,setSelected]=useState(intent.id??reelFeed[0].id),[browse,setBrowse]=useState(!!intent.browse),[long,setLong]=useState(!!intent.long),[savedOnly,setSavedOnly]=useState(false),[saved,setSaved]=useState<string[]>([]),[limit,setLimit]=useState(12);
  const dialog=useRef<HTMLDialogElement>(null),search=useRef<HTMLInputElement>(null);
  const categories=['All',...new Set(reelFeed.map(r=>getTemplate(r.templateId).category))];
  const results=reelFeed.filter(r=>(category==='All'||getTemplate(r.templateId).category===category)&&(!long||r.seconds>=40)&&(!savedOnly||saved.includes(r.id))&&[r.name,r.tag,r.description].join(' ').toLowerCase().includes(query.toLowerCase()));
