@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760" fill="none">
+<defs>
+ <linearGradient id="cake" x1="150" y1="450" x2="430" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#FFB6C5"/><stop offset=".55" stop-color="#F985A6"/><stop offset="1" stop-color="#D65087"/></linearGradient>
+ <linearGradient id="top" x1="205" y1="358" x2="380" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF4D3"/><stop offset="1" stop-color="#EBC98D"/></linearGradient>
+ <radialGradient id="pink" cx=".3" cy=".23" r=".8"><stop stop-color="#FFD0DA"/><stop offset=".5" stop-color="#F48CAE"/><stop offset="1" stop-color="#D5548B"/></radialGradient>
+ <radialGradient id="lime" cx=".3" cy=".23" r=".8"><stop stop-color="#F8FFD7"/><stop offset=".5" stop-color="#D4DF85"/><stop offset="1" stop-color="#98B663"/></radialGradient>
+ <radialGradient id="lilac" cx=".3" cy=".23" r=".8"><stop stop-color="#F2DFFF"/><stop offset=".5" stop-color="#B99CE0"/><stop offset="1" stop-color="#8B6BB8"/></radialGradient>
+ <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFE6A2"/><stop offset="1" stop-color="#F38B49"/></linearGradient>
+ <g id="spark"><path d="M0-16Q3-3 16 0Q3 3 0 16Q-3 3-16 0Q-3-3 0-16" fill="currentColor"/></g>
+</defs>
+<!-- Floating balloons with soft dimensional highlights. -->
+<g stroke="#4C2E4E" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M113 327c-15 84 12 112 18 163s-30 117 3 159M481 307c38 72-16 122-8 171s28 88-6 160M437 244c-17 54 18 102-7 151" stroke-width="2"/>
+ <path d="M50 217c0-51 23-88 64-88s67 37 65 87c-2 47-38 96-65 111-26-15-64-63-64-110z" fill="url(#pink)" stroke-width="3"/>
+ <path d="M109 326l-8 13 23-1-8-12" fill="#DD6792" stroke-width="2"/>
+ <path d="M71 195q4-34 29-44" stroke="#FFE7ED" stroke-width="8" opacity=".7"/>
+ <path d="M422 205c-7-45 11-83 48-90 39-8 67 21 76 64s-13 100-41 125c-32-7-75-51-83-99z" fill="url(#lime)" stroke-width="3"/>
+ <path d="M501 305l-5 14 23-4-13-12" fill="#A7BF6A" stroke-width="2"/>
+ <path d="M439 176q2-28 23-41" stroke="#FCFFE6" stroke-width="8" opacity=".8"/>
+ <path d="M382 168c-6-36 10-67 41-72 32-5 57 21 60 55 4 35-21 77-47 94-25-12-49-43-54-77z" fill="url(#lilac)" stroke-width="3"/>
+ <path d="M432 245l-9 11 21 2-6-13" fill="#9D7DCA" stroke-width="2"/>
+ <path d="M399 147q3-22 20-30" stroke="#F0E4FF" stroke-width="6" opacity=".8"/>
+</g>
+<!-- Glossy pedestal and piped celebration cake. -->
+<ellipse cx="300" cy="686" rx="188" ry="27" fill="#4C2E4E" opacity=".1"/>
+<g stroke="#4C2E4E" stroke-width="3" stroke-linejoin="round">
+ <path d="M268 624l-8 51-55 15q-12 4-9 13c35 19 172 20 208-1 2-8-8-12-14-14l-51-14-8-50" fill="#AABF95"/>
+ <path d="M278 635l-5 40M325 636l6 39" stroke="#D8E5C5" stroke-width="5"/>
+ <ellipse cx="301" cy="626" rx="190" ry="35" fill="#D8E8BE"/>
+ <path d="M112 625v13c57 39 310 40 379-1v-12" fill="#9BB98B"/>
+ <ellipse cx="301" cy="620" rx="178" ry="30" fill="#EDF1CB"/>
+ <path d="M148 482v116c0 46 301 48 301-1V481z" fill="url(#cake)"/>
+ <ellipse cx="298" cy="482" rx="150" ry="36" fill="#FFD0DB"/>
+ <path d="M150 482c14 24 44 8 55 32 11 28 33 24 38 5 5-18 19-5 25 14 9 27 33 28 40-2 8-31 25-10 33-2 17 18 29 7 30-8 1-22 20-14 30-7 25 15 47-4 47-32-47 27-244 25-298 0z" fill="#FFF1D0" stroke-width="2"/>
+ <path d="M206 380v91c0 31 184 32 184-1v-92z" fill="url(#top)"/>
+ <ellipse cx="298" cy="379" rx="92" ry="25" fill="#FFF5DB"/>
+ <path d="M207 379c8 26 29 9 38 24 8 16 18 19 27 1 7-14 15-5 22 7 10 16 23 8 27-3 4-13 13-14 25-3 16 15 40-1 43-25-39 19-143 19-182-1z" fill="#F395B3" stroke-width="2"/>
+ <path d="M150 585q150 56 299 0" stroke="#EFC9DC" stroke-width="10" stroke-dasharray="1 14" stroke-linecap="round"/>
+ <path d="M210 456q87 31 176-1" stroke="#FFF9E7" stroke-width="9" stroke-dasharray="1 12" stroke-linecap="round"/>
+ <path d="M278 371v-67q10-8 22 0v69" fill="#AB98DD" stroke-width="2"/>
+ <path d="M279 325l20-10M279 345l20-10M279 364l20-10" stroke="#EAE1FC" stroke-width="4"/>
+ <path d="M289 302v-12" stroke-width="2"/>
+ <path d="M290 291c-25-2-20-24-4-45 2 18 16 18 16 30 0 8-6 13-12 15z" fill="url(#flame)" stroke="#D8844F" stroke-width="1.5"/>
+ <path d="M289 285c-6-2-8-10-2-18 6 5 10 13 2 18z" fill="#FFF4BC" stroke="none"/>
+</g>
+<!-- Cherry clusters and tiny hand-painted decoration. -->
+<g fill="#B83B65" stroke="#4C2E4E" stroke-width="2"><circle cx="223" cy="364" r="11"/><circle cx="245" cy="367" r="10"/><circle cx="358" cy="370" r="11"/><circle cx="375" cy="364" r="9"/></g>
+<g stroke="#577B52" stroke-width="2.5" fill="none" stroke-linecap="round"><path d="M224 356q-5-17 8-21M246 359q-5-12-15-24M358 362q2-17 14-21M374 357q8-12-2-16"/></g>
+<g fill="#FFF4D8"><circle cx="177" cy="550" r="3"/><circle cx="212" cy="562" r="3"/><circle cx="249" cy="574" r="3"/><circle cx="289" cy="577" r="3"/><circle cx="331" cy="574" r="3"/><circle cx="371" cy="568" r="3"/><circle cx="413" cy="552" r="3"/></g>
+<g stroke="#BC85BA" stroke-width="3" stroke-linecap="round"><path d="M228 429l5 7M259 438l-4 7M298 443l4 6M335 438l-2 7M370 427l3 7"/></g>
+<!-- Confetti feels tossed, not mechanically tiled. -->
+<g color="#E8B75D"><use href="#spark" transform="translate(251 158) scale(1.3) rotate(12)"/><use href="#spark" transform="translate(516 402) scale(.8)"/><use href="#spark" transform="translate(67 425) scale(.65)"/></g>
+<g stroke-linecap="round" stroke-width="6"><path d="M179 103l9 12M334 134l-3 16M239 249l-8 5M471 390l10 9" stroke="#ED92AC"/><path d="M307 207l10-8M193 312l5 10M392 283l-7 8M526 503l8-5" stroke="#BDA6DD"/><path d="M73 368l9-8M350 218l8 8M485 72l4-10" stroke="#ABC773"/></g>
+<path d="M193 194c-16-11-17-32 0-31s15 26 0 31M334 314c-13 7-21-7-9-14s19 8 9 14" stroke="#DAB16C" stroke-width="2.5"/>
+<path d="M472 536q30-25 48-3t-7 31q-21 6-13-13" stroke="#E789A9" stroke-width="4" stroke-linecap="round"/>
+<path d="M82 530q-27-8-20-26t22-3q5 13-8 13" stroke="#A88ACF" stroke-width="4" stroke-linecap="round"/>
+</svg>

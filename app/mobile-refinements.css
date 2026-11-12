@@ -1,0 +1,84 @@
+/* Keep horizontal browsing inside its section and touch controls reachable. */
+.home-studio{overflow-x:clip;min-width:0}
+.home-studio main>section,.home-studio .reel-showroom,.home-studio .reel-screening-player{min-width:0}
+.home-studio .site-header>a{flex-shrink:0}
+.home-studio .site-header .wordmark{white-space:nowrap}
+.home-studio .site-header .wordmark small{white-space:nowrap}
+.home-studio .site-header nav.nav-open{top:100%;max-height:calc(100dvh - 75px);overflow-y:auto}
+.home-studio .reel-category-rail,.home-studio .reel-spotlight,.home-studio .reel-gallery{overscroll-behavior-x:contain}
+.home-studio .reel-discover{scroll-margin-top:84px}
+.reel-screening{overscroll-behavior:contain}
+@media(max-width:760px){
+ .home-studio>.site-header{min-height:68px;padding:10px 16px;gap:10px}
+ .home-studio .site-header .wordmark{font-size:25px}
+ .home-studio .site-header .wordmark small{font-size:6px;letter-spacing:1.2px}
+ .home-studio .header-actions{gap:5px;margin-left:auto;flex-shrink:0}
+ .home-studio .site-header .icon-button,.home-studio .site-header .account-avatar{width:36px;min-width:36px;height:40px}
+ .home-studio .site-header nav a,.home-studio .site-header nav button{min-height:44px;display:flex;align-items:center}
+ .cinema-hero-inner{padding-top:17px;gap:4px}
+ .cinema-stage{height:535px}
+ .cinema-main-reel{width:210px;top:26px}
+ .cinema-main-reel figcaption>div>span{font-size:20px}
+ .cinema-main-reel figcaption button{font-size:9px;min-height:40px}
+ .cinema-film-controls{bottom:2px}
+ .cinema-film-controls button{min-height:40px}
+ .cinema-copy{padding-top:10px}.cinema-copy h1{font-size:54px;margin:18px 0}
+ .cinema-actions{flex-wrap:wrap;gap:12px}.cinema-actions .cinema-primary{min-height:46px}
+ .cinema-watch{min-height:44px}.cinema-promise{flex-wrap:wrap;row-gap:8px}
+ .home-studio .cinematic-occasions{padding:32px 0;margin-inline:20px}
+ .home-studio .cinematic-occasions .home-occasion-list{gap:19px 12px}
+ .home-studio .cinematic-occasions .occasion-name{min-height:32px;margin-top:8px}
+ .home-studio .cinematic-occasions button>small{display:none}
+ .home-studio .reel-showcase.full-film-section{margin-inline:14px;padding:25px 18px 0}
+ .home-studio .reel-gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:0;gap:14px;margin:0;padding:8px 0 14px;max-width:100%}
+ .home-studio .reel-card,.home-studio .reel-card.is-selected{flex:0 0 min(78%,285px);min-width:0;max-width:285px;scroll-snap-align:start}
+ .home-studio .reel-toolbar{overflow-x:auto;max-width:100%;padding-bottom:12px}
+ .home-studio .reel-style-tabs{width:max-content}
+ .home-studio .reel-style-tabs button{min-height:44px}
+ .home-studio .reel-gallery-nav button{width:44px;height:44px}
+ .home-studio .reel-actions{flex-direction:row;gap:6px}
+ .home-studio .reel-actions button{min-height:44px;font-size:11px}
+ .home-studio .home-how{margin:38px 24px;gap:25px}.home-studio .home-how-art{display:none}
+ .home-studio .home-how-copy{max-width:none}.home-studio .home-how ol{gap:20px}
+ .home-studio .faq-section{padding-top:35px;padding-bottom:35px}
+ .home-studio .faq-list summary{min-height:52px}
+ .home-studio .resume-draft{margin:10px 14px;padding:12px}.home-studio .resume-draft>span{font-size:11px;min-width:0}
+ .home-studio .resume-draft .button{font-size:10px;padding:10px;min-height:42px}
+}
+@media(max-width:600px){
+ .home-studio .reel-discover{padding:30px 16px}
+ .home-studio .reel-edit-heading h2{font-size:40px;line-height:1.08}
+ .home-studio .reel-library-stats{padding-top:14px}.home-studio .reel-library-stats strong{font-size:27px}
+ .home-studio .reel-spotlight{display:flex;gap:12px;align-items:stretch;margin:0 0 30px;padding:14px;scroll-snap-type:x proximity;border-radius:12px;max-width:100%;overflow-x:auto}
+ .home-studio .reel-spotlight-copy{display:none}
+ .home-studio .reel-spotlight-card{flex:0 0 160px;min-width:160px;scroll-snap-align:start}
+ .home-studio .reel-browse-heading{gap:16px;margin-bottom:16px}
+ .home-studio .reel-search{min-height:48px}.home-studio .reel-search input{font-size:16px}
+ .home-studio .reel-category-rail{margin:0;max-width:100%;padding:4px 0 12px;gap:6px}
+ .home-studio .reel-category-rail button{min-height:42px;font-size:11px}
+ .home-studio .reel-results-toolbar{gap:8px;padding-bottom:10px;margin-bottom:18px}
+ .home-studio .reel-type-tabs{gap:4px;width:100%;flex-wrap:nowrap;overflow-x:auto}
+ .home-studio .reel-type-tabs button{min-height:42px;padding:7px 9px;white-space:nowrap;font-size:10px;flex-shrink:0}
+ .home-studio .reel-results-toolbar select{font-size:12px;min-height:40px}
+ .home-studio .reel-grid{gap:22px 12px}
+ .home-studio .reel-card-info>button{width:40px;height:40px}
+ .home-studio .reel-card-info h4{font-size:17px;line-height:1.25}
+ .home-studio .reel-card-info small{font-size:7px}.home-studio .reel-card-info p{font-size:10px}
+ .home-studio .reel-asset-banner{padding-top:18px;gap:10px}.home-studio .reel-avatar-parade{height:85px}
+ .home-studio .reel-avatar-parade img{height:83px}.home-studio .reel-avatar-parade img:nth-child(2n){height:76px}
+ .reel-screening{width:100%;max-width:100%;height:100dvh;max-height:100dvh;border-radius:0;padding:52px 18px 22px;margin:0}
+ .reel-screening[open]{display:flex;flex-direction:column;gap:18px;align-items:stretch}
+ .reel-screening-close{position:fixed;top:10px;right:12px;width:40px;height:40px}
+ .reel-screening-player .canvas-frame{width:min(70vw,250px);max-height:none}
+ .reel-screening-player .playback{max-width:330px;margin:12px auto 0}
+ .reel-screening-player .playback .icon-button{width:42px;height:42px}
+ .reel-screening-details{padding:0}.reel-screening-details h2{font-size:29px}
+ .reel-screening-details .button{min-height:48px;position:sticky;bottom:0}
+}
+@media(max-width:370px){
+ .home-studio>.site-header{padding-inline:10px;gap:6px}.home-studio .site-header .wordmark{font-size:22px}
+ .home-studio .header-actions{gap:2px}.home-studio .site-header .sign-in{padding:6px;font-size:11px}
+ .cinema-stage{height:510px}.cinema-main-reel{width:198px}.cinema-copy h1{font-size:47px}
+ .cinema-main-reel figcaption>div>span{font-size:18px}.cinema-main-reel figcaption button{font-size:8px}
+ .home-studio .reel-card-info{flex-wrap:wrap}.home-studio .reel-card-info>button{margin-left:auto}
+}

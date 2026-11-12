@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760" fill="none">
+<defs>
+ <radialGradient id="ball" cx=".3" cy=".23" r=".8"><stop stop-color="#FFF8E1"/><stop offset=".3" stop-color="#E6D6EE"/><stop offset=".65" stop-color="#A993C7"/><stop offset="1" stop-color="#5F467D"/></radialGradient>
+ <radialGradient id="gloss" cx=".28" cy=".22" r=".8"><stop stop-color="#FFFFFF" stop-opacity=".65"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#402B57" stop-opacity=".4"/></radialGradient>
+ <linearGradient id="ribbon" x1="95" y1="450" x2="519" y2="624" gradientUnits="userSpaceOnUse"><stop stop-color="#FFADBF"/><stop offset=".4" stop-color="#EE709C"/><stop offset="1" stop-color="#C0477A"/></linearGradient>
+ <linearGradient id="leaf" x1="48" y1="467" x2="209" y2="616" gradientUnits="userSpaceOnUse"><stop stop-color="#E7ECAD"/><stop offset="1" stop-color="#B4C86F"/></linearGradient>
+ <pattern id="tiles" width="50" height="50" patternUnits="userSpaceOnUse"><rect width="50" height="50" fill="#CDBBE2"/><path d="M1 1h22v22H1zM26 26h22v22H26z" fill="#F4E8F4"/><path d="M26 1h22v22H26z" fill="#B29BCC"/><path d="M1 26h22v22H1z" fill="#EACAD8"/><path d="M0 24h50M24 0v50" stroke="#78628D" stroke-width="1.5"/></pattern>
+ <clipPath id="round"><circle cx="300" cy="305" r="153"/></clipPath>
+ <g id="spark"><path d="M0-32Q5-5 32 0Q5 5 0 32Q-5 5-32 0Q-5-5 0-32" fill="currentColor"/></g>
+</defs>
+<!-- A tiled disco orb: each mirror catches a different colour. -->
+<path d="M300 53v100" stroke="#6B4E7E" stroke-width="2"/>
+<path d="M290 149q10-13 20 0v13h-20z" fill="#D8C7E1" stroke="#5E3F73" stroke-width="2"/>
+<circle cx="300" cy="305" r="153" fill="url(#ball)" stroke="#553860" stroke-width="3"/>
+<g clip-path="url(#round)">
+ <circle cx="300" cy="305" r="153" fill="url(#tiles)" opacity=".85"/>
+ <path d="M168 227q130 42 262 0M148 278q151 22 304 0M148 330q151-19 304 0M167 382q132-44 265 0M203 424q98-47 196 0" stroke="#79608E" stroke-width="2"/>
+ <path d="M209 179q-67 126 2 254M252 160q-32 146 2 290M300 152v306M348 160q32 146-2 290M391 181q67 125-2 252" stroke="#79608E" stroke-width="2"/>
+ <path d="M226 185l24-6-4 30-25 4zM181 235l21 6-4 27-22-3zM254 277l21 1-1 22-21 1zM278 304h21v21h-21zM326 332l22 2-2 22-23-3zM352 213l22-5 3 27-21 5zM399 280l23-2 1 21-23 2zM355 385l24 9-5 20-23-10zM229 386l22-8 4 27-22 9z" fill="#FFFCED"/>
+ <path d="M278 157h20v20h-20zM327 229l21-1 1 23-23 1zM176 305l19 2 3 22-21-3zM302 379l23 2-1 23-22-2zM401 329l24-4-8 24-21 6zM260 429l22-4 1 24-20-4z" fill="#9C7EBB"/>
+ <circle cx="300" cy="305" r="153" fill="url(#gloss)"/>
+</g>
+<path d="M190 223q22-35 61-49" stroke="#FFFAEB" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+<path d="M431 337q-14 59-62 87" stroke="#624877" stroke-width="4" stroke-linecap="round" opacity=".4"/>
+<g color="#FFF2C2" stroke="#C6A975" stroke-width="1"><use href="#spark" transform="translate(216 218) scale(1.25)"/><use href="#spark" transform="translate(404 348) scale(.7)"/></g>
+<g color="#DBE598"><use href="#spark" transform="translate(475 167) scale(.8)"/><use href="#spark" transform="translate(109 374) scale(.6)"/><use href="#spark" transform="translate(487 454) scale(.45)"/></g>
+<!-- An exuberant folded ribbon curls across the bottom. -->
+<path d="M125 479c-69-36-89 11-55 45 37 37 103 31 176 17 78-15 136-38 189-7 50 29 19 69-19 62-23-4-33-26-21-40" stroke="#713653" stroke-width="38" stroke-linecap="round"/>
+<path d="M125 479c-69-36-89 11-55 45 37 37 103 31 176 17 78-15 136-38 189-7 50 29 19 69-19 62-23-4-33-26-21-40" stroke="url(#ribbon)" stroke-width="33" stroke-linecap="round"/>
+<path d="M72 501c20 33 75 32 139 20M275 534c51-13 115-29 152-10" stroke="#FFD2DB" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+<path d="M394 558q-8 23 7 35" stroke="#9F3C69" stroke-width="10" stroke-linecap="round"/>
+<path d="M128 480l30-4-4 31-14-13-13 5" fill="#F79CB5" stroke="#713653" stroke-width="2" stroke-linejoin="round"/>
+<!-- Sculptural paper flower and folded leaves. -->
+<g transform="translate(160 621)">
+ <path d="M-7 48q-46-59-23-107M11 55q51-43 61-78" stroke="#666B42" stroke-width="2.5"/>
+ <path d="M-17 21c-51 2-75-27-69-59 38-1 69 20 69 59zM21 36c16-43 41-57 74-43-7 38-36 47-74 43z" fill="url(#leaf)" stroke="#6E7750" stroke-width="2"/>
+ <path d="M-17 21l-55-47M21 36L79 2" stroke="#91A05D" stroke-width="2"/>
+ <path d="M-31-46c-40-6-51-37-28-57 16-13 32-2 36 16-3-41 31-54 48-27 11 17 1 33-16 39 40-7 57 26 31 46-17 12-36 2-41-16 5 40-28 57-48 30-13-17-1-33 18-31z" fill="#BBA2DD" stroke="#67466F" stroke-width="2.5"/>
+ <path d="M-26-51q-10-30-20-39M-21-52l32-47M-22-47l48 5M-26-45l-12 42" stroke="#916FB5" stroke-width="2"/>
+ <circle cx="-23" cy="-49" r="13" fill="#F6D181" stroke="#AA8059" stroke-width="2"/>
+ <circle cx="-23" cy="-49" r="5" fill="#76526C"/>
+</g>
+<!-- Stylized vinyl record for a little music-room nostalgia. -->
+<g transform="translate(357 639) rotate(-13)">
+ <ellipse rx="81" ry="48" fill="#432A51" stroke="#36223F" stroke-width="3"/>
+ <ellipse rx="67" ry="39" stroke="#77567E" stroke-width="1.5"/>
+ <ellipse rx="56" ry="32" stroke="#77567E" stroke-width="1"/>
+ <ellipse rx="45" ry="26" stroke="#77567E" stroke-width="1"/>
+ <ellipse rx="30" ry="17" fill="#DCE59E" stroke="#9FAF6C" stroke-width="1.5"/>
+ <ellipse rx="5" ry="3" fill="#432A51"/>
+ <path d="M-65-15q12-14 34-18M35 31q20-6 28-17" stroke="#A489AE" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g stroke-linecap="round"><path d="M93 196q-17-16-5-32t25-1q8 14-7 17M463 579q32-10 41 12t-11 24q-15-1-10-14" stroke="#B59ACE" stroke-width="4"/><path d="M134 277l-13-6M415 105l6-12M517 328l12-5M269 689l8 11M458 680l10-10M79 610l-6 11" stroke="#EC86A5" stroke-width="6"/><path d="M176 116l-4 12M484 252l7 10M255 470l-8 6M520 527l-10 6" stroke="#C4CD7B" stroke-width="5"/></g>
+<g fill="#E5B66F"><circle cx="98" cy="253" r="4"/><circle cx="504" cy="391" r="4"/><circle cx="347" cy="108" r="3"/><circle cx="226" cy="645" r="3"/><circle cx="300" cy="714" r="3"/></g>
+<path d="M79 687q20-15 38-5M457 717q24-10 39-3" stroke="#B5A1C3" stroke-width="2" stroke-linecap="round"/>
+</svg>

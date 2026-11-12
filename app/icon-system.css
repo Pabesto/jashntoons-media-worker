@@ -1,0 +1,42 @@
+/* SVGs retain their viewBox proportions when a breakpoint changes their width. */
+svg.lucide{flex-shrink:0;height:auto;aspect-ratio:1/1;vertical-align:middle}
+button>svg.lucide,a>svg.lucide{display:block}
+.site-brand{display:block;width:200px;height:auto;max-width:100%;flex:0 0 auto;color:#f0f3ec;overflow:visible}
+.site-brand .site-brand-flower{color:#e1ac7b}
+.site-brand .site-brand-tagline{color:#b4bea9}
+.site-brand.site-brand-on-light{color:#294b3b}
+.site-brand-on-light .site-brand-flower{color:#a57856}
+.site-brand-on-light .site-brand-tagline{color:#52634f}
+.site-header>a:first-of-type{flex-shrink:0}
+.site-footer>.site-brand{width:200px}
+.studio-brand{width:164px;flex-shrink:0}
+.brand-mark{display:inline-block;width:1em;height:1em;vertical-align:-.12em;flex-shrink:0;aspect-ratio:1/1}
+.google-mark{display:block;flex-shrink:0;width:20px;height:20px;background:#fff;border-radius:50%;padding:2px;box-sizing:content-box}
+.poster-brand>.brand-mark{margin-left:.2em}
+.poster-spark>svg{width:1em;height:1em}
+.effect-swatch>svg.lucide{width:28px;height:28px}
+.studio-no-prop>svg.lucide{width:24px;height:24px}
+.creative-suite .occasion-collection__title>svg.lucide{display:block;width:16px;height:16px;flex-shrink:0;margin-top:0}
+.occasion-collection__title{align-items:center}
+.creative-suite .creator-finished-list article>svg.lucide,.creative-suite .creator-my-bundles article>svg.lucide{display:block;width:18px;height:18px;flex-shrink:0}
+.icon-button>svg.lucide,.portal-icon>svg.lucide,.creator-icon>svg.lucide{width:18px;height:18px}
+.mobile-toggle>svg.lucide{width:22px;height:22px}
+.creation-tool-rail button>svg.lucide,.pro-editor .portal-tools button>svg.lucide{width:20px;height:20px}
+@media(max-width:700px){
+ .site-header .site-brand{width:176px}.site-footer>.site-brand{width:200px}
+ .studio-brand{width:140px}
+ .pro-editor .portal-header,.pro-creation .creation-header{min-width:0;gap:8px}
+ .pro-editor .portal-header .studio-brand{width:112px}
+}
+@media(max-width:380px){
+ .site-header .site-brand{width:152px}
+ .pro-creation .creation-header .studio-brand{width:128px}
+ .pro-editor .portal-header .studio-brand{width:108px}
+ .pro-editor .portal-header{padding-inline:8px;gap:4px}
+ .pro-editor .portal-header .portal-icon{width:24px}
+ .pro-editor .portal-header .portal-save{padding:5px}
+ .pro-editor .portal-header .portal-history{gap:0}
+ .creative-suite .occasion-collection__title>svg.lucide{width:14px;height:14px}
+}
+
+@media(max-width:350px){.pro-editor .portal-header .studio-brand{width:80px}.pro-editor.creator-simple .portal-header .studio-brand{width:112px}.pro-editor .portal-header .portal-export{padding-inline:5px;min-width:98px}}

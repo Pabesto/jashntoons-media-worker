@@ -1,0 +1,25 @@
+import type {Template} from './templates';
+const rows:[string,string,Template['category'],string,string,string][]=[
+ ['jungle-birthday','Wild One, Wonderful You','Birthday','Jungle friends & golden sunshine','A WILD LITTLE CELEBRATION','#326644'],
+ ['candy-carnival','The Candy Carnival','Birthday','Pastel rides & sweet surprises','ROLL UP FOR THE BIRTHDAY MAGIC','#ba587e'],
+ ['disco-birthday','Born to Disco','Birthday','Midnight lights & disco sparkle','YOUR NIGHT TO SHINE','#a558bb'],
+ ['blush-engagement','A Blush Beginning','Engagement','Lakeside roses & golden dusk','TWO HEARTS. ONE BEAUTIFUL YES.','#a66d7c'],
+ ['lotus-engagement','The Lotus Promise','Engagement','Lotus lake & a sunset pavilion','THE START OF OUR FOREVER','#b87953'],
+ ['candle-anniversary','Still Choosing You','Anniversary','Candlelit terrace & burgundy roses','ANOTHER YEAR OF OUR FAVOURITE STORY','#944953'],
+ ['golden-anniversary','Golden Together','Anniversary','Golden roses & garden lights','CELEBRATING A LIFETIME OF LOVE','#a88742'],
+ ['balloon-sky','Up, Up & Baby','Baby shower','Peach balloons & cotton clouds','OUR NEXT ADVENTURE IS TINY','#c18079'],
+ ['storybook-cradle','A Woodland Welcome','Baby shower','Sage woodland & a storybook cradle','A LITTLE WONDER IS ON THE WAY','#688775'],
+ ['marigold-home','Naye Ghar Ka Jashn','Housewarming','Marigold doorway & teal details','NEW KEYS. BEAUTIFUL NEW MEMORIES.','#b77335'],
+ ['modern-villa','The Open House','Housewarming','Sunlit architecture & olive trees','COME MAKE YOURSELF AT HOME','#7c8763'],
+ ['diwali-courtyard','Aangan Ki Diwali','Festivals','A thousand diyas & festive rangoli','LIGHTS, LAUGHTER & LOVED ONES','#c49246'],
+ ['eid-moon','Under the Eid Moon','Festivals','Turquoise arches & moonlit rooftops','A BEAUTIFUL EID, TOGETHER','#4b968e'],
+ ['launch-stage','The Big Reveal','Business','Black & gold launch stage','SOMETHING EXTRAORDINARY BEGINS','#b69b63'],
+ ['boutique-opening','Doors Open, Dreams Begin','Business','A floral boutique & blush streets','YOU ARE ON OUR FIRST GUEST LIST','#bd7e8c'],
+ ['laurel-library','The Next Chapter','Graduation','An ivy library & golden laurels','A DREAM WORKED FOR. A MOMENT EARNED.','#846246'],
+ ['campus-celebration','Caps Off to You','Graduation','Campus sunshine & blue balloons','THIS IS JUST THE BEGINNING','#4b78a3'],
+ ['travel-garden','Hello, Next Adventure','Retirement','A coastal garden & a world to explore','MORE SUNSETS. NEW ADVENTURES.','#6d9584'],
+ ['cradle-lotus','A Name, A New Story','Naming ceremony','Lotus cradle & a floral canopy','A LITTLE NAME. A LIFETIME OF LOVE.','#b88978'],
+ ['haldi-courtyard','Haldi Wali Dhoop','Haldi & Mehendi','Yellow petals & a pink courtyard','A LITTLE HALDI. A LOT OF HAPPINESS.','#bf9032'],
+ ['mehendi-mandap','Mehendi Under the Stars','Haldi & Mehendi','Emerald drapes & lantern light','RANG, RAUNAK AUR MEHENDI','#5a856b'],
+];
+export const catalogTemplates:Template[]=rows.map(([id,name,category,mood,label,accent])=>({id,name,category,mood,label,accent,art:id,catalog:true,cinematic:true,bg:'#f6efe3',ink:'#fff6e6',names:category==='Business'?'Your next big idea':category==='Birthday'?'Your birthday story':'Your celebration',badge:'Editable scenes'}));

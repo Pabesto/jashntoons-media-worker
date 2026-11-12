@@ -1,0 +1,67 @@
+{
+  "feature": "AI Moments",
+  "actions": 140,
+  "categories": 14,
+  "styles": 10,
+  "durationSeconds": 10,
+  "siteCreditsPerNewFilm": 5,
+  "checkout": "Unchanged at user request; complete the credit flow only.",
+  "workflow": [
+    "Upload one or two identity photos",
+    "Select an occasion, one of ten actions, and one of ten styles",
+    "Review the automatic prompt or edit its motion direction",
+    "Confirm the 5-credit charge",
+    "Generate the identity-guided starting frame",
+    "Generate a real image-to-video performance using the chosen choreography",
+    "Review, edit text/audio and export"
+  ],
+  "source": {
+    "catalog": "lib/moment-presets.ts",
+    "promptCompiler": "lib/ai-moments.ts",
+    "editor": "app/components/AIMoments.tsx",
+    "generation": "lib/generation.ts"
+  },
+  "billing": {
+    "explicitConfirmation": true,
+    "atomicReservation": true,
+    "duplicateRequestProtection": true,
+    "failedGenerationRefund": 5,
+    "newActionOrStyle": "New generation, 5 credits",
+    "savedResultReuse": "No new AI charge",
+    "sameProjectExports": "Included"
+  },
+  "privacy": {
+    "referencePhotos": "Account-owned media only",
+    "newUserReferencePublished": false,
+    "privateTestFolder": "outputs/private-moments-test"
+  },
+  "provider": {
+    "image": "Runway gpt_image_2, 1088:1920, medium quality",
+    "video": "Runway gen4_turbo, 720:1280, 10 seconds",
+    "motionPromptLimit": 1000,
+    "supportingDocumentation": "https://docs.dev.runwayml.com/api/"
+  },
+  "verification": {
+    "automatedTestsPassed": 47,
+    "typecheck": "passed",
+    "browser": {
+      "viewportWidths": [
+        1440,
+        1024,
+        768,
+        390,
+        320
+      ],
+      "categoryCount": 14,
+      "actionChoiceCount": 10,
+      "styleChoiceCount": 10,
+      "uploadDoesNotCharge": true,
+      "explicitQuote": true,
+      "resumeWithoutDuplicate": true,
+      "savedResultReuse": true,
+      "videoPlayback": true,
+      "pageErrors": []
+    },
+    "liveProvider": "A private test of the real image and video pipeline is recorded locally in outputs/private-moments-test/status.json. The source photo and generated media are excluded from publication."
+  }
+}

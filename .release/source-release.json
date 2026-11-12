@@ -1,0 +1,3487 @@
+{
+  "format": 1,
+  "applicationCommit": "eb547b6e86db0c66bea4342d0e406f26037fea70",
+  "repository": "Pabesto/jashntoons-media-worker",
+  "branch": "jashntoons-web-source",
+  "archive": {
+    "storageOrigin": "https://jashntoons.jocoseavocet1.chatgpt.site",
+    "commit": "eb547b6e86db0c66bea4342d0e406f26037fea70",
+    "sha256": "2dcbeda645a3438e67543fd8ebd17b9fe6dded7f7fa9bee53959a1a80a94b040",
+    "size": 253374083,
+    "chunks": [
+      {
+        "key": "releases/eb547b6e86db0c66bea4342d0e406f26037fea70/part-0",
+        "size": 60000000,
+        "sha256": "800bd2597d97858bb9783be074299b4def07d5c414e6e716da544392d0676ce3"
+      },
+      {
+        "key": "releases/eb547b6e86db0c66bea4342d0e406f26037fea70/part-1",
+        "size": 60000000,
+        "sha256": "3d2322a42cdd74298d64f68df5669cc3d18eb6159aea52f8051184038f3677a4"
+      },
+      {
+        "key": "releases/eb547b6e86db0c66bea4342d0e406f26037fea70/part-2",
+        "size": 60000000,
+        "sha256": "e8dfcc89ea32969f3fd015afc83e0c12fb5d7bfd0410a0afdb6f64eab98935bd"
+      },
+      {
+        "key": "releases/eb547b6e86db0c66bea4342d0e406f26037fea70/part-3",
+        "size": 60000000,
+        "sha256": "7ddbff7f18583457f27c22879da5868451dc4eb3d8b4ed1f93ef5c1e29c6d2a3"
+      },
+      {
+        "key": "releases/eb547b6e86db0c66bea4342d0e406f26037fea70/part-4",
+        "size": 13374083,
+        "sha256": "58f7013f886c3a47454183f7e4944f4e4e2b5722d9359f9f99ecbdeff9f574da"
+      }
+    ],
+    "key": "releases/eb547b6e86db0c66bea4342d0e406f26037fea70/manifest.json"
+  },
+  "binaryAssets": [
+    {
+      "path": "lib/connector-contract.mts",
+      "mode": "100644",
+      "sha": "f146418508b4c272a4495ec5498b6f0554b1f966",
+      "size": 5362
+    },
+    {
+      "path": "lib/connector-errors.mts",
+      "mode": "100644",
+      "sha": "c9d2fe845ec965062d3724fd28a0892b4fbf5a9b",
+      "size": 2717
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "mode": "100644",
+      "sha": "90bf5472dbcee5cd451d094d8595c49b5fd4fdb7",
+      "size": 4664
+    },
+    {
+      "path": "public/audio/padharo-score.mp3",
+      "mode": "100644",
+      "sha": "1abd948a27316d0da176c0ba5d09f032fb14b231",
+      "size": 993069
+    },
+    {
+      "path": "public/brand/jashntoons-logo.png",
+      "mode": "100644",
+      "sha": "bf27a7cac80fc40b6a280c9907629119cb8389ba",
+      "size": 17451
+    },
+    {
+      "path": "public/brand/jashntoons-social.png",
+      "mode": "100644",
+      "sha": "d69ca5c094b8857d491d8d2fc10d80538ba5f06a",
+      "size": 63468
+    },
+    {
+      "path": "public/catalog/balloon-sky.webp",
+      "mode": "100644",
+      "sha": "c991d0eb86250fe3c16574fbafc3e0a82786abd7",
+      "size": 78906
+    },
+    {
+      "path": "public/catalog/blush-engagement.webp",
+      "mode": "100644",
+      "sha": "5921021b1fc09734a7f5cf7f6b0c040ef51c51f5",
+      "size": 185286
+    },
+    {
+      "path": "public/catalog/boutique-opening.webp",
+      "mode": "100644",
+      "sha": "88dfc280225516fdb553570faa8b8794a339ec00",
+      "size": 226504
+    },
+    {
+      "path": "public/catalog/campus-celebration.webp",
+      "mode": "100644",
+      "sha": "750bb258f893eeb7a57bc79ffb5764c49c3658ea",
+      "size": 270762
+    },
+    {
+      "path": "public/catalog/candle-anniversary.webp",
+      "mode": "100644",
+      "sha": "1f61d2b8e9e49c1dd9e98576b526f4ca1881e392",
+      "size": 182210
+    },
+    {
+      "path": "public/catalog/candy-carnival.webp",
+      "mode": "100644",
+      "sha": "2e88e9e33e62d10872c7b3a6303aca3a50ff0ec3",
+      "size": 204092
+    },
+    {
+      "path": "public/catalog/cradle-lotus.webp",
+      "mode": "100644",
+      "sha": "92f2162e8df1e03592d9bcd6120f4673e7ab5024",
+      "size": 196770
+    },
+    {
+      "path": "public/catalog/disco-birthday.webp",
+      "mode": "100644",
+      "sha": "10b522f2208f8bbdb2cf00dd97218aeccc332bda",
+      "size": 200394
+    },
+    {
+      "path": "public/catalog/diwali-courtyard.webp",
+      "mode": "100644",
+      "sha": "0cf6a04cbe0b76d5d78edc667aea7c570413da56",
+      "size": 216488
+    },
+    {
+      "path": "public/catalog/eid-moon.webp",
+      "mode": "100644",
+      "sha": "e62e60840d0ee94e2ac28bd1287f4da85ed9d6a4",
+      "size": 233030
+    },
+    {
+      "path": "public/catalog/golden-anniversary.webp",
+      "mode": "100644",
+      "sha": "52fead85ca48ae4411e5ea84023f7b47bebd9977",
+      "size": 274040
+    },
+    {
+      "path": "public/catalog/haldi-courtyard.webp",
+      "mode": "100644",
+      "sha": "8e0ff44280f86207cf0c18dc99131456eb93148d",
+      "size": 248762
+    },
+    {
+      "path": "public/catalog/jungle-birthday.webp",
+      "mode": "100644",
+      "sha": "2e48da586f25863407c4ed9c0fb9054e827552ea",
+      "size": 305112
+    },
+    {
+      "path": "public/catalog/launch-stage.webp",
+      "mode": "100644",
+      "sha": "dfd447bf9263209fbec2deb762d717c3f195856b",
+      "size": 69606
+    },
+    {
+      "path": "public/catalog/laurel-library.webp",
+      "mode": "100644",
+      "sha": "463c69f55c1d7bc8ee491904de631b723c107592",
+      "size": 204434
+    },
+    {
+      "path": "public/catalog/lotus-engagement.webp",
+      "mode": "100644",
+      "sha": "adbee0060b528a1c04ecc372bba55e12b600b833",
+      "size": 204212
+    },
+    {
+      "path": "public/catalog/marigold-home.webp",
+      "mode": "100644",
+      "sha": "f2289e3f0256ad69aea15f688a227546846a18bd",
+      "size": 222250
+    },
+    {
+      "path": "public/catalog/mehendi-mandap.webp",
+      "mode": "100644",
+      "sha": "11ebb4ed708d80601bd161e39359d130d152c9eb",
+      "size": 317064
+    },
+    {
+      "path": "public/catalog/modern-villa.webp",
+      "mode": "100644",
+      "sha": "c7dc46d1a50be58f9eadf6ea3be1490e00b7ad7e",
+      "size": 251566
+    },
+    {
+      "path": "public/catalog/storybook-cradle.webp",
+      "mode": "100644",
+      "sha": "83ddab1d18e4b7f3229108aca766531f8459c958",
+      "size": 218556
+    },
+    {
+      "path": "public/catalog/travel-garden.webp",
+      "mode": "100644",
+      "sha": "96386770906fb1b0c1830a6be3ca192725655bb5",
+      "size": 250984
+    },
+    {
+      "path": "public/cinema/bride.webp",
+      "mode": "100644",
+      "sha": "b5d31223bc5ca9704e32ceb0b66d701e471eade6",
+      "size": 255030
+    },
+    {
+      "path": "public/cinema/car.webp",
+      "mode": "100644",
+      "sha": "2002385f41823c37bba6b2c8fe77bd26eb9cd73b",
+      "size": 391100
+    },
+    {
+      "path": "public/cinema/couple.webp",
+      "mode": "100644",
+      "sha": "0e388eb34962bda6d8829c12bbd2e1ac9788871f",
+      "size": 433438
+    },
+    {
+      "path": "public/cinema/groom.webp",
+      "mode": "100644",
+      "sha": "40fb487c60877e6f7ca7ff29b43a4b216760d184",
+      "size": 100070
+    },
+    {
+      "path": "public/cinema/haveli.webp",
+      "mode": "100644",
+      "sha": "cb9b5b31f92c4bdc34e65d84a6c42d8d676521a9",
+      "size": 520202
+    },
+    {
+      "path": "public/cinema/namaste.webp",
+      "mode": "100644",
+      "sha": "be819f321b15feca266c8a8c2b8c0c1959f8c26c",
+      "size": 487400
+    },
+    {
+      "path": "public/cinema/royal-door.webp",
+      "mode": "100644",
+      "sha": "03975b9b6954d2c66578d8b04d5dbaf8cb68ea4e",
+      "size": 90618
+    },
+    {
+      "path": "public/cinema/waving.webp",
+      "mode": "100644",
+      "sha": "6bc3355403f492eaeb3152f3ce0c4a4e74ce20a7",
+      "size": 453178
+    },
+    {
+      "path": "public/custom-films/haveli-namaste.mp4",
+      "mode": "100644",
+      "sha": "1c5a6b792ec2cec8d09108298d1b419d49a28aa1",
+      "size": 725693
+    },
+    {
+      "path": "public/custom-films/haveli-namaste.webp",
+      "mode": "100644",
+      "sha": "8265ccb38608fbab59b7baebc23537fb1ed9b61a",
+      "size": 177808
+    },
+    {
+      "path": "public/favicon-32.png",
+      "mode": "100644",
+      "sha": "43492d0df861aa512c765812716da14022662147",
+      "size": 825
+    },
+    {
+      "path": "public/films/cartoon.jpg",
+      "mode": "100644",
+      "sha": "1cfa8ddd4bfaff8a7a2d536dd10b3d9ec377a000",
+      "size": 158774
+    },
+    {
+      "path": "public/films/cartoon.mp4",
+      "mode": "100644",
+      "sha": "7fd062cf75dded227311488d12663a2754043a49",
+      "size": 637908
+    },
+    {
+      "path": "public/films/rajasthan.jpg",
+      "mode": "100644",
+      "sha": "3d8e52b450d3c1bd8d95fd8ce64e9ee5810e9fab",
+      "size": 126934
+    },
+    {
+      "path": "public/films/rajasthan.mp4",
+      "mode": "100644",
+      "sha": "d1d4791ff735d312f0554a9ee67f6ce3707baa67",
+      "size": 511687
+    },
+    {
+      "path": "public/films/royal-door.jpg",
+      "mode": "100644",
+      "sha": "9f77ba8b3fbdbf05e0e13c31aa4f3855a501eddd",
+      "size": 123177
+    },
+    {
+      "path": "public/films/royal-door.mp4",
+      "mode": "100644",
+      "sha": "2c6084f1a1c978dcd320631edc18485cbf3bdfbf",
+      "size": 377484
+    },
+    {
+      "path": "public/films/save-the-date.jpg",
+      "mode": "100644",
+      "sha": "a4573e45f4704692482f7973da9e6f47efe35800",
+      "size": 223904
+    },
+    {
+      "path": "public/films/save-the-date.mp4",
+      "mode": "100644",
+      "sha": "bc00264d20c66e47d8dc39de702dfb89d56065d5",
+      "size": 301838
+    },
+    {
+      "path": "public/films/shaadi-ka-ghar.jpg",
+      "mode": "100644",
+      "sha": "466f85a92069110a4ab0ea7e96e201f6a9b5271e",
+      "size": 200564
+    },
+    {
+      "path": "public/films/shaadi-ka-ghar.mp4",
+      "mode": "100644",
+      "sha": "7cfe0f81ac5fcb042ff456d32e17c815229d32ad",
+      "size": 1324435
+    },
+    {
+      "path": "public/full-films/haveli-celebration/arrival.mp4",
+      "mode": "100644",
+      "sha": "b67a5655593018e0b273bf8532df042fb7a86fc7",
+      "size": 1590704
+    },
+    {
+      "path": "public/full-films/haveli-celebration/arrival.webp",
+      "mode": "100644",
+      "sha": "3164eee727b7782df689fe324b7f360b8712ae62",
+      "size": 353400
+    },
+    {
+      "path": "public/full-films/haveli-celebration/closing.mp4",
+      "mode": "100644",
+      "sha": "f35395aed0bfdd5989ccc5945b833cff69b7720a",
+      "size": 1061758
+    },
+    {
+      "path": "public/full-films/haveli-celebration/closing.webp",
+      "mode": "100644",
+      "sha": "db76cf2f50ef690093a86cad6db6f8ec8a5c8e44",
+      "size": 292964
+    },
+    {
+      "path": "public/full-films/haveli-celebration/full-reel.mp4",
+      "mode": "100644",
+      "sha": "b342b582b202cd467a9088f42a60937da7c6184c",
+      "size": 3586071
+    },
+    {
+      "path": "public/full-films/haveli-celebration/functions.mp4",
+      "mode": "100644",
+      "sha": "8e937cc59589f8be8a464b91f31133e1f4132d1a",
+      "size": 969973
+    },
+    {
+      "path": "public/full-films/haveli-celebration/functions.webp",
+      "mode": "100644",
+      "sha": "2a49659a7a90a305a3d183f04ca63d8f82c7a101",
+      "size": 318452
+    },
+    {
+      "path": "public/full-films/rajasthan-journey/evening.mp4",
+      "mode": "100644",
+      "sha": "bcf0cd72cc24792fc3e4c3a0285782a006b5d557",
+      "size": 1193959
+    },
+    {
+      "path": "public/full-films/rajasthan-journey/evening.webp",
+      "mode": "100644",
+      "sha": "f9dc2033f3e86a5650b00d75416337f440310762",
+      "size": 226840
+    },
+    {
+      "path": "public/full-films/rajasthan-journey/fort.mp4",
+      "mode": "100644",
+      "sha": "abb5aa1491b2e9ae2af5cfa0de1d46703395f139",
+      "size": 651561
+    },
+    {
+      "path": "public/full-films/rajasthan-journey/fort.webp",
+      "mode": "100644",
+      "sha": "06afbbebbe8775aede91411f9d27f76e14f52c65",
+      "size": 230484
+    },
+    {
+      "path": "public/full-films/rajasthan-journey/full-reel.mp4",
+      "mode": "100644",
+      "sha": "2b3b3bb24dbcb448e3aafe2d1c50dca2f79c3a3e",
+      "size": 2688420
+    },
+    {
+      "path": "public/full-films/rajasthan-journey/scroll.mp4",
+      "mode": "100644",
+      "sha": "97bcbcd70b5d58049b24687a1bfa73bbf1bd7b03",
+      "size": 1421382
+    },
+    {
+      "path": "public/full-films/rajasthan-journey/scroll.webp",
+      "mode": "100644",
+      "sha": "4fcc04b7919c569075501e004ed313b0db57fdeb",
+      "size": 312776
+    },
+    {
+      "path": "public/full-films/royal-garden/doors.mp4",
+      "mode": "100644",
+      "sha": "54789b7861736e7788588f4495cd77591eaa6b1d",
+      "size": 1175721
+    },
+    {
+      "path": "public/full-films/royal-garden/doors.webp",
+      "mode": "100644",
+      "sha": "d28d17f98b4fde56173d819bb588fadaabbb1bb8",
+      "size": 314386
+    },
+    {
+      "path": "public/full-films/royal-garden/full-reel.mp4",
+      "mode": "100644",
+      "sha": "4378f9f9998c668a382c2508f4017ccc84d44131",
+      "size": 1736193
+    },
+    {
+      "path": "public/full-films/royal-garden/garden.mp4",
+      "mode": "100644",
+      "sha": "d4275cd8864754d7fe079ce57530d3fff17dd6b3",
+      "size": 713718
+    },
+    {
+      "path": "public/full-films/royal-garden/garden.webp",
+      "mode": "100644",
+      "sha": "03f6d1f6a6c772b8cbc963d960abd2f536a37276",
+      "size": 254578
+    },
+    {
+      "path": "public/full-films/royal-garden/vows.mp4",
+      "mode": "100644",
+      "sha": "f8c06f1b1b6044e8aa4a0332c5fcd42896c9ec2a",
+      "size": 330229
+    },
+    {
+      "path": "public/full-films/royal-garden/vows.webp",
+      "mode": "100644",
+      "sha": "bebf5276919dfd1b86174222f4bd6a5979a91ec1",
+      "size": 236472
+    },
+    {
+      "path": "public/invitation-studio/afterglow.mp4",
+      "mode": "100644",
+      "sha": "1af42ea38c240a62c5d55095b913f81ec85242a4",
+      "size": 1155450
+    },
+    {
+      "path": "public/invitation-studio/afterglow.webp",
+      "mode": "100644",
+      "sha": "f5cbe74363274ca8bf08a99e161eee7f60cd195d",
+      "size": 185468
+    },
+    {
+      "path": "public/invitation-studio/birthday-express.mp4",
+      "mode": "100644",
+      "sha": "4ae74573c40324b7d714b15f946660c93fd2b0a1",
+      "size": 468670
+    },
+    {
+      "path": "public/invitation-studio/birthday-express.webp",
+      "mode": "100644",
+      "sha": "c968c26d2b56140669517ec3ceb72699d81046ee",
+      "size": 217748
+    },
+    {
+      "path": "public/invitation-studio/letter-for-you.mp4",
+      "mode": "100644",
+      "sha": "b6aed27f68d003145d891a9d4c867f4c0fe766b5",
+      "size": 654851
+    },
+    {
+      "path": "public/invitation-studio/letter-for-you.webp",
+      "mode": "100644",
+      "sha": "8cd9b8119db1543aec23c1204a5f7707faa62356",
+      "size": 314992
+    },
+    {
+      "path": "public/invitation-studio/little-wishes.mp4",
+      "mode": "100644",
+      "sha": "434da3a38f6c6eac834fd2f10c8338bc374e5e6c",
+      "size": 676038
+    },
+    {
+      "path": "public/invitation-studio/little-wishes.webp",
+      "mode": "100644",
+      "sha": "e7fe7e8d81204d1070e281670de3b52d48a74ef2",
+      "size": 222784
+    },
+    {
+      "path": "public/invitation-studio/moonlit-promise.mp4",
+      "mode": "100644",
+      "sha": "a4d3f159a5a0713638c635f6103c763317f8bb5e",
+      "size": 924094
+    },
+    {
+      "path": "public/invitation-studio/moonlit-promise.webp",
+      "mode": "100644",
+      "sha": "c9da380fa93cd4c0e72118878d9e31a0ed176c50",
+      "size": 463646
+    },
+    {
+      "path": "public/invitation-studio/painted-chapters.mp4",
+      "mode": "100644",
+      "sha": "716394851cf1c12e5845d0687707435a1bbcd371",
+      "size": 762382
+    },
+    {
+      "path": "public/invitation-studio/painted-chapters.webp",
+      "mode": "100644",
+      "sha": "9e07a37ce9c0d8b92ee776c3348ad44c1d26d1f9",
+      "size": 467372
+    },
+    {
+      "path": "public/invitation-studio/rangon-ki-mehfil.mp4",
+      "mode": "100644",
+      "sha": "59bd5e5aafebe7c73baa94b158029d6303bb5835",
+      "size": 943106
+    },
+    {
+      "path": "public/invitation-studio/rangon-ki-mehfil.webp",
+      "mode": "100644",
+      "sha": "cf3201ac71225fefa079de29c780c505934de8a1",
+      "size": 459654
+    },
+    {
+      "path": "public/invitation-studio/sunehri-darwaze.mp4",
+      "mode": "100644",
+      "sha": "d62277e8c3d6b1172f2e6e7fa0d7d56410a9c615",
+      "size": 845839
+    },
+    {
+      "path": "public/invitation-studio/sunehri-darwaze.webp",
+      "mode": "100644",
+      "sha": "33cf6ce014749b80b3c3b5fd3f43d197c8c161c2",
+      "size": 474900
+    },
+    {
+      "path": "public/reference-films/heritage-scroll-scene-1.webp",
+      "mode": "100644",
+      "sha": "42d8ecd0d42e71c395745a4b58a787d635edcbc9",
+      "size": 105514
+    },
+    {
+      "path": "public/reference-films/heritage-scroll-scene-2.webp",
+      "mode": "100644",
+      "sha": "e4c6467a69bcbbf7d8054e65aef136c5dac56616",
+      "size": 118944
+    },
+    {
+      "path": "public/reference-films/heritage-scroll-scene-3.webp",
+      "mode": "100644",
+      "sha": "0914daaff8fb12bb7dc6aa9ed0752811d249464e",
+      "size": 109050
+    },
+    {
+      "path": "public/reference-films/heritage-scroll.mp4",
+      "mode": "100644",
+      "sha": "03ffad6d716237ebef15bef4adeaf425ca5a39c8",
+      "size": 2854161
+    },
+    {
+      "path": "public/reference-films/heritage-scroll.webp",
+      "mode": "100644",
+      "sha": "a6723eea63a5e4117e49f9d05b31cca7a2541ad3",
+      "size": 118860
+    },
+    {
+      "path": "public/reference-films/nyota-welcome-scene-1.webp",
+      "mode": "100644",
+      "sha": "7f8dce63b9b8b4adc9788582ee3fca428dc5996d",
+      "size": 34914
+    },
+    {
+      "path": "public/reference-films/nyota-welcome-scene-2.webp",
+      "mode": "100644",
+      "sha": "a48cdb993510bcd68bd51814dd0398b5ffd5adbc",
+      "size": 34444
+    },
+    {
+      "path": "public/reference-films/nyota-welcome-scene-3.webp",
+      "mode": "100644",
+      "sha": "7d93a30693d014e7d73a354a35b24c28ae55bbde",
+      "size": 123912
+    },
+    {
+      "path": "public/reference-films/nyota-welcome.mp4",
+      "mode": "100644",
+      "sha": "283794763a004ebbbefbd577767b0afa655d4413",
+      "size": 1497623
+    },
+    {
+      "path": "public/reference-films/nyota-welcome.webp",
+      "mode": "100644",
+      "sha": "3e5dff852f4b7348d2d6f95c57366ec2fbf9a934",
+      "size": 106734
+    },
+    {
+      "path": "public/reference-films/rajasthan-folk-scene-1.webp",
+      "mode": "100644",
+      "sha": "e079b34e04ab5cf68d233e6836c6fa339af2cafd",
+      "size": 57148
+    },
+    {
+      "path": "public/reference-films/rajasthan-folk-scene-2.webp",
+      "mode": "100644",
+      "sha": "8c83eafd08324abaae3b2ab1b884bf5779bcf392",
+      "size": 74000
+    },
+    {
+      "path": "public/reference-films/rajasthan-folk-scene-3.webp",
+      "mode": "100644",
+      "sha": "ab0465951e961ed99e268ff09cb01a25469fe13f",
+      "size": 61442
+    },
+    {
+      "path": "public/reference-films/rajasthan-folk.mp4",
+      "mode": "100644",
+      "sha": "338b0a4fa3c5877ac5814ceea7a97878e36b9cf3",
+      "size": 3545952
+    },
+    {
+      "path": "public/reference-films/rajasthan-folk.webp",
+      "mode": "100644",
+      "sha": "86deef31d8e7457c6de73d346e37b1c50e47ac5a",
+      "size": 68942
+    },
+    {
+      "path": "public/reference-films/royal-doors-scene-1.webp",
+      "mode": "100644",
+      "sha": "fbecf1d779c2b189491d0ce889565454616e4f3e",
+      "size": 90266
+    },
+    {
+      "path": "public/reference-films/royal-doors-scene-2.webp",
+      "mode": "100644",
+      "sha": "cf228f7c6d0fa27ad68f4627c8b0f4b4c1d63254",
+      "size": 51834
+    },
+    {
+      "path": "public/reference-films/royal-doors-scene-3.webp",
+      "mode": "100644",
+      "sha": "7e81bfb87834f726f13188c944deb4c4007286fd",
+      "size": 63124
+    },
+    {
+      "path": "public/reference-films/royal-doors.mp4",
+      "mode": "100644",
+      "sha": "c6ef83240dd2d9dbf1ea75b83d82f04ba6919645",
+      "size": 1777748
+    },
+    {
+      "path": "public/reference-films/royal-doors.webp",
+      "mode": "100644",
+      "sha": "d386c51e41964db7ced8370c47be69c01bbb2fda",
+      "size": 90524
+    },
+    {
+      "path": "public/reference-films/shaadi-haveli-scene-1.webp",
+      "mode": "100644",
+      "sha": "74f7de56f094a502e9dc478b221c94e0dec617e2",
+      "size": 151594
+    },
+    {
+      "path": "public/reference-films/shaadi-haveli-scene-2.webp",
+      "mode": "100644",
+      "sha": "8a3dfba090a8c765affeb6fb917be3ea0a488292",
+      "size": 154664
+    },
+    {
+      "path": "public/reference-films/shaadi-haveli-scene-3.webp",
+      "mode": "100644",
+      "sha": "959ba3cd662283268d2e57780615f1adc2505b71",
+      "size": 101738
+    },
+    {
+      "path": "public/reference-films/shaadi-haveli.mp4",
+      "mode": "100644",
+      "sha": "e38656d74aca6f24b577699e7fc0db83d6d5e755",
+      "size": 3240568
+    },
+    {
+      "path": "public/reference-films/shaadi-haveli.webp",
+      "mode": "100644",
+      "sha": "027d3b8211b4bd44b6962b0090a36491f5c46ec4",
+      "size": 142472
+    },
+    {
+      "path": "public/reference-films/storybook-wedding-scene-1.webp",
+      "mode": "100644",
+      "sha": "e552e2bfbaad1711a8baf929b5b69a6c9ffd213c",
+      "size": 67548
+    },
+    {
+      "path": "public/reference-films/storybook-wedding-scene-2.webp",
+      "mode": "100644",
+      "sha": "6671c704c9b1103803040ead9b81a6e619554cf5",
+      "size": 83438
+    },
+    {
+      "path": "public/reference-films/storybook-wedding-scene-3.webp",
+      "mode": "100644",
+      "sha": "98e5ad1ea388c7c9219c8f662d529497be33a978",
+      "size": 64920
+    },
+    {
+      "path": "public/reference-films/storybook-wedding.mp4",
+      "mode": "100644",
+      "sha": "0d1d7c39bbb256f902e1592f7803cf26a5e36b60",
+      "size": 2828792
+    },
+    {
+      "path": "public/reference-films/storybook-wedding.webp",
+      "mode": "100644",
+      "sha": "e9510c4ceb49ca41a61e650b96464942d50e2897",
+      "size": 64118
+    },
+    {
+      "path": "public/reference-films/vintage-date-scene-1.webp",
+      "mode": "100644",
+      "sha": "0658a740f727582fec0820ada18f53731d1366df",
+      "size": 115904
+    },
+    {
+      "path": "public/reference-films/vintage-date-scene-2.webp",
+      "mode": "100644",
+      "sha": "f972b937fbc1d58f54937de16446e8d03ddcdd46",
+      "size": 103430
+    },
+    {
+      "path": "public/reference-films/vintage-date-scene-3.webp",
+      "mode": "100644",
+      "sha": "fcaec4942ca9261f27f2494784ef9ae97871e50a",
+      "size": 114350
+    },
+    {
+      "path": "public/reference-films/vintage-date.mp4",
+      "mode": "100644",
+      "sha": "8b553637968843988b89a22abd9bd3969fbb6cff",
+      "size": 673331
+    },
+    {
+      "path": "public/reference-films/vintage-date.webp",
+      "mode": "100644",
+      "sha": "6826ce408b1ebd7e175075ba8a435293a0c0630e",
+      "size": 120126
+    },
+    {
+      "path": "public/reference-films/wedding-street-scene-1.webp",
+      "mode": "100644",
+      "sha": "a973863be1530e9a823712bf591069b17a52c7a0",
+      "size": 87132
+    },
+    {
+      "path": "public/reference-films/wedding-street-scene-2.webp",
+      "mode": "100644",
+      "sha": "ebcea60e4c28ed97aece5a326644f2b90b6290b1",
+      "size": 60644
+    },
+    {
+      "path": "public/reference-films/wedding-street-scene-3.webp",
+      "mode": "100644",
+      "sha": "90ed5e8548fc495bf2661bfe099112e0366fc8a8",
+      "size": 82218
+    },
+    {
+      "path": "public/reference-films/wedding-street.mp4",
+      "mode": "100644",
+      "sha": "62fd33b2cb40f1ade23a26b1be19c36c2032d9f7",
+      "size": 4290000
+    },
+    {
+      "path": "public/reference-films/wedding-street.webp",
+      "mode": "100644",
+      "sha": "dd97457e0548cd8d3dbc1dc81dfb16f2873ea2c8",
+      "size": 87860
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-01.webp",
+      "mode": "100644",
+      "sha": "f5324a7c701bb7e8a54db4a43b4867d34467e88d",
+      "size": 60808
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-02.webp",
+      "mode": "100644",
+      "sha": "8142257f9476375f05767ebdbda55776807d6c8c",
+      "size": 113244
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-03.webp",
+      "mode": "100644",
+      "sha": "bbc342ce7ad65f419b813045e15e5cf0555ee232",
+      "size": 72152
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-04.webp",
+      "mode": "100644",
+      "sha": "5f276a1066ee949a5ed8dd0296fe151e3a93a7f4",
+      "size": 93704
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-05.webp",
+      "mode": "100644",
+      "sha": "0f1411c9cdd298148a61dfe4a50ec01366c0ccf7",
+      "size": 94266
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-06.webp",
+      "mode": "100644",
+      "sha": "b87db5a4acfa6f720f7fa64840dc926a4a17bc94",
+      "size": 95534
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-07.webp",
+      "mode": "100644",
+      "sha": "00a6b6921f2b8a4d2d6f8a4f6eb1660624110c7a",
+      "size": 90194
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-08.webp",
+      "mode": "100644",
+      "sha": "9317264d847831a024f7b027a73745eae81e5862",
+      "size": 116724
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-09.webp",
+      "mode": "100644",
+      "sha": "a85b11b10099ddc38f91b91580ecefb6b6ac245d",
+      "size": 156118
+    },
+    {
+      "path": "public/studio/avatars-photo/anniversary-10.webp",
+      "mode": "100644",
+      "sha": "8702457f9484efacfc585d6bbd423ee503ad7943",
+      "size": 132502
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-01.webp",
+      "mode": "100644",
+      "sha": "52a067a0af0ecc4308f9b16ae17d93bcb32e9b59",
+      "size": 67156
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-02.webp",
+      "mode": "100644",
+      "sha": "043a26b904638b43f85996feabe1197ec5b42dd7",
+      "size": 127106
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-03.webp",
+      "mode": "100644",
+      "sha": "bcbf4de9a81029a098d3f8232f8347500081bd36",
+      "size": 89058
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-04.webp",
+      "mode": "100644",
+      "sha": "3412640cdc770e546c4216e075b1101a44e36581",
+      "size": 124022
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-05.webp",
+      "mode": "100644",
+      "sha": "d90ab8a3c10c4e855f325801329346b84530ff06",
+      "size": 84412
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-06.webp",
+      "mode": "100644",
+      "sha": "1237a80e5c8f7e1497874bf28c4f2a195306cf50",
+      "size": 139666
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-07.webp",
+      "mode": "100644",
+      "sha": "0e2988d46c6b45c39ca8a9e6002b5bd791e68b9c",
+      "size": 123848
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-08.webp",
+      "mode": "100644",
+      "sha": "0c5850290a7a6f6ad1f7c49e7c55f73effbf6c7b",
+      "size": 77760
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-09.webp",
+      "mode": "100644",
+      "sha": "36a2b03b0f81a5b952248545c0fa5602125c718b",
+      "size": 89964
+    },
+    {
+      "path": "public/studio/avatars-photo/baby-shower-10.webp",
+      "mode": "100644",
+      "sha": "188c054412fc6049f6e25799fdb3fde92ab93906",
+      "size": 109876
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-01.webp",
+      "mode": "100644",
+      "sha": "0362f390a0b849a16b25d511851e82a9869a39cd",
+      "size": 121116
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-02.webp",
+      "mode": "100644",
+      "sha": "56b4396a124dce5ad30dcbd8944d2e43ebe13bad",
+      "size": 169914
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-03.webp",
+      "mode": "100644",
+      "sha": "7e0b1c72a9a93e43738942765ddbfef41a76f55b",
+      "size": 131168
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-04.webp",
+      "mode": "100644",
+      "sha": "7663671c1af118c1d97380b2111c1d4c8c343347",
+      "size": 150636
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-05.webp",
+      "mode": "100644",
+      "sha": "77761a16df67aa069efcce3397a283b69c1886cd",
+      "size": 102826
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-06.webp",
+      "mode": "100644",
+      "sha": "2f4bd9d6473e81935864562f49efc13e4a198db8",
+      "size": 132596
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-07.webp",
+      "mode": "100644",
+      "sha": "462137a04c00e4a3dc218d390426a4df702e092e",
+      "size": 176436
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-08.webp",
+      "mode": "100644",
+      "sha": "18c2230b70276d152d7bfb5ce5b7854d182418ed",
+      "size": 186450
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-09.webp",
+      "mode": "100644",
+      "sha": "6689ba5d37452e4cb594d02cf8fd11e82df65eca",
+      "size": 176630
+    },
+    {
+      "path": "public/studio/avatars-photo/baraat-10.webp",
+      "mode": "100644",
+      "sha": "c1ba0489de516c8ad931cbc93fcdeea9c26f1a7f",
+      "size": 104738
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-01.webp",
+      "mode": "100644",
+      "sha": "5edb6b015e0ef975a6b90d0e8dfc83cfe887ae63",
+      "size": 47770
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-02.webp",
+      "mode": "100644",
+      "sha": "a9635c9f1dbbf250a8e1aaeda037146d3fb043a5",
+      "size": 93678
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-03.webp",
+      "mode": "100644",
+      "sha": "77acff62760d4babb72dd249df90f62bc202a0d5",
+      "size": 93466
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-04.webp",
+      "mode": "100644",
+      "sha": "39b0778ab748ea7042dc26b8a15c676b1eb6c4f2",
+      "size": 97934
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-05.webp",
+      "mode": "100644",
+      "sha": "205385c7a925231da43559e2be51dc723addce09",
+      "size": 127476
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-06.webp",
+      "mode": "100644",
+      "sha": "c1f1046c855e1f80f9a6a351a74984be267a64dc",
+      "size": 65048
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-07.webp",
+      "mode": "100644",
+      "sha": "afdeb2e51c4958f6d2511bc77c9dc1288705aee0",
+      "size": 56572
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-08.webp",
+      "mode": "100644",
+      "sha": "fb5286fe055d79637ad6897848a2b1ea709e85d8",
+      "size": 96864
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-09.webp",
+      "mode": "100644",
+      "sha": "9bd343885ee0a07f4465d32328711f037bfaa89f",
+      "size": 122024
+    },
+    {
+      "path": "public/studio/avatars-photo/birthday-10.webp",
+      "mode": "100644",
+      "sha": "bfd8b00af0dd31757756a2631811a6e761c612e1",
+      "size": 101348
+    },
+    {
+      "path": "public/studio/avatars-photo/business-01.webp",
+      "mode": "100644",
+      "sha": "d0a6a6b3112b3d8117ddd5eb600f8a16fdd22f99",
+      "size": 42624
+    },
+    {
+      "path": "public/studio/avatars-photo/business-02.webp",
+      "mode": "100644",
+      "sha": "3168c8147d44725feb0333750e3abe80b7f065c2",
+      "size": 77810
+    },
+    {
+      "path": "public/studio/avatars-photo/business-03.webp",
+      "mode": "100644",
+      "sha": "5553593ab30fa58b6aaf1148340b8b90bc553b5b",
+      "size": 51394
+    },
+    {
+      "path": "public/studio/avatars-photo/business-04.webp",
+      "mode": "100644",
+      "sha": "69ce95097b5239ab0290a3661891851d05f0358f",
+      "size": 46422
+    },
+    {
+      "path": "public/studio/avatars-photo/business-05.webp",
+      "mode": "100644",
+      "sha": "145ef1a6c959357e5a288286677a5edf3bdf86c5",
+      "size": 54782
+    },
+    {
+      "path": "public/studio/avatars-photo/business-06.webp",
+      "mode": "100644",
+      "sha": "10583dae515af91ce0cd7469e95e6351bafaba60",
+      "size": 73920
+    },
+    {
+      "path": "public/studio/avatars-photo/business-07.webp",
+      "mode": "100644",
+      "sha": "a8fe6f610266a8667853cda22f8c71c54b42af05",
+      "size": 42442
+    },
+    {
+      "path": "public/studio/avatars-photo/business-08.webp",
+      "mode": "100644",
+      "sha": "f6a63ab347418478c9909a2cb6dd0e2fb86b4092",
+      "size": 58692
+    },
+    {
+      "path": "public/studio/avatars-photo/business-09.webp",
+      "mode": "100644",
+      "sha": "8a46a4575bc00807d286e6486b105edaeb5782ff",
+      "size": 46526
+    },
+    {
+      "path": "public/studio/avatars-photo/business-10.webp",
+      "mode": "100644",
+      "sha": "9793c7a968cc86d6dfce5b91ad1449f42d938d3c",
+      "size": 46160
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-01.webp",
+      "mode": "100644",
+      "sha": "88db22f894b32a0d84d8085cd6f3f72bad125d10",
+      "size": 147928
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-02.webp",
+      "mode": "100644",
+      "sha": "b86f833f55c37d03dbb27c15260f24198ebd2c6b",
+      "size": 99304
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-03.webp",
+      "mode": "100644",
+      "sha": "5082700f100bb0ac58e3cb80e68252a6617305ba",
+      "size": 173468
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-04.webp",
+      "mode": "100644",
+      "sha": "0a05255bd31a34a2bdfdbf84eb655b3acdd77763",
+      "size": 68924
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-05.webp",
+      "mode": "100644",
+      "sha": "fdb807ad7cf78f8f7f69cca44694ddd0e66d5bd8",
+      "size": 154982
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-06.webp",
+      "mode": "100644",
+      "sha": "9768ba82b9e588f822ef9256fb42d282ec5fbd66",
+      "size": 76196
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-07.webp",
+      "mode": "100644",
+      "sha": "ebfd843e1e1da98a73aa82bcf92590f0eb03eb7c",
+      "size": 178146
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-08.webp",
+      "mode": "100644",
+      "sha": "83ca6932da56ce4aef792ce78213e4e146d8b6ff",
+      "size": 113270
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-09.webp",
+      "mode": "100644",
+      "sha": "23f2835fd9434160731de3df54a87d99686e2d7d",
+      "size": 143432
+    },
+    {
+      "path": "public/studio/avatars-photo/engagement-10.webp",
+      "mode": "100644",
+      "sha": "05ce6ba516e214e0ce14ef281bcb0b2812582a73",
+      "size": 95300
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-01.webp",
+      "mode": "100644",
+      "sha": "7f2ff00a155a124ab0fc9a044834052649025eff",
+      "size": 127858
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-02.webp",
+      "mode": "100644",
+      "sha": "87fa9185c2fdf1562fbf2cfee40c3fcf00dccde1",
+      "size": 140148
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-03.webp",
+      "mode": "100644",
+      "sha": "869280978408b419a2f0c62a8e5f32ed1c21030e",
+      "size": 141042
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-04.webp",
+      "mode": "100644",
+      "sha": "aa52b90e1cc08ab62fc40b7e32dad2e047759c2e",
+      "size": 110352
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-05.webp",
+      "mode": "100644",
+      "sha": "65e6105728299ccb4ee8a16575b3011c28955f9e",
+      "size": 97046
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-06.webp",
+      "mode": "100644",
+      "sha": "969742684284e958aca7121137e883a1efa8ef5d",
+      "size": 116478
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-07.webp",
+      "mode": "100644",
+      "sha": "f99b8ae0ec6de702840cb00788666758b3ac2281",
+      "size": 107358
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-08.webp",
+      "mode": "100644",
+      "sha": "1f5565c1992a876b2d8ae7b40eea1902be56fc10",
+      "size": 128926
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-09.webp",
+      "mode": "100644",
+      "sha": "6a120e69ac252605a20abcf1792a0b42c364a105",
+      "size": 63568
+    },
+    {
+      "path": "public/studio/avatars-photo/festivals-10.webp",
+      "mode": "100644",
+      "sha": "1d6092b645ce0e5a9c90cbf1d3701fb59096e9eb",
+      "size": 131166
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-01.webp",
+      "mode": "100644",
+      "sha": "34fec3b6a478024436ad62e1560715149eae8954",
+      "size": 51634
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-02.webp",
+      "mode": "100644",
+      "sha": "2aada02725c2a2e0625dcbe03d2aa03550b188e8",
+      "size": 60570
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-03.webp",
+      "mode": "100644",
+      "sha": "26c2ec9bc5ae7c2210a9f6f93fc59d24da0b1648",
+      "size": 124252
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-04.webp",
+      "mode": "100644",
+      "sha": "9c478be45bd3001fa2614f04a0a914745d136304",
+      "size": 55172
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-05.webp",
+      "mode": "100644",
+      "sha": "7b73d9eccfc853320c8289be00803d0a85a3c2f3",
+      "size": 113504
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-06.webp",
+      "mode": "100644",
+      "sha": "1514a6f94c68ed63f82de915e3167f3f5503e9c3",
+      "size": 59278
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-07.webp",
+      "mode": "100644",
+      "sha": "bbd8dd6a41e24a734ab535b7561515bc4f546f27",
+      "size": 42170
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-08.webp",
+      "mode": "100644",
+      "sha": "66ebe0a6126fb1c25055cacba27d876243697c19",
+      "size": 73162
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-09.webp",
+      "mode": "100644",
+      "sha": "764423dc82346f6925d59a818b1dbac6ecd8b7e5",
+      "size": 120554
+    },
+    {
+      "path": "public/studio/avatars-photo/graduation-10.webp",
+      "mode": "100644",
+      "sha": "9f11765cc733242e11ef1ea54bb382184c00450c",
+      "size": 67636
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-01.webp",
+      "mode": "100644",
+      "sha": "94f7dcd9cf5846106eda4dabdcc4129b9af10834",
+      "size": 114694
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-02.webp",
+      "mode": "100644",
+      "sha": "dd8f8d3f1b63a3b18493d39acdcdfe35cb9d33a4",
+      "size": 126698
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-03.webp",
+      "mode": "100644",
+      "sha": "6e336cd5e7381ea7e9b612c0965522b7dfd5b0a5",
+      "size": 145690
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-04.webp",
+      "mode": "100644",
+      "sha": "bcddc1c491b590c98730f1ad2a422e44656543f4",
+      "size": 169160
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-05.webp",
+      "mode": "100644",
+      "sha": "e14f9de03cc70b7ee4dcf30ef374918f1cb52dcf",
+      "size": 101342
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-06.webp",
+      "mode": "100644",
+      "sha": "9408cbda273a333c9847bb1db7b03a258fe896c9",
+      "size": 141850
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-07.webp",
+      "mode": "100644",
+      "sha": "83a471943d5293bd5a6945827057d9d2a896ea7c",
+      "size": 122450
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-08.webp",
+      "mode": "100644",
+      "sha": "f5b14c2c2ec9d92e9d3a756361b80d9570a106d3",
+      "size": 142792
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-09.webp",
+      "mode": "100644",
+      "sha": "e11cac70484445a05cd5a798ec7c3e92be22e182",
+      "size": 115174
+    },
+    {
+      "path": "public/studio/avatars-photo/haldi-mehendi-10.webp",
+      "mode": "100644",
+      "sha": "eefdea6a491cf339ac04ba13b4e904750924a3f0",
+      "size": 116696
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-01.webp",
+      "mode": "100644",
+      "sha": "a5aefe553930b69cadbb5d0a6b493a797b4f153e",
+      "size": 51192
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-02.webp",
+      "mode": "100644",
+      "sha": "7ba5fe6c17b3fd5eb352ca302d83dd82b4fec355",
+      "size": 96926
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-03.webp",
+      "mode": "100644",
+      "sha": "d539b88d5752361b0e6ff97e51a9250d423745e9",
+      "size": 104314
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-04.webp",
+      "mode": "100644",
+      "sha": "299d9b1ccb9d82326cd9ffee2198e128536ed227",
+      "size": 71486
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-05.webp",
+      "mode": "100644",
+      "sha": "d16c543308ad9a67498a66477ea5db645416bc9b",
+      "size": 77498
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-06.webp",
+      "mode": "100644",
+      "sha": "5f0229780bcc3f9d615714e0c24830ba54d28b95",
+      "size": 99280
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-07.webp",
+      "mode": "100644",
+      "sha": "5e4e5cc85c852e006939e7970188991ccff3d574",
+      "size": 71414
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-08.webp",
+      "mode": "100644",
+      "sha": "1bfd59670326ee3a5fd825b42cc0febbf196d4ee",
+      "size": 80650
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-09.webp",
+      "mode": "100644",
+      "sha": "86cc5b3525546819e62fc5c8af86bb7ce3982c91",
+      "size": 78606
+    },
+    {
+      "path": "public/studio/avatars-photo/housewarming-10.webp",
+      "mode": "100644",
+      "sha": "b6acce9c74105f6ec2286458674b407edc69aa02",
+      "size": 78294
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-01.webp",
+      "mode": "100644",
+      "sha": "afd37f00545ebe418696c028e64d688f1bea0cd7",
+      "size": 111314
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-02.webp",
+      "mode": "100644",
+      "sha": "e3247bfc4783e4926ae7db61511590e1c235d05a",
+      "size": 142374
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-03.webp",
+      "mode": "100644",
+      "sha": "152f9b0db718c2a988d5a29a21d7cd42865d26a7",
+      "size": 118812
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-04.webp",
+      "mode": "100644",
+      "sha": "97c2cdbe07044a19e1cca10b921d6d93f46b1cda",
+      "size": 139960
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-05.webp",
+      "mode": "100644",
+      "sha": "129ba1c7078ec42fe14a2e4264c95e78e63b5139",
+      "size": 114136
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-06.webp",
+      "mode": "100644",
+      "sha": "537f019c75a1c80d5204e55e025bd78fb2711930",
+      "size": 92752
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-07.webp",
+      "mode": "100644",
+      "sha": "93c0017345d905cf992e398e80e0db18f3b4525a",
+      "size": 117510
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-08.webp",
+      "mode": "100644",
+      "sha": "5661d0c2d3934705b4554c5ca0382a16c43eb1ac",
+      "size": 97724
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-09.webp",
+      "mode": "100644",
+      "sha": "5419e5ad73606245a1bb1553907610779a29ce8b",
+      "size": 146374
+    },
+    {
+      "path": "public/studio/avatars-photo/naming-ceremony-10.webp",
+      "mode": "100644",
+      "sha": "ed8c3c3ef5948888eeb01897924134d7383f98b1",
+      "size": 78482
+    },
+    {
+      "path": "public/studio/avatars-photo/party-01.webp",
+      "mode": "100644",
+      "sha": "b956ebd5be3fec57a3cce78a9aeb18ba1c86cb32",
+      "size": 52236
+    },
+    {
+      "path": "public/studio/avatars-photo/party-02.webp",
+      "mode": "100644",
+      "sha": "40c7f23575335368bc2ca616268a905ae810051c",
+      "size": 115998
+    },
+    {
+      "path": "public/studio/avatars-photo/party-03.webp",
+      "mode": "100644",
+      "sha": "87a87400b18d816b98456ce24028a44ec72c7c47",
+      "size": 41760
+    },
+    {
+      "path": "public/studio/avatars-photo/party-04.webp",
+      "mode": "100644",
+      "sha": "3779e6b9adbcc423b0baa341894791bdb73fa95b",
+      "size": 90628
+    },
+    {
+      "path": "public/studio/avatars-photo/party-05.webp",
+      "mode": "100644",
+      "sha": "d1197f21ee44e8c5299a84ccb9b77bc78d4e692b",
+      "size": 108760
+    },
+    {
+      "path": "public/studio/avatars-photo/party-06.webp",
+      "mode": "100644",
+      "sha": "5865ceb9b7416c68b8a41f1250f4ac510333c3a1",
+      "size": 80084
+    },
+    {
+      "path": "public/studio/avatars-photo/party-07.webp",
+      "mode": "100644",
+      "sha": "6b76e0009524bcfd1ac24433c4ff8c768cb72f70",
+      "size": 55490
+    },
+    {
+      "path": "public/studio/avatars-photo/party-08.webp",
+      "mode": "100644",
+      "sha": "e2973736eb8748dbb75ff15ac7981eb4705d7ffd",
+      "size": 126560
+    },
+    {
+      "path": "public/studio/avatars-photo/party-09.webp",
+      "mode": "100644",
+      "sha": "f2ea82151b5b26b40aa02db9d894ab2bfd8d2c5b",
+      "size": 75362
+    },
+    {
+      "path": "public/studio/avatars-photo/party-10.webp",
+      "mode": "100644",
+      "sha": "ba041053931aa9f020409f69588b38b4c9770c18",
+      "size": 121292
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-01.webp",
+      "mode": "100644",
+      "sha": "7a28021b601b7f0eb1425d6593d35d2ae14c441c",
+      "size": 103298
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-02.webp",
+      "mode": "100644",
+      "sha": "687d8fa58fced503b8a5559996c5c684260223b8",
+      "size": 101714
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-03.webp",
+      "mode": "100644",
+      "sha": "7ccd8b083cb477b39027d03481adfdc9daa676b3",
+      "size": 59252
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-04.webp",
+      "mode": "100644",
+      "sha": "730bd97ea721c913d7020826b6b7deacf4fb5bc7",
+      "size": 84306
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-05.webp",
+      "mode": "100644",
+      "sha": "0ec88a0f80d16b9c59d51c5440c2791fdc3033ea",
+      "size": 61648
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-06.webp",
+      "mode": "100644",
+      "sha": "2b341cc353f88a9ed510f4acf02f2fbea4f2fe55",
+      "size": 109378
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-07.webp",
+      "mode": "100644",
+      "sha": "0787fba0a8f27dcb58a18b84c1b454606b9d03be",
+      "size": 47474
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-08.webp",
+      "mode": "100644",
+      "sha": "b8262b34063f8047b4e57ffba2280b7cd9f6c883",
+      "size": 116216
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-09.webp",
+      "mode": "100644",
+      "sha": "899d3867e235291f1c183dc133c052c33ec1f70c",
+      "size": 70746
+    },
+    {
+      "path": "public/studio/avatars-photo/retirement-10.webp",
+      "mode": "100644",
+      "sha": "cdc9bbc48c069d0d8584266d15a6e62ff0e030cf",
+      "size": 76458
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-01.webp",
+      "mode": "100644",
+      "sha": "ec37ddca35f89c3e3127d123b86414e15f8a77f2",
+      "size": 198074
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-02.webp",
+      "mode": "100644",
+      "sha": "12ef9ad12ea531e412cd8bf822ce4f728b700cf5",
+      "size": 177714
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-03.webp",
+      "mode": "100644",
+      "sha": "e16cc1c477e96b92d9473c0bd94f41c0d322f815",
+      "size": 199064
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-04.webp",
+      "mode": "100644",
+      "sha": "44a71704f24ca7b1200f1935f4d611f1c5e765d2",
+      "size": 163678
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-05.webp",
+      "mode": "100644",
+      "sha": "d2e83fb30a04132f5fbb4a12d3efcf60d44efc28",
+      "size": 150324
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-06.webp",
+      "mode": "100644",
+      "sha": "3f9353e634557d0990fb395eb9d71a1361306e31",
+      "size": 81992
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-07.webp",
+      "mode": "100644",
+      "sha": "9353096300bfa43b49b96324cb24e46d546071ac",
+      "size": 159002
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-08.webp",
+      "mode": "100644",
+      "sha": "bc7847529580e5b263de74e8da5ea63d4b0f0a75",
+      "size": 187440
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-09.webp",
+      "mode": "100644",
+      "sha": "8bf28a3a94178e134ac82b9538291a7fb0213981",
+      "size": 172640
+    },
+    {
+      "path": "public/studio/avatars-photo/wedding-10.webp",
+      "mode": "100644",
+      "sha": "53c62801e9cdeec7afe5ef885fca65eb697a6b68",
+      "size": 147044
+    },
+    {
+      "path": "public/studio/films/haveli-door-film.mp4",
+      "mode": "100644",
+      "sha": "2e0383da76a973f667a464734ef71cd74a75ec5a",
+      "size": 843076
+    },
+    {
+      "path": "public/studio/films/haveli-door-film.webp",
+      "mode": "100644",
+      "sha": "ee0b40d93a919cee3bfcf0a60b94ad5bc1f60b7a",
+      "size": 59964
+    },
+    {
+      "path": "public/studio/posters/anniversary-01.webp",
+      "mode": "100644",
+      "sha": "fed187e692410b4572b3dcdaf18839709560f9dc",
+      "size": 36532
+    },
+    {
+      "path": "public/studio/posters/anniversary-02.webp",
+      "mode": "100644",
+      "sha": "cde99d0f4562475e8fd7bcfa14f1f8eda081c32f",
+      "size": 40794
+    },
+    {
+      "path": "public/studio/posters/anniversary-03.webp",
+      "mode": "100644",
+      "sha": "be4f8b17f8a5eddc85c43c9b03b4ff869da21d04",
+      "size": 39386
+    },
+    {
+      "path": "public/studio/posters/anniversary-04.webp",
+      "mode": "100644",
+      "sha": "51705fcdebd4135e9422e17573b65ccb4fe86836",
+      "size": 39260
+    },
+    {
+      "path": "public/studio/posters/anniversary-05.webp",
+      "mode": "100644",
+      "sha": "2378abf4c10682b2eb7204bdcec41fd493ac7f6c",
+      "size": 40710
+    },
+    {
+      "path": "public/studio/posters/anniversary-06.webp",
+      "mode": "100644",
+      "sha": "704b053bcef802cad5bb6bcb0f00f86ed0e04d78",
+      "size": 38460
+    },
+    {
+      "path": "public/studio/posters/anniversary-07.webp",
+      "mode": "100644",
+      "sha": "8bf1bc5e96200bafc12236587599d41babebd841",
+      "size": 41628
+    },
+    {
+      "path": "public/studio/posters/anniversary-08.webp",
+      "mode": "100644",
+      "sha": "47ccf7aafb9c6bf445f69924d90d8d4c14ebff9e",
+      "size": 44382
+    },
+    {
+      "path": "public/studio/posters/anniversary-09.webp",
+      "mode": "100644",
+      "sha": "ab2806345e3d2a3abda519f54633d5f36f98c8b9",
+      "size": 49820
+    },
+    {
+      "path": "public/studio/posters/anniversary-10.webp",
+      "mode": "100644",
+      "sha": "8319b2db0538a0c98e925c32788492aa1bfce80e",
+      "size": 43744
+    },
+    {
+      "path": "public/studio/posters/baby-shower-01.webp",
+      "mode": "100644",
+      "sha": "6747bf4aafa65677153016d83156c19121ab2bae",
+      "size": 45714
+    },
+    {
+      "path": "public/studio/posters/baby-shower-02.webp",
+      "mode": "100644",
+      "sha": "5d40b0654d296241b3907f0cdbf63bb8382eb119",
+      "size": 53732
+    },
+    {
+      "path": "public/studio/posters/baby-shower-03.webp",
+      "mode": "100644",
+      "sha": "ae0a79817f24ed39d6640d907d16e27d6bb84d62",
+      "size": 49716
+    },
+    {
+      "path": "public/studio/posters/baby-shower-04.webp",
+      "mode": "100644",
+      "sha": "3f8b7e4abc788881015caecc7b8f9d39a33eeed2",
+      "size": 52982
+    },
+    {
+      "path": "public/studio/posters/baby-shower-05.webp",
+      "mode": "100644",
+      "sha": "3174a6cb0051461e83dc690c15e841cca75cc778",
+      "size": 48060
+    },
+    {
+      "path": "public/studio/posters/baby-shower-06.webp",
+      "mode": "100644",
+      "sha": "26cf2db84ad6fd8d52cddde393feea04b4d46396",
+      "size": 53036
+    },
+    {
+      "path": "public/studio/posters/baby-shower-07.webp",
+      "mode": "100644",
+      "sha": "f7e447ca1594d413d4a3cdfdfa8bddb9292a5fa4",
+      "size": 51028
+    },
+    {
+      "path": "public/studio/posters/baby-shower-08.webp",
+      "mode": "100644",
+      "sha": "be1607399448e3ebc77263c7ac7d788bcf976fb1",
+      "size": 47094
+    },
+    {
+      "path": "public/studio/posters/baby-shower-09.webp",
+      "mode": "100644",
+      "sha": "8e860f13f36895ca639cced8c6a1705e8cd25522",
+      "size": 47496
+    },
+    {
+      "path": "public/studio/posters/baby-shower-10.webp",
+      "mode": "100644",
+      "sha": "7d92a6f36cc7cd57183147b872e13d60c859e863",
+      "size": 50154
+    },
+    {
+      "path": "public/studio/posters/baraat-01.webp",
+      "mode": "100644",
+      "sha": "2bd2027e2eb20931c4ce37470e54d4aca1e46bdb",
+      "size": 58692
+    },
+    {
+      "path": "public/studio/posters/baraat-02.webp",
+      "mode": "100644",
+      "sha": "713949b2ab65c5d084df0322088bb92d61ef7792",
+      "size": 60170
+    },
+    {
+      "path": "public/studio/posters/baraat-03.webp",
+      "mode": "100644",
+      "sha": "3a61a0b0f2290a3a86b31e40d4eb08b06e511a15",
+      "size": 57568
+    },
+    {
+      "path": "public/studio/posters/baraat-04.webp",
+      "mode": "100644",
+      "sha": "5c89859f756970042cc5662ff8286b2dfa5aa5fe",
+      "size": 60060
+    },
+    {
+      "path": "public/studio/posters/baraat-05.webp",
+      "mode": "100644",
+      "sha": "17692b066a71cfed931fe09dbf4693f00f57fc4b",
+      "size": 56278
+    },
+    {
+      "path": "public/studio/posters/baraat-06.webp",
+      "mode": "100644",
+      "sha": "a639b32a71ae40fb76b140491ad24aadf7314718",
+      "size": 56524
+    },
+    {
+      "path": "public/studio/posters/baraat-07.webp",
+      "mode": "100644",
+      "sha": "d2c111177176fe568945cdd49e4ea8d00a9ff82f",
+      "size": 63316
+    },
+    {
+      "path": "public/studio/posters/baraat-08.webp",
+      "mode": "100644",
+      "sha": "b9af66984d497012a70adaeaaac5c2bf502f21f9",
+      "size": 63486
+    },
+    {
+      "path": "public/studio/posters/baraat-09.webp",
+      "mode": "100644",
+      "sha": "d58ec6ca3a05ab72c76cfd30a8d97f571a3c62f1",
+      "size": 61848
+    },
+    {
+      "path": "public/studio/posters/baraat-10.webp",
+      "mode": "100644",
+      "sha": "a7a069a66ca9d1be78d97182d4c2d6cea5f5c69b",
+      "size": 56788
+    },
+    {
+      "path": "public/studio/posters/birthday-01.webp",
+      "mode": "100644",
+      "sha": "542bb52788fddb2fa360c7c3c9ac95407499dbc6",
+      "size": 27312
+    },
+    {
+      "path": "public/studio/posters/birthday-02.webp",
+      "mode": "100644",
+      "sha": "8c6520607171a7a4b9662063ed8f539540baaeb4",
+      "size": 30052
+    },
+    {
+      "path": "public/studio/posters/birthday-03.webp",
+      "mode": "100644",
+      "sha": "6a07c8a9652e1803610a50e929165e24763dffc0",
+      "size": 31290
+    },
+    {
+      "path": "public/studio/posters/birthday-04.webp",
+      "mode": "100644",
+      "sha": "be96bc92a40f270518bacb1ad9540657efb52215",
+      "size": 29222
+    },
+    {
+      "path": "public/studio/posters/birthday-05.webp",
+      "mode": "100644",
+      "sha": "64b9d9380f1ecb6501b181fb5a0602198eae226f",
+      "size": 33112
+    },
+    {
+      "path": "public/studio/posters/birthday-06.webp",
+      "mode": "100644",
+      "sha": "093fb13d17353cdb050d60086f8b5a7a2ca3f87a",
+      "size": 28382
+    },
+    {
+      "path": "public/studio/posters/birthday-07.webp",
+      "mode": "100644",
+      "sha": "6e93c3b509d2c241dcc1b950ab1a2dc8ee5a05d1",
+      "size": 28580
+    },
+    {
+      "path": "public/studio/posters/birthday-08.webp",
+      "mode": "100644",
+      "sha": "c4acc3d58736317ce0a1db377a155fe87250d2d4",
+      "size": 31972
+    },
+    {
+      "path": "public/studio/posters/birthday-09.webp",
+      "mode": "100644",
+      "sha": "ecc3fda667e91f7b52029927e3ff8fb7406e8f75",
+      "size": 36562
+    },
+    {
+      "path": "public/studio/posters/birthday-10.webp",
+      "mode": "100644",
+      "sha": "30f2a6e193fb21b4d62671a8c1d29ae78ab19481",
+      "size": 32012
+    },
+    {
+      "path": "public/studio/posters/business-01.webp",
+      "mode": "100644",
+      "sha": "08555cbe996173ce9f8bdc9247e681548bfe967f",
+      "size": 25158
+    },
+    {
+      "path": "public/studio/posters/business-02.webp",
+      "mode": "100644",
+      "sha": "8035e900becf0831643cddb86e590e1d79234e5d",
+      "size": 28932
+    },
+    {
+      "path": "public/studio/posters/business-03.webp",
+      "mode": "100644",
+      "sha": "7b9f02772f2390ac337d32ec4e2c6d043d804c88",
+      "size": 26580
+    },
+    {
+      "path": "public/studio/posters/business-04.webp",
+      "mode": "100644",
+      "sha": "f773eb5dcb663d0c176956e6258e9cd4fdb78a24",
+      "size": 27106
+    },
+    {
+      "path": "public/studio/posters/business-05.webp",
+      "mode": "100644",
+      "sha": "d7d72e430145e8a07a722fc1e683fa6fb5802d5f",
+      "size": 26644
+    },
+    {
+      "path": "public/studio/posters/business-06.webp",
+      "mode": "100644",
+      "sha": "34d5da187b0e33d5fdf8ff50cd1ed3752da5ded5",
+      "size": 28238
+    },
+    {
+      "path": "public/studio/posters/business-07.webp",
+      "mode": "100644",
+      "sha": "959f078aafb65760cea8efc0dec915202f21ae4b",
+      "size": 25242
+    },
+    {
+      "path": "public/studio/posters/business-08.webp",
+      "mode": "100644",
+      "sha": "9fd0a95cf1ed2fa3a8266e46ba2644ada16972d7",
+      "size": 28614
+    },
+    {
+      "path": "public/studio/posters/business-09.webp",
+      "mode": "100644",
+      "sha": "ed9a3f6c88e914f7ea4528437375c8dee0ff74f4",
+      "size": 26186
+    },
+    {
+      "path": "public/studio/posters/business-10.webp",
+      "mode": "100644",
+      "sha": "2447a88edde6ecd4063dfb8e184304cf8730dc20",
+      "size": 25576
+    },
+    {
+      "path": "public/studio/posters/engagement-01.webp",
+      "mode": "100644",
+      "sha": "554f33ab7b832efd475ff027efa523455e0fc8e5",
+      "size": 55116
+    },
+    {
+      "path": "public/studio/posters/engagement-02.webp",
+      "mode": "100644",
+      "sha": "9def96c8b11025119c7ccf44079fc542bdad3a11",
+      "size": 49074
+    },
+    {
+      "path": "public/studio/posters/engagement-03.webp",
+      "mode": "100644",
+      "sha": "e567a916ff0489f0a5429a1eee0b251c054f58bb",
+      "size": 65788
+    },
+    {
+      "path": "public/studio/posters/engagement-04.webp",
+      "mode": "100644",
+      "sha": "1a93d5fae06a10adb4a83d2cc217689fb476bfed",
+      "size": 48258
+    },
+    {
+      "path": "public/studio/posters/engagement-05.webp",
+      "mode": "100644",
+      "sha": "842faabc1f51692e76dd95d581219bb5d0909bfa",
+      "size": 57960
+    },
+    {
+      "path": "public/studio/posters/engagement-06.webp",
+      "mode": "100644",
+      "sha": "cf2387cd83b4371cf22ced9dfe84e5c721c19fa9",
+      "size": 46524
+    },
+    {
+      "path": "public/studio/posters/engagement-07.webp",
+      "mode": "100644",
+      "sha": "84dcbf162a365431ee8b957bd5b142aa7cf3dadf",
+      "size": 59428
+    },
+    {
+      "path": "public/studio/posters/engagement-08.webp",
+      "mode": "100644",
+      "sha": "0374eb98cc849a8e69b387535ac24d4fc5046d02",
+      "size": 50826
+    },
+    {
+      "path": "public/studio/posters/engagement-09.webp",
+      "mode": "100644",
+      "sha": "3b0b1607b5eed96ec66744352440e109fae82837",
+      "size": 56792
+    },
+    {
+      "path": "public/studio/posters/engagement-10.webp",
+      "mode": "100644",
+      "sha": "7bc85e2018b8177f8aafab3bc83e3de2c42dc380",
+      "size": 48978
+    },
+    {
+      "path": "public/studio/posters/festivals-01.webp",
+      "mode": "100644",
+      "sha": "5b33709b3598f802fb132b9f3a1876bbe25dfeb4",
+      "size": 50830
+    },
+    {
+      "path": "public/studio/posters/festivals-02.webp",
+      "mode": "100644",
+      "sha": "d89b9c56452e03c1bfef6206507e8cbb43168e4b",
+      "size": 54620
+    },
+    {
+      "path": "public/studio/posters/festivals-03.webp",
+      "mode": "100644",
+      "sha": "2e9fd58c1c390e4291347702b0e18a49d9f7e281",
+      "size": 58286
+    },
+    {
+      "path": "public/studio/posters/festivals-04.webp",
+      "mode": "100644",
+      "sha": "2b19b3dbbfa7dbc0b19ebe44da249c6e73b52a13",
+      "size": 49132
+    },
+    {
+      "path": "public/studio/posters/festivals-05.webp",
+      "mode": "100644",
+      "sha": "4261e0df421d19cffe9637bd74cdc776c5487146",
+      "size": 43992
+    },
+    {
+      "path": "public/studio/posters/festivals-06.webp",
+      "mode": "100644",
+      "sha": "1192e3ad74125b4f8828cd69637ef0e5cd6bc1d0",
+      "size": 52146
+    },
+    {
+      "path": "public/studio/posters/festivals-07.webp",
+      "mode": "100644",
+      "sha": "5bdd5f12005b1deadd94c7a0a9ee3d283f92aeec",
+      "size": 50178
+    },
+    {
+      "path": "public/studio/posters/festivals-08.webp",
+      "mode": "100644",
+      "sha": "895898c6385ef4a514076a9435332b08ee220ffe",
+      "size": 51342
+    },
+    {
+      "path": "public/studio/posters/festivals-09.webp",
+      "mode": "100644",
+      "sha": "75840b651cd9b1ee407dd60521b3d7ccc9bbbbb6",
+      "size": 42764
+    },
+    {
+      "path": "public/studio/posters/festivals-10.webp",
+      "mode": "100644",
+      "sha": "a01ffe19b9837226cf47963737adbaeae2190734",
+      "size": 48548
+    },
+    {
+      "path": "public/studio/posters/graduation-01.webp",
+      "mode": "100644",
+      "sha": "8522c3e40db52ecce6777c51254fc28578a6ef78",
+      "size": 37042
+    },
+    {
+      "path": "public/studio/posters/graduation-02.webp",
+      "mode": "100644",
+      "sha": "a250a982e2a5b509b834973d853fef87c587a3ee",
+      "size": 38258
+    },
+    {
+      "path": "public/studio/posters/graduation-03.webp",
+      "mode": "100644",
+      "sha": "59fa3fa5f0d032329e3b3d30387bf95f36e45f0a",
+      "size": 44634
+    },
+    {
+      "path": "public/studio/posters/graduation-04.webp",
+      "mode": "100644",
+      "sha": "fd4e1873db104a36c28eaa332aa73e11d131dc4c",
+      "size": 38150
+    },
+    {
+      "path": "public/studio/posters/graduation-05.webp",
+      "mode": "100644",
+      "sha": "6062c2e1e7c7317d6bf318bec1d0d385d6213b44",
+      "size": 44292
+    },
+    {
+      "path": "public/studio/posters/graduation-06.webp",
+      "mode": "100644",
+      "sha": "94774ac987d4d16130fc6aaaaa5cb0acf2220a15",
+      "size": 38980
+    },
+    {
+      "path": "public/studio/posters/graduation-07.webp",
+      "mode": "100644",
+      "sha": "09fc790693fc8e528a7ceca30659debfef7a9905",
+      "size": 35284
+    },
+    {
+      "path": "public/studio/posters/graduation-08.webp",
+      "mode": "100644",
+      "sha": "a37a859f84a44e80448f9765f878e69a60f0f5e0",
+      "size": 40372
+    },
+    {
+      "path": "public/studio/posters/graduation-09.webp",
+      "mode": "100644",
+      "sha": "e6e9eb3e2d802bffc28588d2ac202a63893d2767",
+      "size": 44434
+    },
+    {
+      "path": "public/studio/posters/graduation-10.webp",
+      "mode": "100644",
+      "sha": "c0cb18eedb6b421e4137dd94090a89117b0e4f37",
+      "size": 38784
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-01.webp",
+      "mode": "100644",
+      "sha": "abfffc97740cec9b5b0673641f77d23debb51645",
+      "size": 50682
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-02.webp",
+      "mode": "100644",
+      "sha": "e8d6de1a485fea1dc70f47e9a7fdb1cf4126f48d",
+      "size": 59524
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-03.webp",
+      "mode": "100644",
+      "sha": "0a7bba1f561084b10cb76d627854f377aa1a99ee",
+      "size": 53804
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-04.webp",
+      "mode": "100644",
+      "sha": "baa5472e63e65f55ad08990eaae1b020cd563200",
+      "size": 57600
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-05.webp",
+      "mode": "100644",
+      "sha": "6d84ae520a76597452c879f883a387f001f19f16",
+      "size": 50962
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-06.webp",
+      "mode": "100644",
+      "sha": "33d573791737851b433251584cf194503ef6cc15",
+      "size": 59794
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-07.webp",
+      "mode": "100644",
+      "sha": "54f0fd79c4ebbc3c6542b7103c9f91267d34c0f1",
+      "size": 50120
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-08.webp",
+      "mode": "100644",
+      "sha": "f84ed27d77a00dab517943e9503c3e61f9180a2b",
+      "size": 64214
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-09.webp",
+      "mode": "100644",
+      "sha": "e3138da796897084784b1d38102616f2be3932ed",
+      "size": 55064
+    },
+    {
+      "path": "public/studio/posters/haldi-mehendi-10.webp",
+      "mode": "100644",
+      "sha": "3cd44529a5e5adee22cb724dbfdbab8953d5d953",
+      "size": 58452
+    },
+    {
+      "path": "public/studio/posters/housewarming-01.webp",
+      "mode": "100644",
+      "sha": "87d2004725f37332004979add9960ce269c97d00",
+      "size": 35140
+    },
+    {
+      "path": "public/studio/posters/housewarming-02.webp",
+      "mode": "100644",
+      "sha": "c037b0bd1826756999c769af21b1f64b8d6076fd",
+      "size": 42706
+    },
+    {
+      "path": "public/studio/posters/housewarming-03.webp",
+      "mode": "100644",
+      "sha": "1b8d914b818116dd8e0c7a2301eff6736e5a6889",
+      "size": 47412
+    },
+    {
+      "path": "public/studio/posters/housewarming-04.webp",
+      "mode": "100644",
+      "sha": "f9ddf6deff28c9cf9c6660ddc1f6563d7e1c0a18",
+      "size": 41410
+    },
+    {
+      "path": "public/studio/posters/housewarming-05.webp",
+      "mode": "100644",
+      "sha": "5c9fd8fd6b827527df7570e1ba4f8741cf00cc64",
+      "size": 39012
+    },
+    {
+      "path": "public/studio/posters/housewarming-06.webp",
+      "mode": "100644",
+      "sha": "466290d8712a268c5e14550e506ea4b154f9fe49",
+      "size": 42236
+    },
+    {
+      "path": "public/studio/posters/housewarming-07.webp",
+      "mode": "100644",
+      "sha": "7d8471ddb39fbb06a0f6c94c75c2fe9c83678e41",
+      "size": 38696
+    },
+    {
+      "path": "public/studio/posters/housewarming-08.webp",
+      "mode": "100644",
+      "sha": "4689b358da28ffe51946c3c0daf94e6435154309",
+      "size": 40852
+    },
+    {
+      "path": "public/studio/posters/housewarming-09.webp",
+      "mode": "100644",
+      "sha": "0f0144e2500826795eb846ae9247cd314fad8975",
+      "size": 39970
+    },
+    {
+      "path": "public/studio/posters/housewarming-10.webp",
+      "mode": "100644",
+      "sha": "862397ebf9a812bed2ce787b350733d37653f04c",
+      "size": 38466
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-01.webp",
+      "mode": "100644",
+      "sha": "4e3b16397e1645e0068a5c5636445073b46184c7",
+      "size": 41316
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-02.webp",
+      "mode": "100644",
+      "sha": "fc41d9c76db0dc1e8fcbc3502ff7ce3cee4e90d0",
+      "size": 43220
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-03.webp",
+      "mode": "100644",
+      "sha": "d73453667b875071e7bd1282d34f81152b9e90c9",
+      "size": 43150
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-04.webp",
+      "mode": "100644",
+      "sha": "b01a1a7cadc34beadeae6042429d8452c348c050",
+      "size": 45868
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-05.webp",
+      "mode": "100644",
+      "sha": "94b82767f6de6936d7c0012e58f1a03f9da0f56d",
+      "size": 41726
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-06.webp",
+      "mode": "100644",
+      "sha": "c05eca31ed8fcc818134fd85c8c3a479402ed892",
+      "size": 41176
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-07.webp",
+      "mode": "100644",
+      "sha": "8d8212b7b2407d051bc6a2c1b5aaebdcbf6e0758",
+      "size": 42860
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-08.webp",
+      "mode": "100644",
+      "sha": "58e99f29dd8370fba9aaeac24469290afd1bd918",
+      "size": 42904
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-09.webp",
+      "mode": "100644",
+      "sha": "2f3b48ea6ed1f4c35ad46b5092d81b244bf8820e",
+      "size": 43152
+    },
+    {
+      "path": "public/studio/posters/naming-ceremony-10.webp",
+      "mode": "100644",
+      "sha": "99f4a3678398b60b208203a6db1b50b6cf6b447d",
+      "size": 37504
+    },
+    {
+      "path": "public/studio/posters/party-01.webp",
+      "mode": "100644",
+      "sha": "d245b274c513984ab817e0e701ff884ccb0f566a",
+      "size": 35928
+    },
+    {
+      "path": "public/studio/posters/party-02.webp",
+      "mode": "100644",
+      "sha": "8887ef8bcf21529f25d825db222a7376056ec350",
+      "size": 39564
+    },
+    {
+      "path": "public/studio/posters/party-03.webp",
+      "mode": "100644",
+      "sha": "0a1da7a2b4297a65c444a322e9705e0c98369b55",
+      "size": 35590
+    },
+    {
+      "path": "public/studio/posters/party-04.webp",
+      "mode": "100644",
+      "sha": "699eb5675c68351987078bd807b2dc0b64c9600c",
+      "size": 43144
+    },
+    {
+      "path": "public/studio/posters/party-05.webp",
+      "mode": "100644",
+      "sha": "084f0b6c367e8777c34201713d2e78f36b90605d",
+      "size": 40392
+    },
+    {
+      "path": "public/studio/posters/party-06.webp",
+      "mode": "100644",
+      "sha": "9b53e0af69188ce4325f364ffa61fc4baf4813c2",
+      "size": 40512
+    },
+    {
+      "path": "public/studio/posters/party-07.webp",
+      "mode": "100644",
+      "sha": "594b43c2c6349528bfa9a48affc8a0450e14d077",
+      "size": 36644
+    },
+    {
+      "path": "public/studio/posters/party-08.webp",
+      "mode": "100644",
+      "sha": "985f621545b91bfbf5217643d7b3b91dd6adff58",
+      "size": 43548
+    },
+    {
+      "path": "public/studio/posters/party-09.webp",
+      "mode": "100644",
+      "sha": "e8f7e7867a31316c7db95b41a18ae1b14d506fa7",
+      "size": 39042
+    },
+    {
+      "path": "public/studio/posters/party-10.webp",
+      "mode": "100644",
+      "sha": "3738a39a24870a8342e9d30591b6fc26f39f3ad5",
+      "size": 41012
+    },
+    {
+      "path": "public/studio/posters/retirement-01.webp",
+      "mode": "100644",
+      "sha": "c87b9e431c36b334a9bc9bad597315330e999089",
+      "size": 46900
+    },
+    {
+      "path": "public/studio/posters/retirement-02.webp",
+      "mode": "100644",
+      "sha": "fe3f3a03511d9b208b3098b0b296ec8e545fb62a",
+      "size": 46998
+    },
+    {
+      "path": "public/studio/posters/retirement-03.webp",
+      "mode": "100644",
+      "sha": "83198d7de78185bfbfd3cfbe9d6fd48f9a13427a",
+      "size": 44406
+    },
+    {
+      "path": "public/studio/posters/retirement-04.webp",
+      "mode": "100644",
+      "sha": "be32bd99d1c4d277f3b565f2e85edd8f5e2bbdbc",
+      "size": 50542
+    },
+    {
+      "path": "public/studio/posters/retirement-05.webp",
+      "mode": "100644",
+      "sha": "70883a700e40cae997cac7557d7660acdbaa9ef8",
+      "size": 42564
+    },
+    {
+      "path": "public/studio/posters/retirement-06.webp",
+      "mode": "100644",
+      "sha": "15356a15d18c68824b90f1a97653b792429a784a",
+      "size": 47812
+    },
+    {
+      "path": "public/studio/posters/retirement-07.webp",
+      "mode": "100644",
+      "sha": "a1134ee409043e65dd728dca6f88a09d00298856",
+      "size": 42212
+    },
+    {
+      "path": "public/studio/posters/retirement-08.webp",
+      "mode": "100644",
+      "sha": "a08bc978e55e211b279f47323691389e7d5b2fef",
+      "size": 50756
+    },
+    {
+      "path": "public/studio/posters/retirement-09.webp",
+      "mode": "100644",
+      "sha": "ff15f35d88b39d5e864589849db595e2f57a29a6",
+      "size": 43658
+    },
+    {
+      "path": "public/studio/posters/retirement-10.webp",
+      "mode": "100644",
+      "sha": "a04435f7dfbe435f34565d794311b5cb7c721c52",
+      "size": 46992
+    },
+    {
+      "path": "public/studio/posters/wedding-01.webp",
+      "mode": "100644",
+      "sha": "e634a05d4f88002f1a36b4574fb37c10f6cb69b6",
+      "size": 62252
+    },
+    {
+      "path": "public/studio/posters/wedding-02.webp",
+      "mode": "100644",
+      "sha": "b73eadc3a9728c89e5cfaeb7839bbafed2535a1d",
+      "size": 56992
+    },
+    {
+      "path": "public/studio/posters/wedding-03.webp",
+      "mode": "100644",
+      "sha": "fd647deea88c46319cb950bae525f8e500ed2d51",
+      "size": 66950
+    },
+    {
+      "path": "public/studio/posters/wedding-04.webp",
+      "mode": "100644",
+      "sha": "6763461c77579e9d9ed23e23ef8c719bafd6901f",
+      "size": 63236
+    },
+    {
+      "path": "public/studio/posters/wedding-05.webp",
+      "mode": "100644",
+      "sha": "e0ce1d5719ad18458d20b5135d7abdac8374de8a",
+      "size": 59240
+    },
+    {
+      "path": "public/studio/posters/wedding-06.webp",
+      "mode": "100644",
+      "sha": "62c007a3c3a88a9b7c97b0c0172c25b38753e465",
+      "size": 51158
+    },
+    {
+      "path": "public/studio/posters/wedding-07.webp",
+      "mode": "100644",
+      "sha": "7449d455febadfa923899925cecbb37a3304fcfc",
+      "size": 57054
+    },
+    {
+      "path": "public/studio/posters/wedding-08.webp",
+      "mode": "100644",
+      "sha": "3f3b65b10cece32d69983d05c71a42d4056c516b",
+      "size": 65350
+    },
+    {
+      "path": "public/studio/posters/wedding-09.webp",
+      "mode": "100644",
+      "sha": "364e3700cb8b2a6562093e3f7d8bcee88b6383f9",
+      "size": 58978
+    },
+    {
+      "path": "public/studio/posters/wedding-10.webp",
+      "mode": "100644",
+      "sha": "5e91e96d9ab6c7b967e212513d1b2c621d5ddb2d",
+      "size": 52456
+    },
+    {
+      "path": "public/studio/reels/anniversary-01.mp4",
+      "mode": "100644",
+      "sha": "d6d4abfd628f8bd19d1d6e473218423f6c1b14b2",
+      "size": 1074743
+    },
+    {
+      "path": "public/studio/reels/anniversary-02.mp4",
+      "mode": "100644",
+      "sha": "42763c2e651656a12172e6b17419c518c0b0c390",
+      "size": 1130594
+    },
+    {
+      "path": "public/studio/reels/anniversary-03.mp4",
+      "mode": "100644",
+      "sha": "48346f6b54c41b7d6d85649296712521944e6312",
+      "size": 1106913
+    },
+    {
+      "path": "public/studio/reels/anniversary-04.mp4",
+      "mode": "100644",
+      "sha": "02824bbd814a8815af07e01d1200b1c8f1bb000f",
+      "size": 1135308
+    },
+    {
+      "path": "public/studio/reels/anniversary-05.mp4",
+      "mode": "100644",
+      "sha": "3c2f4604ff21cd892c75373b45bfd4caba38ca6f",
+      "size": 1150675
+    },
+    {
+      "path": "public/studio/reels/anniversary-06.mp4",
+      "mode": "100644",
+      "sha": "66ac957c7e29405008fcb6ba4ce6d2ad5ee188a8",
+      "size": 1115112
+    },
+    {
+      "path": "public/studio/reels/anniversary-07.mp4",
+      "mode": "100644",
+      "sha": "c24f2f7f5dba82cf2d14558101bdaff6cd27322d",
+      "size": 1180996
+    },
+    {
+      "path": "public/studio/reels/anniversary-08.mp4",
+      "mode": "100644",
+      "sha": "16d3dd9eda6243105d4bfa120672946ecbfa2af9",
+      "size": 1340507
+    },
+    {
+      "path": "public/studio/reels/anniversary-09.mp4",
+      "mode": "100644",
+      "sha": "5829583524b016c04ac28663fd3b01d022a694d1",
+      "size": 1318519
+    },
+    {
+      "path": "public/studio/reels/anniversary-10.mp4",
+      "mode": "100644",
+      "sha": "a1581dc9c36552e70062f0a927f728eb03025a4e",
+      "size": 1171902
+    },
+    {
+      "path": "public/studio/reels/baby-shower-01.mp4",
+      "mode": "100644",
+      "sha": "1126f1c01c52223f1eea0d8d1d331dd176fc16e4",
+      "size": 1196673
+    },
+    {
+      "path": "public/studio/reels/baby-shower-02.mp4",
+      "mode": "100644",
+      "sha": "ca04e5b37f193f4007440f83ae88e9bbeb32e24a",
+      "size": 1315485
+    },
+    {
+      "path": "public/studio/reels/baby-shower-03.mp4",
+      "mode": "100644",
+      "sha": "12271f461bd39550db74d3bcbce1364d522c7a9c",
+      "size": 1269921
+    },
+    {
+      "path": "public/studio/reels/baby-shower-04.mp4",
+      "mode": "100644",
+      "sha": "4ac2f8c592776d23f9f647ee08c28048e24fa143",
+      "size": 1298301
+    },
+    {
+      "path": "public/studio/reels/baby-shower-05.mp4",
+      "mode": "100644",
+      "sha": "7524417b5166a5edf28d6e541f62b8f48d6bca36",
+      "size": 1237209
+    },
+    {
+      "path": "public/studio/reels/baby-shower-06.mp4",
+      "mode": "100644",
+      "sha": "a4450b1f0844d55b0f897746a0fdd12a13d37e64",
+      "size": 1327376
+    },
+    {
+      "path": "public/studio/reels/baby-shower-07.mp4",
+      "mode": "100644",
+      "sha": "abd09a36fc2fe90d8cc9c0e7401db7889c092a6a",
+      "size": 1291777
+    },
+    {
+      "path": "public/studio/reels/baby-shower-08.mp4",
+      "mode": "100644",
+      "sha": "2780a824eeaa025879a46d252c87c32d5bd27838",
+      "size": 1342982
+    },
+    {
+      "path": "public/studio/reels/baby-shower-09.mp4",
+      "mode": "100644",
+      "sha": "367f27fee140d7d1321269e8dda73aa6fb5ad5b5",
+      "size": 1212091
+    },
+    {
+      "path": "public/studio/reels/baby-shower-10.mp4",
+      "mode": "100644",
+      "sha": "3e33c8a6c73893e1434a6b7769a788c915293107",
+      "size": 1283571
+    },
+    {
+      "path": "public/studio/reels/baraat-01.mp4",
+      "mode": "100644",
+      "sha": "6f4f5a05ebb64f70d48d9f39d72fe38b162e0250",
+      "size": 925267
+    },
+    {
+      "path": "public/studio/reels/baraat-02.mp4",
+      "mode": "100644",
+      "sha": "7972603d8e888886c986b163a1add9bfa2ad5d1f",
+      "size": 978532
+    },
+    {
+      "path": "public/studio/reels/baraat-03.mp4",
+      "mode": "100644",
+      "sha": "76dff7b19e5bc71f029f1216b7fd5ed35ea9ea70",
+      "size": 928367
+    },
+    {
+      "path": "public/studio/reels/baraat-04.mp4",
+      "mode": "100644",
+      "sha": "ae27f684a0ee432dbceba7c903eaf0faae2a31ea",
+      "size": 941633
+    },
+    {
+      "path": "public/studio/reels/baraat-05.mp4",
+      "mode": "100644",
+      "sha": "87ef839c4ba36dcdcacc8f0354cd4dfe3be17bb7",
+      "size": 935980
+    },
+    {
+      "path": "public/studio/reels/baraat-06.mp4",
+      "mode": "100644",
+      "sha": "131884a743cbbe92e902721500c4b2b72460ae4f",
+      "size": 932243
+    },
+    {
+      "path": "public/studio/reels/baraat-07.mp4",
+      "mode": "100644",
+      "sha": "031056880e07c14ba75cbf2deaf22891a6ccd7a7",
+      "size": 964804
+    },
+    {
+      "path": "public/studio/reels/baraat-08.mp4",
+      "mode": "100644",
+      "sha": "5d3860384d78512629a9e968b4f8f81a111c4c90",
+      "size": 954991
+    },
+    {
+      "path": "public/studio/reels/baraat-09.mp4",
+      "mode": "100644",
+      "sha": "185737f91c03e431847247ee16e6a122b0f80d94",
+      "size": 979930
+    },
+    {
+      "path": "public/studio/reels/baraat-10.mp4",
+      "mode": "100644",
+      "sha": "b2e3db7375b70429bd330554c4465fb9eb792f11",
+      "size": 929162
+    },
+    {
+      "path": "public/studio/reels/birthday-01.mp4",
+      "mode": "100644",
+      "sha": "971062a83c56c12033826e236f56fbc0ac3f5149",
+      "size": 942225
+    },
+    {
+      "path": "public/studio/reels/birthday-02.mp4",
+      "mode": "100644",
+      "sha": "a745f68f27b7da19daa90ac2b21625c1280fbcb7",
+      "size": 1002985
+    },
+    {
+      "path": "public/studio/reels/birthday-03.mp4",
+      "mode": "100644",
+      "sha": "17a6e82656326a572e9bf8f41b3ce608938a865b",
+      "size": 1004516
+    },
+    {
+      "path": "public/studio/reels/birthday-04.mp4",
+      "mode": "100644",
+      "sha": "7eba4ca9112e82268cb76e704f763b8dac1e3ff8",
+      "size": 995379
+    },
+    {
+      "path": "public/studio/reels/birthday-05.mp4",
+      "mode": "100644",
+      "sha": "3f90b89c851ef1b894cdbc68e4a0f4e18fdfbf65",
+      "size": 1064381
+    },
+    {
+      "path": "public/studio/reels/birthday-06.mp4",
+      "mode": "100644",
+      "sha": "747a5e0d06b25fdf99a5673c0b31f6d80962c7fb",
+      "size": 960490
+    },
+    {
+      "path": "public/studio/reels/birthday-07.mp4",
+      "mode": "100644",
+      "sha": "866c33d0d183e762c660f8c8eda61db26ee45d79",
+      "size": 963201
+    },
+    {
+      "path": "public/studio/reels/birthday-08.mp4",
+      "mode": "100644",
+      "sha": "cb3252afaf5c58aa6949b00806e78d4752ade945",
+      "size": 1127963
+    },
+    {
+      "path": "public/studio/reels/birthday-09.mp4",
+      "mode": "100644",
+      "sha": "47d08d4333ce954108f567c9e6ccfb0e2f624b7c",
+      "size": 1099347
+    },
+    {
+      "path": "public/studio/reels/birthday-10.mp4",
+      "mode": "100644",
+      "sha": "1ae15fe60b204bf4af3d49f9f126e81c4a5a65d7",
+      "size": 1013281
+    },
+    {
+      "path": "public/studio/reels/business-01.mp4",
+      "mode": "100644",
+      "sha": "08f51828074e520cae4d6570cf50c2888b2ee6d2",
+      "size": 875519
+    },
+    {
+      "path": "public/studio/reels/business-02.mp4",
+      "mode": "100644",
+      "sha": "f3ed22bcfd9332e63dd89eff6f3624ecbb7d81f4",
+      "size": 949213
+    },
+    {
+      "path": "public/studio/reels/business-03.mp4",
+      "mode": "100644",
+      "sha": "7166937b37e0a150a0febfceb6959803a975b1a8",
+      "size": 894996
+    },
+    {
+      "path": "public/studio/reels/business-04.mp4",
+      "mode": "100644",
+      "sha": "40c72ff5853728875ba06293f730d6540dffe996",
+      "size": 912562
+    },
+    {
+      "path": "public/studio/reels/business-05.mp4",
+      "mode": "100644",
+      "sha": "80011ad6b7773a4a871ad99e7d23837962b490f3",
+      "size": 899704
+    },
+    {
+      "path": "public/studio/reels/business-06.mp4",
+      "mode": "100644",
+      "sha": "19752855b82882f3c12d3d61f9f628ac6e4e883f",
+      "size": 946084
+    },
+    {
+      "path": "public/studio/reels/business-07.mp4",
+      "mode": "100644",
+      "sha": "cce594613cc840426b593d41c2e74c82907baeb5",
+      "size": 875850
+    },
+    {
+      "path": "public/studio/reels/business-08.mp4",
+      "mode": "100644",
+      "sha": "c4f91e392f8d7f74f748c6af1f0d74ad706ce5f7",
+      "size": 1080369
+    },
+    {
+      "path": "public/studio/reels/business-09.mp4",
+      "mode": "100644",
+      "sha": "7cf5c3c24a28d2b3ac7bcf5cae072fa4a2bab2ac",
+      "size": 887787
+    },
+    {
+      "path": "public/studio/reels/business-10.mp4",
+      "mode": "100644",
+      "sha": "53153bf79a2c5b8c60cf95c876b0655465c6a933",
+      "size": 895357
+    },
+    {
+      "path": "public/studio/reels/engagement-01.mp4",
+      "mode": "100644",
+      "sha": "2cdc9b259b823aaaa6d9327f98470894390e67c6",
+      "size": 1335166
+    },
+    {
+      "path": "public/studio/reels/engagement-02.mp4",
+      "mode": "100644",
+      "sha": "26c27755b69bceaf61ba0ec02efa1b363463c5ce",
+      "size": 1241923
+    },
+    {
+      "path": "public/studio/reels/engagement-03.mp4",
+      "mode": "100644",
+      "sha": "ae50bb531ef855417e480805b02a8042f1eb1c2f",
+      "size": 921016
+    },
+    {
+      "path": "public/studio/reels/engagement-04.mp4",
+      "mode": "100644",
+      "sha": "8bacde04198d39bbecec532176cf49d02af22c22",
+      "size": 1244477
+    },
+    {
+      "path": "public/studio/reels/engagement-05.mp4",
+      "mode": "100644",
+      "sha": "176036783c4b22d97efd2b26eb6f5e454e8fb06d",
+      "size": 1413554
+    },
+    {
+      "path": "public/studio/reels/engagement-06.mp4",
+      "mode": "100644",
+      "sha": "a1df8a96a416f59338a9e75d2ffca78d67fff170",
+      "size": 1196897
+    },
+    {
+      "path": "public/studio/reels/engagement-07.mp4",
+      "mode": "100644",
+      "sha": "cc5d11126873cf707e87d15e8a833ec1603820ee",
+      "size": 1505047
+    },
+    {
+      "path": "public/studio/reels/engagement-08.mp4",
+      "mode": "100644",
+      "sha": "bb05741768835a9546674a3a5ebcb6939da20a0b",
+      "size": 1434522
+    },
+    {
+      "path": "public/studio/reels/engagement-09.mp4",
+      "mode": "100644",
+      "sha": "25c718bb1a581e49a3ba3b79f722f713134b14a2",
+      "size": 1392626
+    },
+    {
+      "path": "public/studio/reels/engagement-10.mp4",
+      "mode": "100644",
+      "sha": "84f0d40a57683304657323e91c5721b0b6b91511",
+      "size": 1248795
+    },
+    {
+      "path": "public/studio/reels/festivals-01.mp4",
+      "mode": "100644",
+      "sha": "2bea831d717af13af07a88f193697a3db671eea7",
+      "size": 1300758
+    },
+    {
+      "path": "public/studio/reels/festivals-02.mp4",
+      "mode": "100644",
+      "sha": "084afb47b85b885c36cba16baa3e97e51ee78e93",
+      "size": 1455934
+    },
+    {
+      "path": "public/studio/reels/festivals-03.mp4",
+      "mode": "100644",
+      "sha": "8a132823dd0aeeec42e9feb57c5e0f3b70fe8de5",
+      "size": 1440039
+    },
+    {
+      "path": "public/studio/reels/festivals-04.mp4",
+      "mode": "100644",
+      "sha": "6c63a5b510841d1f33ebdccecf027215148ddec7",
+      "size": 1354168
+    },
+    {
+      "path": "public/studio/reels/festivals-05.mp4",
+      "mode": "100644",
+      "sha": "f6cd0de375ad7b7c2451f8b122bba99432fc4943",
+      "size": 1173092
+    },
+    {
+      "path": "public/studio/reels/festivals-06.mp4",
+      "mode": "100644",
+      "sha": "e6ed014a8f4357a95d6760988ab17597b67e56ab",
+      "size": 1402703
+    },
+    {
+      "path": "public/studio/reels/festivals-07.mp4",
+      "mode": "100644",
+      "sha": "baf4ded831be60cbf3776761f21a630d81ee40cf",
+      "size": 1334627
+    },
+    {
+      "path": "public/studio/reels/festivals-08.mp4",
+      "mode": "100644",
+      "sha": "76ca3cf7fcd32c74e6ccee0ed5584bd2f5773b22",
+      "size": 1452774
+    },
+    {
+      "path": "public/studio/reels/festivals-09.mp4",
+      "mode": "100644",
+      "sha": "b4b6b7720409205692b6380ed6930af8f9a069c1",
+      "size": 1174230
+    },
+    {
+      "path": "public/studio/reels/festivals-10.mp4",
+      "mode": "100644",
+      "sha": "353c2c3adfa90c6484616684847d900ec7a9769c",
+      "size": 1263572
+    },
+    {
+      "path": "public/studio/reels/graduation-01.mp4",
+      "mode": "100644",
+      "sha": "8da5430152d406f9ab6ab72b45a02ff70ef6db85",
+      "size": 1115197
+    },
+    {
+      "path": "public/studio/reels/graduation-02.mp4",
+      "mode": "100644",
+      "sha": "3fefd4bbcac238eb7cf1e743adb03bc89ed12e5a",
+      "size": 1132831
+    },
+    {
+      "path": "public/studio/reels/graduation-03.mp4",
+      "mode": "100644",
+      "sha": "1c524f05879c961ff9c3390c20fee3512f11c434",
+      "size": 1242041
+    },
+    {
+      "path": "public/studio/reels/graduation-04.mp4",
+      "mode": "100644",
+      "sha": "303806a0422ab83fafff95a484f8d0e4ef64dacd",
+      "size": 1167238
+    },
+    {
+      "path": "public/studio/reels/graduation-05.mp4",
+      "mode": "100644",
+      "sha": "c9f9f1c9509148bf4bd4271ddf421b3fff977530",
+      "size": 1251066
+    },
+    {
+      "path": "public/studio/reels/graduation-06.mp4",
+      "mode": "100644",
+      "sha": "24ee9416a72b2cc0904f15494ba679c8a25166d1",
+      "size": 1141956
+    },
+    {
+      "path": "public/studio/reels/graduation-07.mp4",
+      "mode": "100644",
+      "sha": "c63826e2d3360e8e82f7cc4bc863c3404549cf64",
+      "size": 1101556
+    },
+    {
+      "path": "public/studio/reels/graduation-08.mp4",
+      "mode": "100644",
+      "sha": "ad502400ec0187ba8bdbf0745b8df7113d4ef019",
+      "size": 1326302
+    },
+    {
+      "path": "public/studio/reels/graduation-09.mp4",
+      "mode": "100644",
+      "sha": "b2d42ad492cdc0b6b30b9f775091fcfac9db78c2",
+      "size": 1252901
+    },
+    {
+      "path": "public/studio/reels/graduation-10.mp4",
+      "mode": "100644",
+      "sha": "32c91b5a12dbd74a5bcf67074d863793ca53b9e1",
+      "size": 1140036
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-01.mp4",
+      "mode": "100644",
+      "sha": "30233a3954ffe70f2be67b471e8da518da54799c",
+      "size": 1369268
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-02.mp4",
+      "mode": "100644",
+      "sha": "7bebc6f0ccf4e809240bceb59f6cf152283c0400",
+      "size": 1029645
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-03.mp4",
+      "mode": "100644",
+      "sha": "0964ec93fe9c2d73bc0328c03c33927f9278f4f0",
+      "size": 1447560
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-04.mp4",
+      "mode": "100644",
+      "sha": "5b9c013e5ce71096fb090e31112ca84333ea82ae",
+      "size": 923859
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-05.mp4",
+      "mode": "100644",
+      "sha": "14da8ddeb5af797b9c9c3cc69987fb31fcc5f559",
+      "size": 1428004
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-06.mp4",
+      "mode": "100644",
+      "sha": "687484285ef3f348a047ce8ac1b1843154642444",
+      "size": 940502
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-07.mp4",
+      "mode": "100644",
+      "sha": "216207d5d7b337061ae50df867969b8b51452631",
+      "size": 1390599
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-08.mp4",
+      "mode": "100644",
+      "sha": "d2ead1f9ed5946216b3fcc18e8efedef21253ebf",
+      "size": 1008058
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-09.mp4",
+      "mode": "100644",
+      "sha": "1f6a35adff84c5393a997b251ce598c841b54374",
+      "size": 1500995
+    },
+    {
+      "path": "public/studio/reels/haldi-mehendi-10.mp4",
+      "mode": "100644",
+      "sha": "67c2fd5eb5fc73f4a2d31584d074982cd9677deb",
+      "size": 934808
+    },
+    {
+      "path": "public/studio/reels/housewarming-01.mp4",
+      "mode": "100644",
+      "sha": "496305c239ba836589621547f24aa3cda5dd9f4b",
+      "size": 1073845
+    },
+    {
+      "path": "public/studio/reels/housewarming-02.mp4",
+      "mode": "100644",
+      "sha": "9f5cee1624cf6c922cbe9445c4ff136bd2f8e5e2",
+      "size": 1169856
+    },
+    {
+      "path": "public/studio/reels/housewarming-03.mp4",
+      "mode": "100644",
+      "sha": "28ebc8954449c67b4d6a7a03d087b890473e5a29",
+      "size": 1267672
+    },
+    {
+      "path": "public/studio/reels/housewarming-04.mp4",
+      "mode": "100644",
+      "sha": "e0f2571d9920d900cbac4bf2efc1c8e5e8f0314e",
+      "size": 1139463
+    },
+    {
+      "path": "public/studio/reels/housewarming-05.mp4",
+      "mode": "100644",
+      "sha": "77521214fff3bd0c2fbf383b4a3e193ad541cb0c",
+      "size": 1137155
+    },
+    {
+      "path": "public/studio/reels/housewarming-06.mp4",
+      "mode": "100644",
+      "sha": "15a1574c20986f934182ae8606e3c8f99e59a76b",
+      "size": 1169946
+    },
+    {
+      "path": "public/studio/reels/housewarming-07.mp4",
+      "mode": "100644",
+      "sha": "3a11f84ab40fce2e029baf5e9ef4ee27283deb7b",
+      "size": 1118074
+    },
+    {
+      "path": "public/studio/reels/housewarming-08.mp4",
+      "mode": "100644",
+      "sha": "37aeacdba55e4deb4c84063b17ac8e4fa6f546f0",
+      "size": 1260970
+    },
+    {
+      "path": "public/studio/reels/housewarming-09.mp4",
+      "mode": "100644",
+      "sha": "1016b393b2f9b4bc0ff58b893c9c119611773cb4",
+      "size": 1146688
+    },
+    {
+      "path": "public/studio/reels/housewarming-10.mp4",
+      "mode": "100644",
+      "sha": "a8b805116f6c5136c606e72711b7d88200a49e71",
+      "size": 1113045
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-01.mp4",
+      "mode": "100644",
+      "sha": "c9d19b181859cd7b24a8071fbeadb5b4bf997199",
+      "size": 1145475
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-02.mp4",
+      "mode": "100644",
+      "sha": "2177b4d914ad309130ed243e2bd43cb273ae409c",
+      "size": 1197216
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-03.mp4",
+      "mode": "100644",
+      "sha": "9cb1f58d3f4a7a628a41049b5e51f2c806e272a6",
+      "size": 1168432
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-04.mp4",
+      "mode": "100644",
+      "sha": "62c6118e9029cfbd3ca688f4f43d3f0e9ba79f87",
+      "size": 1206007
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-05.mp4",
+      "mode": "100644",
+      "sha": "1a9a6c4d52cc0f2aba8a4d058620916fba71000a",
+      "size": 1157792
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-06.mp4",
+      "mode": "100644",
+      "sha": "8e6e62ed35f9fb790f6ac3021c0f3b1dff33f5aa",
+      "size": 1142945
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-07.mp4",
+      "mode": "100644",
+      "sha": "0c00d62c0e8d95dd46d329dc14182caad0625513",
+      "size": 1165521
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-08.mp4",
+      "mode": "100644",
+      "sha": "3a28fd5949a9b33b9022920e5d509326bcdb2e30",
+      "size": 1244392
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-09.mp4",
+      "mode": "100644",
+      "sha": "0ecfe37f26a406805aa7de40f91eea58a27256c0",
+      "size": 1185180
+    },
+    {
+      "path": "public/studio/reels/naming-ceremony-10.mp4",
+      "mode": "100644",
+      "sha": "456b2fa7e3768751c7d907275e5c11209a38e498",
+      "size": 1085140
+    },
+    {
+      "path": "public/studio/reels/party-01.mp4",
+      "mode": "100644",
+      "sha": "948e9a692d2807e6a1ef48e7a6e2f120eef30146",
+      "size": 1245404
+    },
+    {
+      "path": "public/studio/reels/party-02.mp4",
+      "mode": "100644",
+      "sha": "6d7e3d59418eed080bf27da50f59a541f8a4e1e2",
+      "size": 1429359
+    },
+    {
+      "path": "public/studio/reels/party-03.mp4",
+      "mode": "100644",
+      "sha": "d81921c6d8e0a9e2c5e6d4ace019f03f6c58217b",
+      "size": 1208494
+    },
+    {
+      "path": "public/studio/reels/party-04.mp4",
+      "mode": "100644",
+      "sha": "dcd28717b867d49358f63ae8924ce48a7e1313e5",
+      "size": 1377630
+    },
+    {
+      "path": "public/studio/reels/party-05.mp4",
+      "mode": "100644",
+      "sha": "fa8006937eda5b957888ee1d4efba1c2e09a674a",
+      "size": 1395031
+    },
+    {
+      "path": "public/studio/reels/party-06.mp4",
+      "mode": "100644",
+      "sha": "00c90936fa4de52413d5c9cd17ceca34ecd7417e",
+      "size": 1290074
+    },
+    {
+      "path": "public/studio/reels/party-07.mp4",
+      "mode": "100644",
+      "sha": "cab023632d65533a235e37398f3900a595d15145",
+      "size": 1273642
+    },
+    {
+      "path": "public/studio/reels/party-08.mp4",
+      "mode": "100644",
+      "sha": "3daecfa40975a19197da10e3e89631077ad3bebf",
+      "size": 1463177
+    },
+    {
+      "path": "public/studio/reels/party-09.mp4",
+      "mode": "100644",
+      "sha": "055f8a9f05fb4b61346c06e5fe91adc00cce94c0",
+      "size": 1313960
+    },
+    {
+      "path": "public/studio/reels/party-10.mp4",
+      "mode": "100644",
+      "sha": "9e5677bd98c4595109a62d0be48329ee5c020090",
+      "size": 1427037
+    },
+    {
+      "path": "public/studio/reels/retirement-01.mp4",
+      "mode": "100644",
+      "sha": "c1e6dca32f5efcdeef35ec37d4770f6274b18a35",
+      "size": 1239996
+    },
+    {
+      "path": "public/studio/reels/retirement-02.mp4",
+      "mode": "100644",
+      "sha": "294220a109d4369580199520531f634b4e34e1f1",
+      "size": 1233021
+    },
+    {
+      "path": "public/studio/reels/retirement-03.mp4",
+      "mode": "100644",
+      "sha": "c9ef18248164a9ff017fd4657f28e852811459c4",
+      "size": 1186503
+    },
+    {
+      "path": "public/studio/reels/retirement-04.mp4",
+      "mode": "100644",
+      "sha": "12b6e126f7307d48e5f3f7bd2e3dbf74301a6e05",
+      "size": 1304190
+    },
+    {
+      "path": "public/studio/reels/retirement-05.mp4",
+      "mode": "100644",
+      "sha": "3705f075682bd8ab22249cc746550d8ffb3c46ba",
+      "size": 1164991
+    },
+    {
+      "path": "public/studio/reels/retirement-06.mp4",
+      "mode": "100644",
+      "sha": "a62750c46be5023c001077dfe6ec75dce02847ed",
+      "size": 1273946
+    },
+    {
+      "path": "public/studio/reels/retirement-07.mp4",
+      "mode": "100644",
+      "sha": "875d32d38ce543e87bea690107b81be7b9365136",
+      "size": 1167642
+    },
+    {
+      "path": "public/studio/reels/retirement-08.mp4",
+      "mode": "100644",
+      "sha": "61e1e8d1e281782b342c4fb9d65a0933c54f909b",
+      "size": 1421306
+    },
+    {
+      "path": "public/studio/reels/retirement-09.mp4",
+      "mode": "100644",
+      "sha": "48758eb3d8d876dd5b5f2099c9720134d7e310d3",
+      "size": 1183147
+    },
+    {
+      "path": "public/studio/reels/retirement-10.mp4",
+      "mode": "100644",
+      "sha": "a71541f3f6625de522e357589a7f97c1e332e532",
+      "size": 1235592
+    },
+    {
+      "path": "public/studio/reels/wedding-01.mp4",
+      "mode": "100644",
+      "sha": "cce1e115d55d30b55fe4e2e61cdf970394d41c89",
+      "size": 957390
+    },
+    {
+      "path": "public/studio/reels/wedding-02.mp4",
+      "mode": "100644",
+      "sha": "a064c34cc55a7d6b8a15d71755132c648030261b",
+      "size": 926245
+    },
+    {
+      "path": "public/studio/reels/wedding-03.mp4",
+      "mode": "100644",
+      "sha": "0ac0ee621e4b7ddefa6c23a9fcdbb4e524ee18a9",
+      "size": 1014964
+    },
+    {
+      "path": "public/studio/reels/wedding-04.mp4",
+      "mode": "100644",
+      "sha": "cc833ead384ab92b4ab296c1799792a38564600c",
+      "size": 953086
+    },
+    {
+      "path": "public/studio/reels/wedding-05.mp4",
+      "mode": "100644",
+      "sha": "29d4ca6cced623a759d5374da4c1a5108ccb93b0",
+      "size": 933951
+    },
+    {
+      "path": "public/studio/reels/wedding-06.mp4",
+      "mode": "100644",
+      "sha": "cab0fac220c073790c7e184c82010cbb847e68b5",
+      "size": 1413746
+    },
+    {
+      "path": "public/studio/reels/wedding-07.mp4",
+      "mode": "100644",
+      "sha": "2fed62ee34fd20e4e9e857ba5841211d55e4b54f",
+      "size": 933729
+    },
+    {
+      "path": "public/studio/reels/wedding-08.mp4",
+      "mode": "100644",
+      "sha": "a556b3b97fbaa8934ef6d4ea7bcb075e498439d4",
+      "size": 1032156
+    },
+    {
+      "path": "public/studio/reels/wedding-09.mp4",
+      "mode": "100644",
+      "sha": "7a0aff12c1383ced5bbf74aa959db28b1dd4e37f",
+      "size": 953910
+    },
+    {
+      "path": "public/studio/reels/wedding-10.mp4",
+      "mode": "100644",
+      "sha": "4862efd8b9a47dadf8a06ea6408b34545880e05c",
+      "size": 1461455
+    },
+    {
+      "path": "public/studio/scenes-photo/anniversary.webp",
+      "mode": "100644",
+      "sha": "fc15b9be8737ede59a20cd2029eecc3f782328d1",
+      "size": 135692
+    },
+    {
+      "path": "public/studio/scenes-photo/baby-shower.webp",
+      "mode": "100644",
+      "sha": "db04e290d2f06504e20e92d0318b0ae45ee19a34",
+      "size": 186462
+    },
+    {
+      "path": "public/studio/scenes-photo/baraat.webp",
+      "mode": "100644",
+      "sha": "5cb3f29b91ab8badf30ba7ab467ee5766f02fd5c",
+      "size": 233382
+    },
+    {
+      "path": "public/studio/scenes-photo/birthday.webp",
+      "mode": "100644",
+      "sha": "052b93c963a704da79d6ead186f144f1675ff196",
+      "size": 99320
+    },
+    {
+      "path": "public/studio/scenes-photo/business.webp",
+      "mode": "100644",
+      "sha": "479a69c020a3417b16cff28f5406cde06fcc8b9b",
+      "size": 90170
+    },
+    {
+      "path": "public/studio/scenes-photo/engagement.webp",
+      "mode": "100644",
+      "sha": "ecf0ae00c5fc16f4e624e7c9bb9147723c1e7b0b",
+      "size": 183920
+    },
+    {
+      "path": "public/studio/scenes-photo/festivals.webp",
+      "mode": "100644",
+      "sha": "a063afdc91c024ab1380fe1f64579361e6b8aef8",
+      "size": 178506
+    },
+    {
+      "path": "public/studio/scenes-photo/graduation.webp",
+      "mode": "100644",
+      "sha": "992fb298d46965468c008bee815416a9f22f84b4",
+      "size": 139624
+    },
+    {
+      "path": "public/studio/scenes-photo/haldi-mehendi.webp",
+      "mode": "100644",
+      "sha": "545ef0ac1d48dd00b306a7fc7c81a4aa928511c4",
+      "size": 200122
+    },
+    {
+      "path": "public/studio/scenes-photo/housewarming.webp",
+      "mode": "100644",
+      "sha": "1961ef312e5de5b97a39e43914ec34e773731407",
+      "size": 160788
+    },
+    {
+      "path": "public/studio/scenes-photo/naming-ceremony.webp",
+      "mode": "100644",
+      "sha": "8795331c9b71dc07f579a90135d447493dbf3fe6",
+      "size": 129560
+    },
+    {
+      "path": "public/studio/scenes-photo/party.webp",
+      "mode": "100644",
+      "sha": "78e6448d67c0604f6898111cf750929aca496fde",
+      "size": 167002
+    },
+    {
+      "path": "public/studio/scenes-photo/retirement.webp",
+      "mode": "100644",
+      "sha": "a99bc8c0b72273ac1d16d13a328f5580aa04a62d",
+      "size": 220856
+    },
+    {
+      "path": "public/studio/scenes-photo/wedding-door.webp",
+      "mode": "100644",
+      "sha": "a810b99af6f3f1954d100cbed8e165bf6cff6847",
+      "size": 209396
+    },
+    {
+      "path": "public/studio/scenes-photo/wedding.webp",
+      "mode": "100644",
+      "sha": "97a67f673fc3e0fec89fef6582bab8bb850e7272",
+      "size": 225350
+    },
+    {
+      "path": "public/worlds/beach-couple.webp",
+      "mode": "100644",
+      "sha": "0010ba3916e65a03f1c37d9c46b71c71973d0c35",
+      "size": 314134
+    },
+    {
+      "path": "public/worlds/beach-vows.mp4",
+      "mode": "100644",
+      "sha": "43a912140e26e7bde87a88e53bb70d9ca00a0815",
+      "size": 430221
+    },
+    {
+      "path": "public/worlds/beach-vows.webp",
+      "mode": "100644",
+      "sha": "837eec01a771f74c1dd11caad51d044a5657f650",
+      "size": 237240
+    },
+    {
+      "path": "public/worlds/cosmic-birthday.webp",
+      "mode": "100644",
+      "sha": "32a25e4d1307cd51e84cc1133f28695e1204701f",
+      "size": 85988
+    },
+    {
+      "path": "public/worlds/garden-bloom.webp",
+      "mode": "100644",
+      "sha": "84d946e4ecf588dc160ae9489605c4d33a3de0b3",
+      "size": 229920
+    },
+    {
+      "path": "public/worlds/little-cloud.webp",
+      "mode": "100644",
+      "sha": "2542aa4dcc76c4d1d428b8d6fac75ef741aa911b",
+      "size": 83122
+    },
+    {
+      "path": "public/worlds/moon-couple.webp",
+      "mode": "100644",
+      "sha": "16ae3f414938a440f4c1f1f8d0953f7db1ea5d61",
+      "size": 279928
+    },
+    {
+      "path": "public/worlds/moon-palace.mp4",
+      "mode": "100644",
+      "sha": "081de44c216898557b5304dff5675927da5fe094",
+      "size": 435718
+    },
+    {
+      "path": "public/worlds/moon-palace.webp",
+      "mode": "100644",
+      "sha": "4d2c5f5ea4b40d96e4ba81216b84581ff9515dca",
+      "size": 163154
+    },
+    {
+      "path": "public/worlds/neon-sangeet.webp",
+      "mode": "100644",
+      "sha": "8f73a484a37619e4d498b1ebbde9e1eb0987e4e2",
+      "size": 157458
+    },
+    {
+      "path": "scripts/vite/sites-vite-plugin.LICENSE",
+      "mode": "100644",
+      "sha": "4243cb4a9aaa50f954498e54c850773e9ba13eea",
+      "size": 1063
+    },
+    {
+      "path": "services/media-worker/Dockerfile",
+      "mode": "100644",
+      "sha": "3634d6f35ff9c2fe577744e7e180749997a16e07",
+      "size": 213
+    }
+  ],
+  "restore": "The private archive contains every tracked file. See docs/source-sync.md; never commit a storage credential."
+}

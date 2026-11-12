@@ -1,0 +1,11 @@
+import {notFound} from 'next/navigation';
+import {BrandLogo} from '../components/BrandLogo';
+import {invitationGuides} from '@/lib/invitation-guides';
+import {jsonLd,pageMetadata,siteOrigin} from '@/lib/seo';
+export const dynamicParams=false;
+export function generateStaticParams(){return invitationGuides.map(g=>({guide:g.slug}));}
+export async function generateMetadata({params}:{params:Promise<{guide:string}>}){const {guide}=await params,g=invitationGuides.find(x=>x.slug===guide);return g?pageMetadata(g.title,g.intro,'/'+g.slug):{title:'Page not found'};}
+export default async function Guide({params}:{params:Promise<{guide:string}>}){
+ const {guide}=await params,g=invitationGuides.find(x=>x.slug===guide);if(!g)notFound();
+ return <div className="growth-page"><header className="growth-header"><a href="/" aria-label="Jashntoons home"><BrandLogo/></a><a href="/reels">Watch reels ↗</a></header><main><div className="growth-guide-hero"><div><a className="growth-back" href="/">← The invitation studio</a><p className="eyebrow">{g.occasion.toUpperCase()}</p><h1>{g.heading}</h1><p>{g.intro}</p><a className="button button-dark" href={'/?template='+g.template+'&studio=1'}>Start creating ↗</a><small>2 free standard reel credits · No editing skills needed</small></div><img src={g.poster} alt={g.occasion+' invitation style reference'} width="480" height="640"/></div><section className="growth-steps"><h2>Make it yours in three steps.</h2><div>{g.steps.map(([title,body],i)=><article key={title}><span>0{i+1}</span><h3>{title}</h3><p>{body}</p></article>)}</div></section><section className="growth-faq"><h2>A few useful answers.</h2>{g.faq.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</section><nav className="growth-related" aria-label="More invitation guides">{invitationGuides.filter(x=>x.slug!==g.slug).map(x=><a key={x.slug} href={'/'+x.slug}>{x.occasion} invitations ↗</a>)}</nav></main><footer className="growth-footer"><a href="/">Jashntoons</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></footer><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Jashntoons',item:siteOrigin},{'@type':'ListItem',position:2,name:g.occasion,item:siteOrigin+'/'+g.slug}]})}}/></div>;
+}

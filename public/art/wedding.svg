@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760" fill="none">
+<defs>
+ <linearGradient id="veil" x1="107" y1="274" x2="305" y2="606" gradientUnits="userSpaceOnUse"><stop stop-color="#FFB8C9"/><stop offset="1" stop-color="#E9567D"/></linearGradient>
+ <linearGradient id="dress" x1="122" y1="422" x2="302" y2="684" gradientUnits="userSpaceOnUse"><stop stop-color="#F16F8B"/><stop offset="1" stop-color="#B63462"/></linearGradient>
+ <linearGradient id="coat" x1="326" y1="405" x2="445" y2="657" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF6D9"/><stop offset="1" stop-color="#E6C58C"/></linearGradient>
+ <linearGradient id="skin" x1="205" y1="287" x2="391" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#DFA37B"/><stop offset="1" stop-color="#C4805E"/></linearGradient>
+ <linearGradient id="gold" x1="145" y1="300" x2="418" y2="586" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE3A1"/><stop offset=".5" stop-color="#DDA652"/><stop offset="1" stop-color="#AF7638"/></linearGradient>
+ <pattern id="dots" width="26" height="30" patternUnits="userSpaceOnUse"><path d="M13 9v12M7 15h12" stroke="#FFDBA4" stroke-width="1.3" opacity=".8"/></pattern>
+ <g id="flower"><path d="M0-19C7-33 24-21 19-10C35-10 34 11 20 13C26 28 7 36 0 23C-10 35-27 24-20 12C-35 7-29-13-16-12C-18-27-2-33 0-19" fill="currentColor"/><circle r="9" fill="#F6D28A"/><circle r="3" fill="#824150"/></g>
+ <g id="leaf"><path d="M0 0Q-36-43-48-15Q-50 7 0 0" fill="currentColor"/><path d="M-37-13L-5-2" stroke="#423138" stroke-width="1.5" opacity=".4"/></g>
+</defs>
+<!-- A delicately scalloped halo frames the couple without a background panel. -->
+<path d="M80 411V296C80 169 177 89 300 89S520 169 520 296V411" stroke="#E5B46F" stroke-width="2" stroke-dasharray="2 9"/>
+<path d="M97 402V296C97 181 184 109 300 109S503 181 503 296V402" stroke="#E5B46F" stroke-width="1.3" opacity=".7"/>
+<path d="M300 73l7 17-7 17-7-17zM67 302l7 17-7 17-7-17zM526 302l7 17-7 17-7-17z" fill="#DFA35A"/>
+<g stroke="#4B293D" stroke-width="3" stroke-linejoin="round">
+ <!-- Bride's veil, hair and face. -->
+ <path d="M133 449c-11-78-10-169 20-205 36-42 95-23 112 19 13 31 13 130 32 187-44 23-103 29-164-1z" fill="url(#veil)"/>
+ <path d="M141 421c-4-71-7-134 14-165 30-40 78-27 96 7" stroke="#FFE0A7" stroke-width="7"/>
+ <path d="M175 293c-15-18-9-51 10-62 24-15 56-4 66 22 7 19 3 46-2 60z" fill="#472839"/>
+ <path d="M193 279c9 7 34 10 46-2 4 16 8 22 20 35l-10 7c-1 24-12 37-28 38l1 39-37-5 9-47c-17-12-22-43-15-58z" fill="url(#skin)"/>
+ <path d="M237 312l8 2M244 331q-7 7-14 1" stroke-linecap="round"/>
+ <path d="M225 308q6-6 14-4" stroke-width="2" stroke-linecap="round"/>
+ <circle cx="228" cy="323" r="8" fill="#E98C87" stroke="none" opacity=".65"/>
+ <path d="M180 299q8 10 17 9" stroke="#F5D08B" stroke-width="5"/>
+ <circle cx="181" cy="321" r="7" fill="#EDC478" stroke="#A66B39" stroke-width="1.5"/>
+ <path d="M178 330l-6 15q9 8 18 0l-5-15" fill="#F6D58E" stroke="#A66B39" stroke-width="1.5"/>
+ <path d="M201 242q20 11 39 9" stroke="url(#gold)" stroke-width="5"/>
+ <path d="M226 250v26" stroke="url(#gold)" stroke-width="3"/>
+ <path d="M226 274l6 9-7 10-6-10z" fill="#FBE1A3" stroke="#A66B39" stroke-width="1"/>
+ <circle cx="242" cy="297" r="2.5" fill="#A83154" stroke="none"/>
+ <!-- Lehenga and embroidered shawl. -->
+ <path d="M182 375l42 3 24 55 35 222q-91 46-181-3l48-220z" fill="url(#dress)"/>
+ <path d="M182 375l42 3 24 55 35 222q-91 46-181-3l48-220z" fill="url(#dots)" stroke="none"/>
+ <path d="M152 424q26 40 89 0M118 637q72 30 156 1" stroke="url(#gold)" stroke-width="9"/>
+ <path d="M132 651q60 20 119 1" stroke="#FFE0A7" stroke-width="2"/>
+ <path d="M176 447l-34 170M199 450l-6 184M221 445l24 179" stroke="#8E2D56" stroke-width="2" opacity=".45"/>
+ <path d="M183 376q22 40 49 12" stroke="#F7D392" stroke-width="6"/>
+ <path d="M157 391c-16 30-18 58-8 77l42 35 18-21-33-37 16-47" fill="url(#skin)"/>
+ <path d="M158 383l32 10-14 43-33-10z" fill="#E65B7E"/>
+ <path d="M184 468l-15 19M189 474l-13 18M194 478l-12 17" stroke="url(#gold)" stroke-width="4"/>
+ <path d="M198 480c27-2 57-6 75-17l16 18c-22 20-58 25-86 26" fill="url(#skin)"/>
+ <!-- Groom's turban, hair, face, and sherwani. -->
+ <path d="M324 669l9 31h43l-4-44M398 658l8 42h43l-15-45" fill="#CBB692"/>
+ <path d="M333 693l-18 14q-9 11 2 15h58l1-28M407 694v27h61q6-11-8-13l-14-13" fill="#603143"/>
+ <path d="M326 380l65-10 39 26 18 254q-66 34-139 6l6-216z" fill="url(#coat)"/>
+ <path d="M367 384l8 260M319 632q66 20 124-1" stroke="#B79461" stroke-width="2"/>
+ <path d="M324 385l20 24 22-25 20 20 8-30" fill="#FBECCE"/>
+ <path d="M352 347l-4 42q19 13 37-9l-6-42" fill="url(#skin)"/>
+ <path d="M325 279q-13 25-6 47l-10 10 12 5q5 25 28 30c27 6 43-24 45-52l-20-48z" fill="url(#skin)"/>
+ <path d="M328 314l8-2M328 335q6 2 9 0" stroke-linecap="round"/>
+ <path d="M323 306q8-6 16-2" stroke-width="2" stroke-linecap="round"/>
+ <path d="M322 345q8 13 17 7 15 15 30 1l10-23 11 3q-4 36-34 38-22-1-34-26z" fill="#4B293D" stroke="none"/>
+ <path d="M339 338q-6-7-14-2M338 337q8-6 15 0" stroke-width="5" stroke-linecap="round"/>
+ <path d="M375 284l-1 29 10-9 9 6 6-41z" fill="#4B293D"/>
+ <path d="M316 282q-12-54 39-58 47-5 52 41l-18 30-22-20z" fill="#E98291"/>
+ <path d="M322 244l69 39M333 230l67 38M317 263l60 26" stroke="#F6B3BA" stroke-width="7"/>
+ <path d="M314 281q31-4 57-14" stroke="#F5CF8A" stroke-width="5"/>
+ <circle cx="325" cy="276" r="8" fill="#F2CC81" stroke="#A66B39" stroke-width="1.5"/>
+ <path d="M325 268q-18-32 9-59-2 36-9 59" fill="#FFF1CD" stroke="#D7AB64" stroke-width="1.5"/>
+ <path d="M401 397q20 9 23 31l-43 64-58 8-5-25 47-11 22-44" fill="url(#coat)"/>
+ <path d="M322 473l-38-13q-8-4-12 1l-12 12q-5 8 4 13l22-6 33 17z" fill="url(#skin)"/>
+ <path d="M320 469l5 32M329 470l5 30" stroke="url(#gold)" stroke-width="4"/>
+ <path d="M333 390l-16 240q8 20 28 19l10-243" fill="#CF5273" stroke="#A43156"/>
+ <path d="M326 613l16 4M325 622l17 4" stroke="#F9D48A" stroke-width="3"/>
+ <path d="M343 402q-26 42-12 70M386 394q23 28 11 57" stroke="#F2C96E" stroke-width="4"/>
+ <path d="M343 402q-26 42-12 70M386 394q23 28 11 57" stroke="#FFF1C2" stroke-width="5" stroke-dasharray="1 10" stroke-linecap="round"/>
+</g>
+<g fill="#B58A54"><circle cx="379" cy="423" r="3"/><circle cx="380" cy="445" r="3"/><circle cx="381" cy="521" r="3"/><circle cx="382" cy="545" r="3"/><circle cx="383" cy="569" r="3"/></g>
+<!-- Scattered petals and a flower bed. -->
+<path d="M105 185q20-20 17 4-14 15-17-4M472 192q-4-24 13-6 3 19-13 6M92 503q-12-17 10-11 10 16-10 11M489 496q8-24 20-5-4 18-20 5" fill="#EB8EAA"/>
+<g stroke="#497064" stroke-width="3" fill="none"><path d="M126 707Q72 641 76 562M459 711q54-82 50-163M207 725q-20-70-45-104M386 721q25-62 70-94"/></g>
+<g color="#769C72"><use href="#leaf" transform="translate(99 659) rotate(28)"/><use href="#leaf" transform="translate(85 620) rotate(72)"/><use href="#leaf" transform="translate(485 657) rotate(149)"/><use href="#leaf" transform="translate(500 606) rotate(112)"/><use href="#leaf" transform="translate(195 701) rotate(7)"/><use href="#leaf" transform="translate(409 684) rotate(172)"/></g>
+<g color="#C5CE8D"><use href="#leaf" transform="translate(114 682) rotate(116)"/><use href="#leaf" transform="translate(484 680) rotate(25)"/><use href="#leaf" transform="translate(374 714) rotate(-20)"/></g>
+<g color="#F9A8B9"><use href="#flower" transform="translate(118 694) scale(1.4)"/><use href="#flower" transform="translate(461 689) scale(1.5)"/><use href="#flower" transform="translate(227 719) scale(.85)"/></g>
+<g color="#F3C576"><use href="#flower" transform="translate(77 643) scale(.7)"/><use href="#flower" transform="translate(499 629) scale(.8)"/><use href="#flower" transform="translate(391 717) scale(.8)"/></g>
+<g color="#CA5D80"><use href="#flower" transform="translate(162 717) scale(1)"/><use href="#flower" transform="translate(424 716) scale(.9)"/></g>
+</svg>

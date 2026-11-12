@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1794373754984,
+      "tag": "0000_blushing_mystique",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1794381480793,
+      "tag": "0001_careless_champions",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1794393404835,
+      "tag": "0002_melted_the_fury",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1794393858154,
+      "tag": "0003_sweet_hulk",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1794439529556,
+      "tag": "0004_woozy_moonstone",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1794442153402,
+      "tag": "0005_swift_pet_avengers",
+      "breakpoints": true
+    }
+  ]
+}

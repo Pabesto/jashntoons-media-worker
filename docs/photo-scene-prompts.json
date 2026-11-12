@@ -1,0 +1,108 @@
+[
+  {
+    "id": "wedding",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. Symmetric sandstone Rajasthani haveli entrance with sage-green carved double doors OPEN toward the outer sides. Through the open doors: sunlit wedding courtyard, pink bougainvillea, soft cream sandstone arches, brass lanterns, a romantic floral mandap in the far background. Elegant dusty rose and sage palette, warm morning light. Camera straight-on at entrance level, full tall doorway and floor visible.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-7603483b-5977-4171-b85f-41e1cdec1078.png",
+    "file": "public/studio/scenes-photo/wedding.webp"
+  },
+  {
+    "id": "baraat",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. Grand sandstone Rajasthan palace approach decorated for a joyful Indian baraat, warm sunset light, strings of marigold flowers and warm lanterns overhead, regal courtyard avenue, ornate brass dhol drums resting on a low side platform. Deep saffron, ruby and antique gold palette; open middle promenade, celebration decorations along the sides. No people.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-01ec3fd9-9555-4ef6-8147-c8a6a467aa41.png",
+    "file": "public/studio/scenes-photo/baraat.webp"
+  },
+  {
+    "id": "birthday",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. Tasteful bright birthday celebration salon: ivory curved wall, peach, lilac and butter-yellow balloon garland framing upper left and right, small elegant cake on a side plinth, satin ribbons and gift boxes at lower edges. Soft window light, pastel contemporary luxury, photo-real event styling. Calm cream wall upper center and clear floor center. No numerals, no candles shaped as numbers, no lettering.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-45d667d1-8fe4-46b2-a725-aae9a85f9c86.png",
+    "file": "public/studio/scenes-photo/birthday.webp"
+  },
+  {
+    "id": "party",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. Stylish luxury rooftop nightclub dancefloor at blue hour, giant mirrored disco ball near upper edge, violet and electric-blue ambient lighting, warm illuminated city skyline glimpsed through arched windows, tiny glass reflections and lush palm leaves at outer corners. Cinematic photographic detail, sophisticated after-dark celebration. Open central dancefloor and dark uncluttered upper middle for titles, no people.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-6ff81b70-b3c3-4b52-ab58-b5a5b341ff21.png",
+    "file": "public/studio/scenes-photo/party.webp"
+  },
+  {
+    "id": "baby-shower",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. A dreamy garden conservatory decorated for an elegant baby shower: pastel sage and cream balloon arch at outer upper edges, pale blue and blush wildflowers, tiny linen bunting without lettering, teddy bear on a small side bench, botanical greenhouse windows softly glowing in morning light. Central ivory architectural panel for text and clear stone floor for an expectant-parent character overlay. Natural photographed fabric, glass and flower textures.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-d2d4dc4a-d3a0-42ce-a40c-1dc46502cc50.png",
+    "file": "public/studio/scenes-photo/baby-shower.webp"
+  },
+  {
+    "id": "engagement",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. A romantic engagement celebration garden at twilight, tall ivory roses and pale blush hydrangeas framing edges, delicate candles and glass lanterns along a symmetrical stone path, airy cream drapery at sides, distant elegant pavilion softly illuminated. Large simple warm ivory backdrop panel upper-center and open lower-center. Realistic cinematic wedding editorial photography, luminous champagne and forest green palette, no people.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-89964f07-13fb-4ddf-b522-89c33b034e30.png",
+    "file": "public/studio/scenes-photo/engagement.webp"
+  },
+  {
+    "id": "anniversary",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. An intimate luxury anniversary celebration ballroom with warm champagne drapery, crystal chandeliers near top corners, burgundy roses and gold candle stands at sides, polished pale marble floor, a pair of elegant champagne flutes on a side table. Deep warm romantic amber lighting, sophisticated natural photographic detail, upper-middle ivory wall free of writing and clear center floor. No numbers or people.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-93ed82c9-3252-404d-b3c8-8ba84b7b5bbd.png",
+    "file": "public/studio/scenes-photo/anniversary.webp"
+  },
+  {
+    "id": "housewarming",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. Beautiful modern Indian home entrance decorated for a housewarming celebration: rich teak doorway open on the sides, cream limestone entry hall, marigold and mango-leaf toran overhead, brass lamps on side plinths, potted palms, subtle colorful flower rangoli near bottom edge. A calm warm cream wall and sunlit empty center floor, welcoming afternoon light, natural realistic architectural photography. No people, no religious icons, no lettering.",
+    "mode": "built-in image_gen",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-057bb716-f6b2-4a20-ba0f-57b4580b257e.png",
+    "file": "public/studio/scenes-photo/housewarming.webp"
+  },
+  {
+    "id": "wedding-door",
+    "prompt": "Use case: precise-object-edit. Edit target: the supplied photoreal vertical haveli doorway scene. Change ONLY the sage-green double doors from OPEN to fully CLOSED, meeting at the exact center. Both matching carved sage-green door leaves fill the existing rectangular entrance opening from threshold to lintel, brass ring handles visible near the meeting line. Preserve the camera position, image dimensions, sandstone arch and floral carvings, bougainvillea, lanterns, flower planters, lighting, floor and every surrounding architectural detail exactly. Do not change or cover the surrounding frame. No people, text or logos. The output is the matching closed-door state for the same invitation opening animation. Photoreal textures, opaque background.",
+    "mode": "built-in image_gen edit",
+    "reference": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-7603483b-5977-4171-b85f-41e1cdec1078.png",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1caaf-42a7-7772-b0e3-2a67407e7f56\\exec-4951448b-81d2-4a4d-afe2-64dfbf8d35cb.png",
+    "file": "public/studio/scenes-photo/wedding-door.webp"
+  },
+  {
+    "id": "festivals",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 background for a premium invitation reel; finished raster image, photographic cinematic realism. Composition: rich decoration around edges, depth and an open uncluttered lower-center floor for a character overlay, upper-center architectural surface calm enough for editable lettering. No people or animals, no text, no logos, no watermark, no phone/UI, no vector style. Fine natural material textures, believable soft lighting. A festive Indian courtyard at luminous blue twilight, elegant sandstone arches, orange and yellow marigold garlands framing upper edges, warm hanging brass lanterns, tiny clay lamps along low side ledges, subtle flower-petal decorations. A quiet indigo central wall above and open warm stone floor below, premium realistic celebratory photography. No people, no deities or religious symbols, no holiday names or text, richly detailed but calm central composition.",
+    "mode": "built-in image_gen",
+    "source": "C:/Users/hacker/Downloads/Pabesto-Passport-Design (1)/Jashntoons/outputs/generated-scenes/festivals.png",
+    "file": "public/studio/scenes-photo/festivals.webp"
+  },
+  {
+    "id": "business",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 cinematic background for a premium invitation reel. Finished photographic raster artwork, richly detailed real materials and natural light. No people, no animals, no text, no signage, no logos or watermarks. Decorate the edges but leave a calm uncluttered upper-center area for editable titles and clear center floor for character overlays. Sophisticated business launch and conference venue, tall navy acoustic wall upper center, slim brushed brass trim, warm architectural spotlights, cream sculptural chairs at outer sides, low stage with unbranded clear lectern at far right. Soft city skyline through side windows, elegant neutral stone floor, navy ivory and champagne palette. Camera frontal and level, cinematic architectural photography, tasteful modern professional atmosphere.",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-4766-7a61-8cf9-8baa0d385443\\exec-5e96d7cb-50f8-4e0e-b762-29c1bf136ebe.png",
+    "file": "public/studio/scenes-photo/business.webp",
+    "mode": "built-in image_gen"
+  },
+  {
+    "id": "graduation",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 cinematic background for a premium invitation reel. Finished photographic raster artwork, richly detailed real materials and natural light. No people, no animals, no text, no signage, no logos or watermarks. Decorate the edges but leave a calm uncluttered upper-center area for editable titles and clear center floor for character overlays. Elegant graduation ceremony setting in an old university hall, tall soft navy velvet backdrop at upper center, golden laurel leaf decorations framing outside edges, warm spotlights and champagne curtains, rich wood panelled sides, a simple unbranded lectern at far left with a single graduation cap and rolled blank diploma on a low side plinth. Open central parquet stage, refined academic celebration, cinematic editorial architecture photography. No lettering, crests, screens or numbers.",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-4766-7a61-8cf9-8baa0d385443\\exec-8d26d120-ae07-4a93-959c-4575c2e26853.png",
+    "file": "public/studio/scenes-photo/graduation.webp",
+    "mode": "built-in image_gen"
+  },
+  {
+    "id": "retirement",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 cinematic background for a premium invitation reel. Finished photographic raster artwork, richly detailed real materials and natural light. No people, no animals, no text, no signage, no logos or watermarks. Decorate the edges but leave a calm uncluttered upper-center area for editable titles and clear center floor for character overlays. An elegant tropical garden terrace prepared for a retirement celebration at warm sunrise, mature palm leaves framing the upper edges, cream stucco garden pavilion wall in upper middle, soft wicker lounge chairs set far to the sides, travel trunk and a simple straw hat on a low side bench, warm fairy lights overhead, subtle ivory flowers. Airy sage green, sand and golden palette, peaceful hopeful next-chapter mood, open limestone terrace center. Luxury lifestyle architectural photograph with realistic textures. No travel labels or map lettering.",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-4766-7a61-8cf9-8baa0d385443\\exec-8f80d4e8-b375-4d16-b029-5ee6cf1050a8.png",
+    "file": "public/studio/scenes-photo/retirement.webp",
+    "mode": "built-in image_gen"
+  },
+  {
+    "id": "naming-ceremony",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 cinematic background for a premium invitation reel. Finished photographic raster artwork, richly detailed real materials and natural light. No people, no animals, no text, no signage, no logos or watermarks. Decorate the edges but leave a calm uncluttered upper-center area for editable titles and clear center floor for character overlays. A delicate naming ceremony garden conservatory scene, ivory fluted wall framed with pale peach and white roses, sage foliage, pale linen canopy at the top sides. A tiny beautiful empty wooden baby cradle at the lower left with cream quilt and soft neutral teddy bear, warm window light and subtle pastel peach-blue accents. Clear middle floor to place a family avatar, calm warm cream center upper wall for invitation lettering. Premium realistic celebration photography, gentle welcoming mood, no baby, no people, no written names or initials.",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-4766-7a61-8cf9-8baa0d385443\\exec-1e79223d-b989-4874-a326-4ab7973e3163.png",
+    "file": "public/studio/scenes-photo/naming-ceremony.webp",
+    "mode": "built-in image_gen"
+  },
+  {
+    "id": "haldi-mehendi",
+    "prompt": "Use case: photorealistic-natural. Asset type: vertical 9:16 cinematic background for a premium invitation reel. Finished photographic raster artwork, richly detailed real materials and natural light. No people, no animals, no text, no signage, no logos or watermarks. Decorate the edges but leave a calm uncluttered upper-center area for editable titles and clear center floor for character overlays. A vibrant elegant Indian haldi and mehendi celebration courtyard in warm morning sunlight. Aged cream and pale yellow haveli arches, abundant yellow-orange marigold garlands framing the top and sides, fresh banana and palm leaves at edges, brass bowls with golden turmeric paste and rose petals on a low side ledge, small woven stools with saffron cushions at outer lower corners. Fresh celebratory yellow, leafy green, terracotta and antique brass palette. Center upper wall calm cream and open central stone floor for full-body wedding avatars. Beautiful detailed event-design photograph, realistic flowers and warm natural light.",
+    "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-4766-7a61-8cf9-8baa0d385443\\exec-fc4a694a-848e-46fc-bfe1-84be86bbb7c6.png",
+    "file": "public/studio/scenes-photo/haldi-mehendi.webp",
+    "mode": "built-in image_gen"
+  }
+]

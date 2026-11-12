@@ -1,0 +1,1239 @@
+{
+  "mode": "built-in image_gen; one call per asset",
+  "records": [
+    {
+      "id": "wedding-01",
+      "name": "The Rosewater Couple",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-01.webp",
+      "prompt": "Use case: stylized-concept. Asset type: transparent full-body avatar for a premium Indian wedding invitation reel. Primary request: a photo-like, richly detailed Indian bride and groom, two adults standing together in a warm namaste welcome pose. Bride in dusty rose embroidered silk lehenga, emerald and pearl jewellery, groom in ivory brocade sherwani with rose turban. Style: luxury 3D cinematic character portrait with soft realistic skin, expressive natural faces, finely rendered fabric and jewellery, romantic Indian wedding editorial lighting. Full bodies and feet entirely visible, centered together, generous transparent margin around silhouettes. This is a finished raster character asset, not flat vector, not logo, not line-art, not sticker outlines. Transparent background, no scenery, no frame, no text, no watermark. Preserve clean alpha around veils and hands. Portrait composition.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:/Users/hacker/.codex/generated_images/01a1c591-bddf-7462-aaf6-7fe4a5653437/exec-f38dc5af-27fc-4231-90df-3591c9731553.png",
+      "generatedAt": "2026-11-11T13:00:27.448Z",
+      "validation": {
+        "id": "wedding-01",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.3129,
+        "bytes": 418408
+      }
+    },
+    {
+      "id": "wedding-02",
+      "name": "Ivory Namaste",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-02.webp",
+      "prompt": "Use case: stylized-concept. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: Ivory Namaste. Subject: one adult Indian bride and groom, two complete figures, elegant lehenga, embroidered sherwani and culturally authentic jewellery. Style/medium: high-end cinematic 3D character rendering, tactile finely embroidered clothing, realistic skin materials and lifelike human proportions; softly stylized expressive faces, not flat cartoons. Clothing palette: ivory and muted gold. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1ca87-71bb-74e1-a32f-332db91722ba\\exec-15848f14-27e1-44a1-b3ce-de712e0a4e53.png",
+      "generatedAt": "2026-11-11T13:00:28.854Z",
+      "validation": {
+        "id": "wedding-02",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.3582,
+        "bytes": 390910
+      }
+    },
+    {
+      "id": "wedding-03",
+      "name": "Emerald Vows",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-03.webp",
+      "prompt": "Use case: stylized-concept. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: Emerald Vows. Subject: one adult Indian bride and groom, two complete figures, elegant lehenga, embroidered sherwani and culturally authentic jewellery. Style/medium: richly painted realistic character artwork with dimensional skin, detailed woven silk and physically convincing lighting; painterly edge finesse but photographic anatomical detail. Clothing palette: emerald and champagne. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1ca87-71bb-74e1-a32f-332db91722ba\\exec-b9c6fc48-f353-4f15-86f7-b9c0f6d5ac43.png",
+      "generatedAt": "2026-11-11T13:00:30.201Z",
+      "validation": {
+        "id": "wedding-03",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.3506,
+        "bytes": 412126
+      }
+    },
+    {
+      "id": "wedding-04",
+      "name": "A Royal Welcome",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-04.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: A Royal Welcome. Subject: one adult Indian bride and groom, two complete figures, elegant lehenga, embroidered sherwani and culturally authentic jewellery. Style/medium: photorealistic premium Indian celebration editorial photography with natural human proportions, pores, real hair and physically real fabric. Clothing palette: burgundy and antique gold. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1ca87-71bb-74e1-a32f-332db91722ba\\exec-4425e882-6f84-4135-800c-16571c5affa0.png",
+      "generatedAt": "2026-11-11T13:01:51.874Z",
+      "validation": {
+        "id": "wedding-04",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4594,
+        "bytes": 342566
+      }
+    },
+    {
+      "id": "wedding-05",
+      "name": "Sunset Bride",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-05.webp",
+      "prompt": "Use case: stylized-concept. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: Sunset Bride. Subject: one adult Indian bride holding a delicate bouquet. Style/medium: high-end cinematic 3D character rendering, tactile finely embroidered clothing, realistic skin materials and lifelike human proportions; softly stylized expressive faces, not flat cartoons. Clothing palette: coral and dusty peach. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1ca87-71bb-74e1-a32f-332db91722ba\\exec-bd66980c-52d9-40ba-af0f-c58cfff1080c.png",
+      "generatedAt": "2026-11-11T13:01:52.559Z",
+      "validation": {
+        "id": "wedding-05",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4862,
+        "bytes": 317608
+      }
+    },
+    {
+      "id": "wedding-06",
+      "name": "Saffron Sherwani",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-06.webp",
+      "prompt": "Use case: stylized-concept. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: Saffron Sherwani. Subject: one adult Indian groom in a saffron embroidered sherwani and turban, palms joined in namaste. Style/medium: richly painted realistic character artwork with dimensional skin, detailed woven silk and physically convincing lighting; painterly edge finesse but photographic anatomical detail. Clothing palette: saffron and cream. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1ca87-71bb-74e1-a32f-332db91722ba\\exec-faa50e29-34e9-4f3e-9ef3-b611bd298525.png",
+      "generatedAt": "2026-11-11T13:02:55.611Z",
+      "validation": {
+        "id": "wedding-06",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.7021,
+        "bytes": 173348
+      }
+    },
+    {
+      "id": "wedding-07",
+      "name": "The Garden Promise",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-07.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: The Garden Promise. Subject: one adult Indian bride and groom, two complete figures, elegant lehenga, embroidered sherwani and culturally authentic jewellery. Style/medium: photorealistic premium Indian celebration editorial photography with natural human proportions, pores, real hair and physically real fabric. Clothing palette: sage and ivory. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1ca87-71bb-74e1-a32f-332db91722ba\\exec-891d40c6-798d-4321-981c-4f44d4e3f9f3.png",
+      "generatedAt": "2026-11-11T13:02:56.861Z",
+      "validation": {
+        "id": "wedding-07",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.3903,
+        "bytes": 341620
+      }
+    },
+    {
+      "id": "wedding-08",
+      "name": "Pearl & Pomegranate",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-08.webp",
+      "prompt": "Use case: stylized-concept. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: Pearl & Pomegranate. Subject: one adult Indian bride and groom, two complete figures, elegant lehenga, embroidered sherwani and culturally authentic jewellery. Style/medium: high-end cinematic 3D character rendering, tactile finely embroidered clothing, realistic skin materials and lifelike human proportions; softly stylized expressive faces, not flat cartoons. Clothing palette: pearl and pomegranate. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:/Users/hacker/.codex/generated_images/01a1ca87-71bb-74e1-a32f-332db91722ba/recovered-wedding-08.png",
+      "generatedAt": "2026-11-11T13:05:38.750Z",
+      "validation": {
+        "id": "wedding-08",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.3969,
+        "bytes": 393438
+      }
+    },
+    {
+      "id": "wedding-09",
+      "name": "The Wedding Family",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-09.webp",
+      "prompt": "Use case: stylized-concept. Asset type: production-quality transparent character cutout for a premium celebration invitation reel. Asset concept: The Wedding Family. Subject: one Indian wedding family: bride, groom and a smiling fully clothed school-age child, three complete figures. Style/medium: richly painted realistic character artwork with dimensional skin, detailed woven silk and physically convincing lighting; painterly edge finesse but photographic anatomical detail. Clothing palette: teal and warm apricot. Materials: detailed fabric weave, embroidery, dimensional jewellery, natural skin and hair texture. Composition: one isolated coherent character group, FULL BODY from above hair to below every shoe, every person's entire head, hands, legs and both feet visible. Centered in a tall portrait canvas, camera pulled back with generous clear margin around the complete silhouette and 8 percent empty space below all feet. Scene/backdrop: completely transparent alpha background, no environment and no studio backdrop. Clean continuous cutout edges including between figures; no floor, no pedestal, no ground shadow. Soft warm editorial light on the people only. Do not put names or lettering into the image. Avoid flat vector art, SVG style, icons, stickers, cropped heads, cut-off feet, duplicate people, extra limbs, plastic-looking fabric, logos, text and watermarks.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:/Users/hacker/.codex/generated_images/01a1ca87-71bb-74e1-a32f-332db91722ba/recovered-wedding-09.png",
+      "generatedAt": "2026-11-11T13:05:39.498Z",
+      "validation": {
+        "id": "wedding-09",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.3835,
+        "bytes": 373984
+      }
+    },
+    {
+      "id": "wedding-10",
+      "name": "Champagne Together",
+      "category": "Wedding",
+      "file": "public/studio/avatars-photo/wedding-10.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Champagne Together. Subject: an adult Indian bride in champagne embroidered lehenga and groom in matching beige sherwani, standing close with hands in namaste. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Wedding outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-5daddf9a-f767-4cdd-942e-3e6b588e024a.png",
+      "generatedAt": "2026-11-11T13:15:26.619Z",
+      "validation": {
+        "id": "wedding-10",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4038,
+        "bytes": 306936
+      }
+    },
+    {
+      "id": "baraat-01",
+      "name": "Dhol Da Jashn",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-01.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Dhol Da Jashn. Subject: a smiling adult Indian male dhol drummer wearing a red and ivory embroidered sherwani and turban, holding his double-sided dhol drum across his waist with drumsticks. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-d4eeed2e-3020-4fae-90e3-7d897a71bf98.png",
+      "generatedAt": "2026-11-11T13:15:27.133Z",
+      "validation": {
+        "id": "baraat-01",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6348,
+        "bytes": 252182
+      }
+    },
+    {
+      "id": "baraat-02",
+      "name": "The Bhangra Duo",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-02.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Bhangra Duo. Subject: two adult Indian friends, woman in saffron lehenga and man in emerald kurta and turban, joyous bhangra dance pose. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-2712a8c8-9334-4d0b-95ee-c33bb5907563.png",
+      "generatedAt": "2026-11-11T13:15:27.675Z",
+      "validation": {
+        "id": "baraat-02",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4708,
+        "bytes": 350490
+      }
+    },
+    {
+      "id": "baraat-03",
+      "name": "Genda Phool Dholi",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-03.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Genda Phool Dholi. Subject: an adult Indian dhol player in ochre sherwani with marigold accessories, holding and playing a polished wooden dhol. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-8018740b-7fd3-45d4-ad3b-9ac2f372fe68.png",
+      "generatedAt": "2026-11-11T13:17:46.905Z",
+      "validation": {
+        "id": "baraat-03",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5674,
+        "bytes": 278778
+      }
+    },
+    {
+      "id": "baraat-04",
+      "name": "Baraati Besties",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-04.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Baraati Besties. Subject: two adult Indian friends, woman in fuchsia sari and man in navy sherwani, joyful wedding dance pose. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-6952dd93-c2ce-44a0-985c-8a95389c0b37.png",
+      "generatedAt": "2026-11-11T13:17:48.267Z",
+      "validation": {
+        "id": "baraat-04",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5112,
+        "bytes": 304428
+      }
+    },
+    {
+      "id": "baraat-05",
+      "name": "Punjab Da Swag",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-05.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Punjab Da Swag. Subject: a Punjabi adult man in royal blue kurta and magenta turban, proudly playing a dhol drum. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-d3f6473b-7f2f-404f-ae01-0f465750a312.png",
+      "generatedAt": "2026-11-11T13:17:49.231Z",
+      "validation": {
+        "id": "baraat-05",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5857,
+        "bytes": 214590
+      }
+    },
+    {
+      "id": "baraat-06",
+      "name": "The Dancing Groom",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-06.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Dancing Groom. Subject: one adult Indian groom in ivory and gold sherwani, turban and mojari shoes, joyous raised-arm dance pose. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-329ad604-a176-4610-b0e2-db90557d63ed.png",
+      "generatedAt": "2026-11-11T13:19:51.831Z",
+      "validation": {
+        "id": "baraat-06",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5924,
+        "bytes": 271546
+      }
+    },
+    {
+      "id": "baraat-07",
+      "name": "Rhythm & Rang",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-07.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Rhythm & Rang. Subject: an adult Indian couple in teal lehenga and bronze embroidered sherwani, mid-dance smiling at one another. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-22047c3e-c2ad-43a6-9c49-1d1b798c48d4.png",
+      "generatedAt": "2026-11-11T13:19:53.655Z",
+      "validation": {
+        "id": "baraat-07",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4511,
+        "bytes": 362774
+      }
+    },
+    {
+      "id": "baraat-08",
+      "name": "Dholki Sisters",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-08.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Dholki Sisters. Subject: two adult Indian women in yellow and pink lehengas, one holding a small dhol and one dancing. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-3dc4f145-80af-4350-8049-458f7f2539bc.png",
+      "generatedAt": "2026-11-11T13:19:55.410Z",
+      "validation": {
+        "id": "baraat-08",
+        "width": 930,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4018,
+        "bytes": 441696
+      }
+    },
+    {
+      "id": "baraat-09",
+      "name": "The Welcome Band",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-09.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Welcome Band. Subject: two adult Indian male musicians, one in emerald sherwani playing dhol and one in saffron sherwani holding drumsticks. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-f5eb312d-e75f-439b-82ce-bdd728d9af1e.png",
+      "generatedAt": "2026-11-11T13:21:58.064Z",
+      "validation": {
+        "id": "baraat-09",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4261,
+        "bytes": 371374
+      }
+    },
+    {
+      "id": "baraat-10",
+      "name": "Baraat Afterglow",
+      "category": "Dhol & Baraat",
+      "file": "public/studio/avatars-photo/baraat-10.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Baraat Afterglow. Subject: an adult Indian dhol drummer in burgundy sherwani and cream turban with a wooden dhol drum. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Dhol & Baraat outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-f3000f79-cebd-4667-a0d1-7e493290d292.png",
+      "generatedAt": "2026-11-11T13:21:58.608Z",
+      "validation": {
+        "id": "baraat-10",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6391,
+        "bytes": 213030
+      }
+    },
+    {
+      "id": "birthday-01",
+      "name": "Cake Day Kid",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-01.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Cake Day Kid. Subject: a cheerful Indian boy about seven years old in smart casual birthday clothing, holding a small birthday cake with one candle. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-cfc96c47-08df-473c-9e0b-3ac67f8732f0.png",
+      "generatedAt": "2026-11-11T13:21:58.932Z",
+      "validation": {
+        "id": "birthday-01",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.7533,
+        "bytes": 94920
+      }
+    },
+    {
+      "id": "birthday-02",
+      "name": "The Balloon Explorer",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-02.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Balloon Explorer. Subject: a cheerful Indian girl about eight years old in a sky-blue party dress, holding three pastel balloons. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-c4a15c87-439b-4e3d-b0bc-7dd49a6a5b2e.png",
+      "generatedAt": "2026-11-11T13:23:28.460Z",
+      "validation": {
+        "id": "birthday-02",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6044,
+        "bytes": 190662
+      }
+    },
+    {
+      "id": "birthday-03",
+      "name": "Confetti Birthday Girl",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-03.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Confetti Birthday Girl. Subject: a smiling Indian girl about nine in a coral party dress, holding a wrapped birthday present. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-92cba95d-dd9e-48ea-b569-dbd2a2d40e0d.png",
+      "generatedAt": "2026-11-11T13:23:29.115Z",
+      "validation": {
+        "id": "birthday-03",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6245,
+        "bytes": 199234
+      }
+    },
+    {
+      "id": "birthday-04",
+      "name": "Little Crown Big Day",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-04.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Little Crown Big Day. Subject: a young Indian girl about five in a pink party dress and small golden paper crown, holding a birthday cupcake. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-f2d32e3a-2729-48c1-81d8-5e41dd528cb1.png",
+      "generatedAt": "2026-11-11T13:23:29.867Z",
+      "validation": {
+        "id": "birthday-04",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5032,
+        "bytes": 209408
+      }
+    },
+    {
+      "id": "birthday-05",
+      "name": "Birthday Best Friends",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-05.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Birthday Best Friends. Subject: two Indian children about seven years old, boy in casual birthday outfit holding a small cake and girl in lavender dress holding balloons. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-0e65776b-7958-435d-8a3b-3e4e428e46dc.png",
+      "generatedAt": "2026-11-11T13:25:03.917Z",
+      "validation": {
+        "id": "birthday-05",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4361,
+        "bytes": 258482
+      }
+    },
+    {
+      "id": "birthday-06",
+      "name": "Sweet Sixteen",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-06.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Sweet Sixteen. Subject: a smiling Indian teenage girl age sixteen in a modest knee-length pastel mint birthday party dress, holding a wrapped gift. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-d474794f-c63f-4843-ac04-38832d93f292.png",
+      "generatedAt": "2026-11-11T13:25:04.756Z",
+      "validation": {
+        "id": "birthday-06",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.7151,
+        "bytes": 133204
+      }
+    },
+    {
+      "id": "birthday-07",
+      "name": "The Birthday Baker",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-07.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Birthday Baker. Subject: a happy adult Indian man in a coral shirt, beige trousers and a birthday baker apron, holding a decorated small cake. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-b91fdd27-edf8-4ab9-a43e-d42a44830340.png",
+      "generatedAt": "2026-11-11T13:25:05.483Z",
+      "validation": {
+        "id": "birthday-07",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.7355,
+        "bytes": 117506
+      }
+    },
+    {
+      "id": "birthday-08",
+      "name": "Party Hat Hero",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-08.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Party Hat Hero. Subject: a smiling adult Indian woman in a violet party dress and small paper party hat, waving, holding balloons. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-ef2da90e-0cb4-4d83-b8e6-694a4a330a38.png",
+      "generatedAt": "2026-11-11T13:26:35.777Z",
+      "validation": {
+        "id": "birthday-08",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5921,
+        "bytes": 193492
+      }
+    },
+    {
+      "id": "birthday-09",
+      "name": "Birthday Together",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-09.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Birthday Together. Subject: an adult Indian couple celebrating a birthday, woman in emerald dress holding a cake and man in cream casual shirt smiling and waving. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-d81f547d-09a5-474d-90de-1e04b4bb0bed.png",
+      "generatedAt": "2026-11-11T13:26:36.494Z",
+      "validation": {
+        "id": "birthday-09",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4273,
+        "bytes": 260468
+      }
+    },
+    {
+      "id": "birthday-10",
+      "name": "Golden Birthday Queen",
+      "category": "Birthday",
+      "file": "public/studio/avatars-photo/birthday-10.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Golden Birthday Queen. Subject: an adult Indian woman in an elegant golden birthday dress and small celebration crown, holding a small cake. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Birthday outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-5e118ce2-6a55-4a1d-a472-f05b340e78b3.png",
+      "generatedAt": "2026-11-11T13:26:37.270Z",
+      "validation": {
+        "id": "birthday-10",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5397,
+        "bytes": 214388
+      }
+    },
+    {
+      "id": "party-01",
+      "name": "Midnight DJ",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-01.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Midnight DJ. Subject: an adult Indian male DJ in fashionable black casual clothing and silver headphones around neck, holding one headphone earpiece with a friendly smile, no DJ desk. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-56292355-b4de-4222-bdfa-dafa864fc669.png",
+      "generatedAt": "2026-11-11T13:28:13.123Z",
+      "validation": {
+        "id": "party-01",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6972,
+        "bytes": 102106
+      }
+    },
+    {
+      "id": "party-02",
+      "name": "Disco Dancing Duo",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-02.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Disco Dancing Duo. Subject: an adult Indian woman in a teal evening gown and man in black blazer, playful disco dance pose. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-75568d8d-f67c-4760-baa2-fd3c5929ea30.png",
+      "generatedAt": "2026-11-11T13:28:13.943Z",
+      "validation": {
+        "id": "party-02",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4653,
+        "bytes": 228590
+      }
+    },
+    {
+      "id": "party-03",
+      "name": "The Rooftop Host",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-03.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Rooftop Host. Subject: an adult Indian male rooftop party host in plum blazer and dark trousers, holding a small gift. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-c5b55a96-4b30-4b47-ba47-e03c2b173a06.png",
+      "generatedAt": "2026-11-11T13:28:14.405Z",
+      "validation": {
+        "id": "party-03",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.7408,
+        "bytes": 80924
+      }
+    },
+    {
+      "id": "party-04",
+      "name": "All That Glitters",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-04.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: All That Glitters. Subject: an adult Indian woman in a tasteful shimmering silver jumpsuit, graceful dance pose. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-00600391-aeda-45b1-8f63-ed04438d402f.png",
+      "generatedAt": "2026-11-11T13:29:55.563Z",
+      "validation": {
+        "id": "party-04",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.7001,
+        "bytes": 188892
+      }
+    },
+    {
+      "id": "party-05",
+      "name": "The Neon Besties",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-05.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Neon Besties. Subject: two adult Indian friends, woman in electric blue gown and man in purple blazer, lively party dance pose. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-d6f2d81f-a45a-4ed2-8d82-14525bd685b1.png",
+      "generatedAt": "2026-11-11T13:29:56.423Z",
+      "validation": {
+        "id": "party-05",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5076,
+        "bytes": 214292
+      }
+    },
+    {
+      "id": "party-06",
+      "name": "Camera Ready",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-06.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Camera Ready. Subject: an adult Indian woman in a rose gold jumpsuit, holding a compact camera and smiling. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-98433f2d-6377-4909-8d1e-38623d5fc453.png",
+      "generatedAt": "2026-11-11T13:29:57.089Z",
+      "validation": {
+        "id": "party-06",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6869,
+        "bytes": 173680
+      }
+    },
+    {
+      "id": "party-07",
+      "name": "House Party Hero",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-07.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: House Party Hero. Subject: an adult Indian male host in sage blazer and white shirt, relaxed welcoming wave. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-597461f1-3f33-481f-bf9e-50cbb4e5ff7b.png",
+      "generatedAt": "2026-11-11T13:32:14.639Z",
+      "validation": {
+        "id": "party-07",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.7004,
+        "bytes": 111816
+      }
+    },
+    {
+      "id": "party-08",
+      "name": "The Champagne Dancers",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-08.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Champagne Dancers. Subject: an adult Indian woman in champagne gown and man in midnight blue blazer, elegant dance pose. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-6effad20-3150-4989-8305-29baaa1d1637.png",
+      "generatedAt": "2026-11-11T13:32:15.444Z",
+      "validation": {
+        "id": "party-08",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4503,
+        "bytes": 259904
+      }
+    },
+    {
+      "id": "party-09",
+      "name": "Music & Mischief",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-09.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Music & Mischief. Subject: an adult Indian female DJ in stylish dark streetwear and over-ear headphones, lively music gesture, no desk. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-39f22a78-eef5-4f1d-a22a-f4a13a8d8bb0.png",
+      "generatedAt": "2026-11-11T13:32:16.172Z",
+      "validation": {
+        "id": "party-09",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6897,
+        "bytes": 150894
+      }
+    },
+    {
+      "id": "party-10",
+      "name": "The Afterparty Crew",
+      "category": "Party",
+      "file": "public/studio/avatars-photo/party-10.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Afterparty Crew. Subject: three adult Indian party friends, two women in emerald and burgundy gowns and a man in beige blazer, cheerful relaxed dance poses. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Party outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-f07bd8b0-1200-4d6b-be3b-c5d2e32638c6.png",
+      "generatedAt": "2026-11-11T13:34:35.495Z",
+      "validation": {
+        "id": "party-10",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4147,
+        "bytes": 242244
+      }
+    },
+    {
+      "id": "baby-shower-01",
+      "name": "A Little Love",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-01.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: A Little Love. Subject: an adult Indian expectant mother in blush maternity gown, both hands gently on her baby bump. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-45f930c8-df23-482d-af2e-ca28c927a548.png",
+      "generatedAt": "2026-11-11T13:34:36.229Z",
+      "validation": {
+        "id": "baby-shower-01",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6133,
+        "bytes": 140068
+      }
+    },
+    {
+      "id": "baby-shower-02",
+      "name": "Parents in Bloom",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-02.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Parents in Bloom. Subject: an adult Indian expectant mother in pastel peach lehenga with her adult partner in ivory kurta, warm affectionate pose. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-bc1127e2-bfa5-4e62-8c2e-a5da951a0945.png",
+      "generatedAt": "2026-11-11T13:34:37.240Z",
+      "validation": {
+        "id": "baby-shower-02",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.486,
+        "bytes": 275524
+      }
+    },
+    {
+      "id": "baby-shower-03",
+      "name": "The Sunshine Mama",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-03.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Sunshine Mama. Subject: an adult Indian expectant mother in sunflower-yellow modest maternity gown, warm smile and hands around baby bump. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-f77a7737-36bc-4ae9-8a51-66197d1b1ce3.png",
+      "generatedAt": "2026-11-11T13:36:19.819Z",
+      "validation": {
+        "id": "baby-shower-03",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5519,
+        "bytes": 184974
+      }
+    },
+    {
+      "id": "baby-shower-04",
+      "name": "Hello Little Wonder",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-04.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Hello Little Wonder. Subject: an adult Indian expectant couple, woman in sage maternity lehenga and man in peach kurta, smiling warmly. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-3a6246b6-ea13-40fa-a752-919feee3a3c4.png",
+      "generatedAt": "2026-11-11T13:36:21.554Z",
+      "validation": {
+        "id": "baby-shower-04",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4656,
+        "bytes": 260614
+      }
+    },
+    {
+      "id": "baby-shower-05",
+      "name": "A Gift for Baby",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-05.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: A Gift for Baby. Subject: an adult Indian expectant mother in pale blue maternity gown, holding a small wrapped baby gift. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-ce2b6571-1a3a-4260-839b-0251437607ea.png",
+      "generatedAt": "2026-11-11T13:36:22.764Z",
+      "validation": {
+        "id": "baby-shower-05",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5535,
+        "bytes": 175718
+      }
+    },
+    {
+      "id": "baby-shower-06",
+      "name": "The Proud Grandparents",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-06.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The Proud Grandparents. Subject: an elderly Indian grandmother in lavender sari and grandfather in cream kurta, warm blessing pose, grandmother holding a swaddled infant safely. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-e0d7256b-04f7-42d1-8bc3-584badf73d00.png",
+      "generatedAt": "2026-11-11T13:38:19.326Z",
+      "validation": {
+        "id": "baby-shower-06",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.3602,
+        "bytes": 305302
+      }
+    },
+    {
+      "id": "baby-shower-07",
+      "name": "The New Chapter",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-07.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: The New Chapter. Subject: an adult Indian expectant couple, woman in lavender maternity lehenga and partner in beige kurta, gentle welcoming pose. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-ededa502-7425-454b-98e2-36c824ef33d2.png",
+      "generatedAt": "2026-11-11T13:38:20.288Z",
+      "validation": {
+        "id": "baby-shower-07",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4576,
+        "bytes": 262810
+      }
+    },
+    {
+      "id": "baby-shower-08",
+      "name": "Our Tiny Adventure",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-08.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Our Tiny Adventure. Subject: an adult Indian expectant mother in soft coral maternity gown, holding a tiny pair of baby shoes. Style: luxury cinematic 3D human portrait with realistic materials and natural expressive faces; subtle stylisation, never flat cartoons. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-8003739b-a8c6-460c-a460-1482d809cbd3.png",
+      "generatedAt": "2026-11-11T13:38:20.954Z",
+      "validation": {
+        "id": "baby-shower-08",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.544,
+        "bytes": 165658
+      }
+    },
+    {
+      "id": "baby-shower-09",
+      "name": "Balloons for Baby",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-09.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Balloons for Baby. Subject: an adult Indian expectant mother in ivory maternity gown, holding three pastel balloons. Style: richly painted realistic portrait, intricate fine brush detail and photographic lighting, natural human anatomy. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-6da7a305-c7b4-4533-94a4-4b0e0f76fdd8.png",
+      "generatedAt": "2026-11-11T13:40:28.955Z",
+      "validation": {
+        "id": "baby-shower-09",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6037,
+        "bytes": 186280
+      }
+    },
+    {
+      "id": "baby-shower-10",
+      "name": "Baby in Our Arms",
+      "category": "Baby shower",
+      "file": "public/studio/avatars-photo/baby-shower-10.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for an invitation reel. Concept: Baby in Our Arms. Subject: adult Indian new parents, mother in a soft pink traditional outfit safely cradling a fully swaddled newborn with father in cream kurta standing close. Style: natural editorial photographic portrait, lifelike human proportions and real skin texture. Individually designed Baby shower outfit details, realistic fabric weave, fine jewellery and natural hair texture. Soft warm editorial lighting on the subjects only. Composition: camera pulled back, every head, every hand, both legs and all shoes fully visible, generous 8 percent transparent margin all around and below feet. One coherent isolated character group centered on a portrait canvas. Background: genuinely transparent alpha, including between people and limbs. No scenery, floor, pedestal, ground shadow, studio backdrop or vignette. No text, logos, letters or watermark. Avoid flat vector illustration, icons, sticker outlines, cropped feet, extra limbs and plastic-looking fabric.",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-79e5af04-1f13-442d-b89d-e2a304d2be58.png",
+      "generatedAt": "2026-11-11T13:40:29.864Z",
+      "validation": {
+        "id": "baby-shower-10",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4712,
+        "bytes": 235638
+      }
+    },
+    {
+      "id": "naming-ceremony-01",
+      "name": "Our Little Name",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-01.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "baby",
+        "lehenga",
+        "adult"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-01.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-a83af0b2-057a-45fc-a192-4fd33816a6a9.png",
+      "generatedAt": "2026-11-11T13:40:31.130Z",
+      "validation": {
+        "id": "naming-ceremony-01",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5584,
+        "bytes": 238452
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: Our Little Name. Subject: one adult Indian mother in a blush lehenga safely cradling a fully swaddled newborn. Style: natural editorial photographic portrait. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-02",
+      "name": "The Proud Parents",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-02.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "baby",
+        "lehenga",
+        "adult",
+        "sherwani"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-02.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-8ac31d28-a421-4627-a79f-8e61cbb6b58d.png",
+      "generatedAt": "2026-11-11T13:45:18.586Z",
+      "validation": {
+        "id": "naming-ceremony-02",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4085,
+        "bytes": 309624
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: The Proud Parents. Subject: two adult Indian parents, mother in pale yellow lehenga holding a fully swaddled newborn safely and father in ivory sherwani. Style: luxury cinematic 3D human portrait with realistic materials and lifelike proportions. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-03",
+      "name": "A Blessing in Arms",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-03.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "baby",
+        "lehenga",
+        "adult"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-03.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-da831cad-5cb0-4a44-b0e5-0402560d7607.png",
+      "generatedAt": "2026-11-11T13:45:19.627Z",
+      "validation": {
+        "id": "naming-ceremony-03",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5398,
+        "bytes": 251066
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: A Blessing in Arms. Subject: one adult Indian mother in soft mint lehenga, gently cradling a fully swaddled infant against her chest. Style: richly painted realism with photographic lighting. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-04",
+      "name": "Little One Big Love",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-04.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "baby",
+        "lehenga",
+        "adult",
+        "sherwani"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-04.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-da082a87-b773-422f-89e1-7feb1851c3d7.png",
+      "generatedAt": "2026-11-11T13:45:20.581Z",
+      "validation": {
+        "id": "naming-ceremony-04",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4475,
+        "bytes": 296914
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: Little One Big Love. Subject: two adult Indian parents, mother in sky blue lehenga and father in champagne kurta, holding a fully swaddled newborn securely together. Style: natural editorial photographic portrait. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-05",
+      "name": "Grandparents Welcome",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-05.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "baby",
+        "sari",
+        "elder",
+        "sherwani",
+        "namaste"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-05.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-694b6742-d6ad-4e55-9dcd-aaf44bc2ea1c.png",
+      "generatedAt": "2026-11-11T13:47:36.942Z",
+      "validation": {
+        "id": "naming-ceremony-05",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5136,
+        "bytes": 241826
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: Grandparents Welcome. Subject: an elderly Indian grandmother in lavender sari holding a fully swaddled newborn safely with grandfather in cream sherwani standing beside her, natural gray hair and wrinkles. Style: luxury cinematic 3D human portrait with realistic materials and lifelike proportions. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-06",
+      "name": "The Cradle Celebration",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-06.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "baby",
+        "sari",
+        "adult"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-06.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-de02eb46-bb3f-4fb8-be95-7559d7323cd7.png",
+      "generatedAt": "2026-11-11T13:47:37.987Z",
+      "validation": {
+        "id": "naming-ceremony-06",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6287,
+        "bytes": 203780
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: The Cradle Celebration. Subject: one adult Indian mother in coral silk sari, holding a fully swaddled baby safely in both arms. Style: richly painted realism with photographic lighting. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-07",
+      "name": "A Bouquet for Baby",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-07.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "bouquet",
+        "lehenga",
+        "adult"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-07.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-cf8e2378-d0da-4959-bf3e-5a07df499b20.png",
+      "generatedAt": "2026-11-11T13:47:38.887Z",
+      "validation": {
+        "id": "naming-ceremony-07",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.5469,
+        "bytes": 252812
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: A Bouquet for Baby. Subject: one adult Indian woman in pastel peach lehenga holding a small white flower bouquet for a naming ceremony. Style: natural editorial photographic portrait. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-08",
+      "name": "Tiny Gift Day",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-08.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "gift",
+        "sari",
+        "adult"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-08.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-f670ffdc-39c0-4781-bbfb-8b52e345bd9c.png",
+      "generatedAt": "2026-11-11T13:49:37.426Z",
+      "validation": {
+        "id": "naming-ceremony-08",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6098,
+        "bytes": 210428
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: Tiny Gift Day. Subject: one adult Indian woman in a sage-green sari holding a wrapped baby gift. Style: luxury cinematic 3D human portrait with realistic materials and lifelike proportions. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-09",
+      "name": "Our New Family",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-09.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "baby",
+        "lehenga",
+        "adult",
+        "sherwani"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-09.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-cefcf624-7d24-4934-835f-712862152bf3.png",
+      "generatedAt": "2026-11-11T13:49:38.294Z",
+      "validation": {
+        "id": "naming-ceremony-09",
+        "width": 830,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.4086,
+        "bytes": 300692
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: Our New Family. Subject: two adult Indian parents, mother in ivory lehenga with pale pink dupatta holding a fully swaddled newborn safely, father in dusty-rose sherwani standing close. Style: richly painted realism with photographic lighting. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    },
+    {
+      "id": "naming-ceremony-10",
+      "name": "The Balloon Blessing",
+      "category": "Naming ceremony",
+      "src": "/studio/avatars-photo/naming-ceremony-10.webp",
+      "pose": "float",
+      "tags": [
+        "Naming ceremony",
+        "balloons",
+        "sari",
+        "adult"
+      ],
+      "file": "public/studio/avatars-photo/naming-ceremony-10.webp",
+      "status": "generated",
+      "mode": "built-in image_gen",
+      "source": "C:\\Users\\hacker\\.codex\\generated_images\\01a1cabd-0515-7d92-a596-f013f7045df7\\exec-501964a2-8dd8-4bc8-bfb4-5b3324715dc5.png",
+      "generatedAt": "2026-11-11T13:49:39.149Z",
+      "validation": {
+        "id": "naming-ceremony-10",
+        "width": 853,
+        "height": 1280,
+        "hasAlpha": true,
+        "transparentFraction": 0.6756,
+        "bytes": 157272
+      },
+      "prompt": "Use case: stylized-concept. Asset type: premium transparent character cutout for a baby naming ceremony invitation reel. Concept: The Balloon Blessing. Subject: one adult Indian woman in pale blue sari holding pastel balloons for a baby naming ceremony. Style: natural editorial photographic portrait. Realistic skin, natural expressions, detailed embroidery and jewellery. Warm soft studio light on the people only. Every adult full-body head-to-toe including both shoes, infant fully clothed and securely swaddled with head naturally supported where present. Camera pulled back with generous8percent transparent margin. Background genuinely transparent alpha, no environment, floor, pedestal, vignette or ground shadow. No text, names, logos or watermark. No flat vector art or sticker outlines; anatomically coherent hands and faces."
+    }
+  ],
+  "validationSummary": {
+    "assigned": 60,
+    "generated": 60,
+    "uniqueFiles": 60,
+    "alphaValidated": 60,
+    "allOriginalSourcesPreserved": true,
+    "optimizedTotalBytes": 14812390
+  },
+  "assignmentNote": "Completed: Wedding, Dhol & Baraat, Birthday, Party, Baby shower, Naming ceremony (10 each). Engagement, Anniversary and Retirement provenance is in batch-c."
+}

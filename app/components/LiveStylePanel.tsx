@@ -1,0 +1,22 @@
+'use client';
+import {useState} from 'react';
+import {ArrowRight,Check,Search,Sparkles} from 'lucide-react';
+import {templates,getTemplate,type Invite} from '@/lib/templates';
+import {studioBackgrounds} from '@/lib/studio-backgrounds';
+import {referenceEditSource} from '@/lib/reference-edit-contract';
+import {settings} from '@/lib/editor-settings';
+import {bakedScene,filmLayouts,liveBackground,liveTemplate,withLiveBackground} from '@/lib/live-style';
+
+export function LiveStylePanel({data,onChange,mode,busy=false,onRecreate}:{data:Invite;onChange:(d:Invite)=>void;mode:'template'|'background';busy?:boolean;onRecreate?:()=>void}){
+ const [category,setCategory]=useState('All'),[search,setSearch]=useState(''),[limit,setLimit]=useState(12),baked=bakedScene(data),s=settings(data),source=referenceEditSource(data);
+ const items=mode==='template'?templates.filter(t=>t.studio&&!t.archived).map(t=>({id:t.id,name:t.name,category:t.category,src:t.poster!})):studioBackgrounds;
+ const found=items.filter(a=>(category==='All'||a.category===category)&&(a.name+' '+a.category).toLowerCase().includes(search.toLowerCase())),active=mode==='template'?(s.videoTemplateId??data.templateId):liveBackground(data);
+ function choose(id:string){onChange(mode==='template'?liveTemplate(data,getTemplate(id)):withLiveBackground(data,id));}
+ return <section className="live-style-panel"><div className="live-style-badge"><span/> LIVE PREVIEW <b>0 AI credits</b></div><p className="portal-copy">{baked?'Keep your moving scene and sound. Change its frame, text styling and surrounding background instantly. The location inside the video stays as recorded.':'Switch the whole visual world instantly. Your personal character, event details and saved creation stay with you.'}</p>
+ {baked&&<><div className="live-layouts" role="group" aria-label="Moving reel frame">{filmLayouts.map(layout=><button key={layout.id} aria-pressed={s.videoLayout===layout.id} disabled={busy} onClick={()=>onChange({...data,editor:{...s,videoLayout:layout.id}})}><span className={'live-layout-sample layout-'+layout.id} aria-hidden="true"><i/></span><strong>{layout.name}</strong><small>{layout.note}</small></button>)}</div><p className="live-style-tip">Selecting a background opens the Royal arch frame if your film is currently full-screen.</p></>}
+ <label className="field">Collection<select aria-label="Live design collection" value={category} disabled={busy} onChange={e=>{setCategory(e.target.value);setLimit(12)}}><option value="All">All occasions</option>{[...new Set(items.map(a=>a.category))].map(c=><option key={c}>{c}</option>)}</select></label><label className="studio-asset-search"><Search size={15}/><input aria-label={'Search live '+mode+'s'} value={search} placeholder={mode==='template'?'Find a reel style…':'Find a setting…'} onChange={e=>{setSearch(e.target.value);setLimit(12)}}/></label>
+ <div className="live-style-grid">{found.slice(0,limit).map(item=><button key={item.id} aria-pressed={active===item.id} aria-label={'Apply live '+item.name} disabled={busy} onClick={()=>choose(item.id)}><span><img src={item.src} alt="" loading="lazy"/>{active===item.id&&<i><Check size={13}/></i>}</span><strong>{item.name}</strong><small>{item.category}</small></button>)}</div>{!found.length&&<p className="portal-copy">No matching designs. Try another collection or search.</p>}{found.length>limit&&<button className="button button-outline full-width" onClick={()=>setLimit(n=>n+12)}>Show more designs</button>}
+ {baked&&<button className="text-link" disabled={busy} onClick={()=>onChange({...data,backgroundId:undefined,accent:getTemplate(data.templateId).accent,editor:{...s,videoLayout:'full',videoTemplateId:undefined}})}>Restore original full-screen film</button>}
+ {baked&&onRecreate&&<div className="live-regenerate"><Sparkles size={18}/><h3>{source?'Make another edit of this film?':'Change the location inside the film?'}</h3><p>{source?`Review another full ${Number(source.seconds.toFixed(1))}s edit with your saved people. The original scenery, scene sequence and camera remain the basis of the edit. Review the total before creating; AI edits can vary.`:'Create a new 30-second AI scene in this setting. Review your saved photos, voice and credit quote before starting. The original video remains saved; new motion can differ.'}</p><button className="button button-outline full-width" disabled={busy} onClick={onRecreate}>{source?'Review film edit':'Review new AI scene'} <ArrowRight size={15}/></button></div>}
+ </section>;
+}

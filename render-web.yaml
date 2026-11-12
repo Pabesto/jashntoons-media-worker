@@ -1,0 +1,38 @@
+# Application hosting. The existing render.yaml is the separate media worker.
+# Use a private repository; never include .dev.vars or deployment credentials.
+services:
+  - type: web
+    name: jashntoons-production
+    runtime: node
+    region: singapore
+    plan: 1c-2g
+    numInstances: 1
+    autoDeployTrigger: off
+    buildCommand: npm ci --include=dev && npm run build:render
+    startCommand: npm run start:render
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.21.0
+      - key: NODE_ENV
+        value: production
+      - key: JASHNTOONS_RUNTIME
+        value: render
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+      - key: STORAGE_ORIGIN
+        value: https://jashntoons.jocoseavocet1.chatgpt.site
+      - key: STORAGE_BRIDGE_SECRET
+        sync: false
+      - key: PUBLIC_SITE_ORIGIN
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: RUNWAY_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

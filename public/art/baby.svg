@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="760" viewBox="0 0 600 760" fill="none">
+<defs>
+ <linearGradient id="moon" x1="188" y1="185" x2="430" y2="530" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF2B6"/><stop offset=".5" stop-color="#F3D387"/><stop offset="1" stop-color="#DCA967"/></linearGradient>
+ <linearGradient id="cloud" x1="204" y1="481" x2="326" y2="642" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF9F0"/><stop offset="1" stop-color="#D8DDED"/></linearGradient>
+ <radialGradient id="fur" cx=".34" cy=".28" r=".8"><stop stop-color="#EFC79F"/><stop offset=".65" stop-color="#C99A78"/><stop offset="1" stop-color="#B37E60"/></radialGradient>
+ <radialGradient id="tummy" cx=".35" cy=".25" r=".85"><stop stop-color="#F8DEC2"/><stop offset="1" stop-color="#EAC4A0"/></radialGradient>
+ <g id="star"><path d="M0-18L5-6 18-5 8 4 11 17 0 10-11 17-8 4-18-5-5-6z" fill="currentColor" stroke="#A77D54" stroke-width="1.5" stroke-linejoin="round"/></g>
+ <g id="spark"><path d="M0-12Q2-2 12 0Q2 2 0 12Q-2 2-12 0Q-2-2 0-12" fill="currentColor"/></g>
+</defs>
+<!-- A nursery mobile of little hand-sewn stars. -->
+<g stroke="#B9A4C1" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round"><path d="M146 124v113M293 66v71M458 123v73M96 316v76M496 340v98"/></g>
+<g color="#F7DB96"><use href="#star" transform="translate(146 255) rotate(-15) scale(1.2)"/><use href="#star" transform="translate(293 151) scale(.9)"/><use href="#star" transform="translate(457 212) rotate(12)"/><use href="#star" transform="translate(96 408) scale(.65)"/><use href="#star" transform="translate(496 451) scale(.65) rotate(-12)"/></g>
+<path d="M431 126C286 109 177 217 184 352C193 517 383 594 503 478C369 490 280 409 280 302C280 223 340 153 431 126Z" fill="url(#moon)" stroke="#A77D54" stroke-width="3" stroke-linejoin="round"/>
+<path d="M356 142C244 172 190 285 219 389" stroke="#FFF4C7" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+<path d="M231 439q63 91 181 76" stroke="#C99056" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+<circle cx="222" cy="349" r="12" fill="#E4B87A" opacity=".4"/>
+<circle cx="257" cy="438" r="17" fill="#D4A16B" opacity=".3"/>
+<circle cx="222" cy="323" r="5" fill="#EDD297"/>
+<!-- Sleepy heirloom teddy: asymmetrical, soft, and gently outlined. -->
+<g stroke="#6B4A4E" stroke-width="2.6" stroke-linejoin="round">
+ <ellipse cx="353" cy="450" rx="63" ry="80" transform="rotate(-10 353 450)" fill="url(#fur)"/>
+ <ellipse cx="354" cy="454" rx="39" ry="51" transform="rotate(-10 354 454)" fill="url(#tummy)" stroke="#B58D75" stroke-width="1.5"/>
+ <path d="M307 408c-31 0-48 53-27 63 14 7 27-12 38-29" fill="url(#fur)"/>
+ <path d="M397 404c28-2 48 38 29 53-17 14-33-7-37-26" fill="url(#fur)"/>
+ <ellipse cx="309" cy="502" rx="28" ry="37" transform="rotate(-25 309 502)" fill="url(#fur)"/>
+ <ellipse cx="401" cy="494" rx="29" ry="37" transform="rotate(25 401 494)" fill="url(#fur)"/>
+ <ellipse cx="308" cy="507" rx="17" ry="22" transform="rotate(-25 308 507)" fill="url(#tummy)" stroke="#B58D75" stroke-width="1.3"/>
+ <ellipse cx="401" cy="499" rx="17" ry="22" transform="rotate(25 401 499)" fill="url(#tummy)" stroke="#B58D75" stroke-width="1.3"/>
+ <circle cx="296" cy="315" r="27" fill="url(#fur)"/>
+ <circle cx="403" cy="302" r="27" fill="url(#fur)"/>
+ <circle cx="296" cy="315" r="16" fill="#DDAE98" stroke="#B58D75" stroke-width="1.3"/>
+ <circle cx="403" cy="302" r="16" fill="#DDAE98" stroke="#B58D75" stroke-width="1.3"/>
+ <path d="M278 355c-3-42 25-74 70-77 48-4 78 25 80 67 2 41-28 72-71 75-42 2-75-23-79-65z" fill="url(#fur)"/>
+ <ellipse cx="353" cy="376" rx="31" ry="25" fill="url(#tummy)" stroke="#C29C7E" stroke-width="1.3"/>
+ <path d="M304 350q11 11 22-3M373 344q12 11 22-3" stroke-width="3" stroke-linecap="round"/>
+ <path d="M306 353l-3 4M321 353l3 4M376 347l-2 4M391 347l3 4" stroke-width="1.5" stroke-linecap="round"/>
+ <path d="M346 369q8-5 16-1-1 10-7 11-7-2-9-10z" fill="#6B4A4E" stroke="none"/>
+ <path d="M355 379v5q-7 8-13 0M355 384q8 6 13-3" stroke-width="2" stroke-linecap="round"/>
+ <ellipse cx="305" cy="374" rx="12" ry="7" transform="rotate(-8 305 374)" fill="#DF9296" stroke="none" opacity=".55"/>
+ <ellipse cx="402" cy="363" rx="12" ry="7" transform="rotate(-8 402 363)" fill="#DF9296" stroke="none" opacity=".55"/>
+ <path d="M330 419l22 9 23-13 8 24-28-3-20 12z" fill="#BCA6D5" stroke="#8E75AC" stroke-width="1.5"/>
+ <circle cx="354" cy="431" r="7" fill="#A98BC6" stroke="#8E75AC" stroke-width="1.5"/>
+</g>
+<path d="M354 475l8-8q8-5 11 3 4 10-16 21-20-9-17-18 4-10 14 2" fill="#D97F9E" stroke="#B66F8A" stroke-width="1.3"/>
+<!-- A pillowy cloud nest with stitched edges. -->
+<path d="M124 592c-41-6-47-49-17-65 15-8 31-5 40 4 3-43 37-68 72-56 16 5 27 16 31 30 21-24 57-26 82-9 14-18 37-26 59-17 27-27 70-11 76 19 42-6 70 32 52 64 31 37 0 69-40 70H158c-24 0-40-17-34-40z" fill="url(#cloud)" stroke="#9F9DBB" stroke-width="2.5"/>
+<path d="M148 531q22 4 27 22M249 506q9 13 7 26M389 480q-3 8-3 16M466 498q-5 15-20 21M127 591q19-7 32 2" stroke="#BDBED3" stroke-width="2" stroke-linecap="round"/>
+<path d="M167 611h287" stroke="#C6C9DA" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+<path d="M205 662c-19-24-41-9-40 11-28-5-40 18-22 31h121c17-23-5-43-24-35-2-21-22-24-35-7z" fill="#ECE7F3" stroke="#B9AACB" stroke-width="2"/>
+<path d="M429 666c-15-19-34-9-34 8-21-3-28 16-15 26h93c14-19-4-35-19-28-3-17-17-21-25-6z" fill="#FAE6DF" stroke="#C8AFB1" stroke-width="2"/>
+<g color="#B79ECF"><use href="#spark" transform="translate(93 179) scale(.8)"/><use href="#spark" transform="translate(487 296)"/><use href="#spark" transform="translate(335 663) scale(.8)"/><use href="#spark" transform="translate(222 103) scale(.6)"/></g>
+<g fill="#DBB77E"><circle cx="183" cy="178" r="3"/><circle cx="522" cy="245" r="3"/><circle cx="106" cy="461" r="3"/><circle cx="329" cy="704" r="3"/><circle cx="429" cy="80" r="3"/></g>
+<path d="M67 580q-19-11-7-29M524 595q18-2 20-19" stroke="#B8A4C8" stroke-width="2" stroke-linecap="round"/>
+</svg>

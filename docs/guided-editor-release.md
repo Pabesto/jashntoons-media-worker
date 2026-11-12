@@ -1,0 +1,9 @@
+# Automatic customer studio
+
+Customers now upload their photos and create without choosing an AI service. Image and optional motion routing are enforced on the server, including when an older draft contains a specific provider choice. Available integrations remain configured as owner-managed server secrets. The customer account endpoint returns studio capabilities rather than provider configuration.
+
+The editor has a four-step navigation strip, contextual tool hints and a How to use guide in Hinglish and English. Guide steps open the corresponding controls. Mobile controls occupy the full width below the live preview; customers can expand the preview and return to editing. Desktop retains the live canvas, tool sidebar and scene inspector.
+
+The Export screen checks names, date and venue, explains how to review the reel, and includes video length, resolution and download instructions. The header Export action opens this review screen. Create download performs the existing credit reservation, rendering and upload flow. Saving an editable draft and exporting a finished video are explained separately. Avatar generation remains optional.
+
+Validation: TypeScript and 20 automated tests, including automatic routing, legacy provider overrides, motion selection and unavailable services. Browser checks at 1440px, 768px, 390px and 320px cover language switching, guide navigation, automatic upload-to-avatar, export readiness, full-width controls and expandable preview. The browser test generated and uploaded a real 12-second MP4 through the new Export screen (6.34 MB); AI responses and the reservation/storage endpoints were mocked for this UI check, using the previously generated real character as the image fixture. No additional provider generation charge was needed. No JavaScript errors were observed.

@@ -4,6 +4,7 @@ services:
     runtime: docker
     region: singapore
     plan: 1c-2g
+    rootDir: services/media-worker
     dockerfilePath: ./Dockerfile
     numInstances: 1
     envVars:

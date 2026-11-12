@@ -1,0 +1,9 @@
+import {getAppUser} from './app-auth';
+import {requestOrigin} from './hosting-runtime';
+export class APIError extends Error {constructor(public status:number,message:string){super(message);}}
+export async function identity(){const u=await getAppUser();if(!u)throw new APIError(401,'Sign in to save your invitations and photos.');return u;}
+export function originCheck(req:Request){if(req.headers.get('origin')!==requestOrigin(req))throw new APIError(403,'This request must come from Jashntoons.');}
+export const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store'}});
+export async function guarded(action:()=>Promise<Response>){try{return await action()}catch(e){if(e instanceof APIError)return json({error:e.message},e.status);console.error('Jashntoons API request failed',e instanceof Error?e.name:'Unknown error');return json({error:'Something went wrong. Your changes have not been saved. Please try again.'},500);}}
+export async function boundedBytes(req:Pick<Request,'headers'|'body'>,limit:number){if(Number(req.headers.get('content-length'))>limit)throw new APIError(413,'This upload is too large.');const reader=req.body?.getReader();if(!reader)throw new APIError(400,'The request is empty.');const chunks:Uint8Array[]=[];let total=0;while(true){const {done,value}=await reader.read();if(done)break;total+=value.byteLength;if(total>limit){await reader.cancel();throw new APIError(413,'This upload is too large.');}chunks.push(value);}const result=new Uint8Array(total);let offset=0;for(const chunk of chunks){result.set(chunk,offset);offset+=chunk.byteLength;}return result;}
+export async function smallJson(req:Request){const bytes=await boundedBytes(req,15000);try{return JSON.parse(new TextDecoder().decode(bytes))}catch{throw new APIError(400,'Invalid request.');}}

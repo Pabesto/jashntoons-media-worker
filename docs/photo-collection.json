@@ -1,0 +1,102 @@
+{
+  "title": "Jashntoons photo reel collection",
+  "reference": {
+    "file": "Your wedding invite just got a little more extra - user supplied MP4",
+    "durationSeconds": 50.500544,
+    "observed": "A phone demonstration of a richly decorated interactive haveli invitation: opening doors, invitation details, countdown, calendar and venue actions.",
+    "adaptation": "Original photo-style character artwork, a carved-door reveal, five editable invitation scenes and complete music-backed videos."
+  },
+  "artwork": {
+    "mode": "Built-in imagegen",
+    "avatarFolder": "public/studio/avatars-photo",
+    "backgroundFolder": "public/studio/scenes-photo",
+    "promptSets": [
+      "docs/avatar-photo-batch-a.json",
+      "docs/avatar-photo-batch-b.json",
+      "docs/avatar-photo-batch-c.json",
+      "docs/photo-scene-prompts.json"
+    ],
+    "avatarCount": 140,
+    "photoBackgroundCount": 14,
+    "additionalDoorArtworkCount": 1,
+    "deliveryOptimization": "640px-wide transparent WebP avatars at quality 80; 480px poster thumbnails at quality 78. Full-resolution original artwork and renders retained locally.",
+    "originalAvatarFolder": "outputs/media-originals/studio/avatars-photo"
+  },
+  "reels": {
+    "folder": "public/studio/reels",
+    "posterFolder": "public/studio/posters",
+    "renderManifest": "docs/photo-reel-renders.json",
+    "durationSeconds": 30,
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "format": "MP4 / H.264 / AAC",
+    "renderMethod": "Photo artwork composited with editable text, camera movement, character animation, transitions and particles using the shared browser renderer.",
+    "rebuild": "Run scripts/render-photo-reels.cjs against the local preview; FFMPEG_PATH and PLAYWRIGHT_MODULE can point to local installations.",
+    "count": 140,
+    "sceneCount": 5,
+    "occasions": 14,
+    "originalFolder": "outputs/media-originals/studio/reels",
+    "deliveryOptimization": "720p / 24 fps / 30 seconds retained; H.264 slow CRF 35 and AAC 48k for web delivery. Original render files retained locally.",
+    "posterWidth": 480
+  },
+  "aiMotionFilm": {
+    "file": "public/studio/films/haveli-door-film.mp4",
+    "poster": "public/studio/films/haveli-door-film.webp",
+    "durationSeconds": 15.041,
+    "method": "Original connected Runway multi-scene video generation",
+    "taskId": "79d20156-2f5c-4b8f-9f84-756528ab70f6",
+    "prompts": [
+      "A premium photoreal Indian wedding invitation film. No phone, hands, text or logos. Symmetric vertical view of closed sage-green carved wooden double doors framed by sandstone haveli arch and abundant pink bougainvillea. Brass lanterns glow, petals drift. Doors slowly swing open inward and camera travels through the arch into a sunlit courtyard. Rich realistic natural textures, cream and blush palette, cinematic detail.",
+      "Continuing through the same sage-green doors, camera gently glides into the warm sunlit Rajasthani haveli courtyard with pink bougainvillea, sandstone arches and brass lanterns. A beautifully dressed adult Indian bride in dusty rose embroidered lehenga and groom in ivory sherwani and rose turban stand together, smile and join hands in namaste. Full bodies visible lower half, top third clean warm wall for later editable invitation titles. Cinematic realism, soft romantic light, natural subtle movement. No text or logos.",
+      "The same bride in dusty rose lehenga and groom in ivory sherwani turn toward the floral mandap in the same sandstone haveli courtyard, rose petals fall and golden lamps brighten. Camera pulls back into a majestic symmetric wide composition, couple at lower center and large clean central upper space for later editable event details and RSVP. Graceful rich photo-like realistic invitation film. No writing, lettering, watermarks, phone or UI."
+    ]
+  },
+  "verification": {
+    "browser": {
+      "occasionFilters": 14,
+      "viewportWidths": [
+        1440,
+        1024,
+        768,
+        620,
+        390,
+        320
+      ],
+      "avatarReplacement": true,
+      "backgroundReplacement": true,
+      "effects": true,
+      "fullPreviewPlayback": true,
+      "editorExport": true,
+      "pageErrors": [],
+      "failedAssets": []
+    },
+    "typeCheck": "passed",
+    "videoVerificationCommand": "node scripts/verify-photo-reels.cjs",
+    "testsPassed": 40,
+    "decodedVideoCount": 140,
+    "videoChecks": [
+      "720 x 1280",
+      "30 seconds",
+      "720 frames at 24 fps",
+      "H.264 picture",
+      "audible AAC soundtrack"
+    ],
+    "homepage": {
+      "featuredFilmSeconds": 15.041,
+      "playPause": true,
+      "photoArtwork": true,
+      "viewportWidths": [
+        1440,
+        1024,
+        768,
+        620,
+        390,
+        320
+      ]
+    },
+    "optimizedMediaChecked": true,
+    "legacyClipsPreserved": 12,
+    "legacyAudioPaddingToleranceSeconds": 0.03
+  }
+}
