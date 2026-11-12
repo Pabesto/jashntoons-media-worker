@@ -5,6 +5,7 @@ import {reelFeed,type ReelFeedItem} from '@/lib/reel-feed';
 import {getTemplate,type Template} from '@/lib/templates';
 import {ReferencePlayer} from './ReferencePlayer';
 import {BrandMark} from './BrandLogo';
+import {InvitationLinkCard} from './InvitationLinkCard';
 import {StudioSpotlight,type SpotlightIntent} from './StudioSpotlight';
 
 export type AppTab='home'|'reels'|'plans'|'creators'|'help';
@@ -19,6 +20,7 @@ export function MobileApp(p:Props){
  return <><div className={'mobile-app mobile-app-'+p.tab}>
   {p.tab==='home'&&<main className="app-home" aria-label="Your invitation studio">
    <div className="app-welcome"><div><p>{p.name?'HELLO, '+p.name.split(' ')[0].toUpperCase():'A LITTLE MAGIC, ALL YOURS'}</p><h1>Make a moment.<br/><em>Make it yours.</em></h1></div><span className="app-welcome-mark"><BrandMark/></span></div>
+   <InvitationLinkCard/>
    <button className="app-search" onClick={()=>p.openReels({browse:true})}><Search size={19}/><span>Find your invitation reel</span><span className="app-search-key"><Sparkles size={14}/></span></button>
    <section className="app-occasions" aria-label="Choose your celebration">{occasions.map(c=><button key={c} onClick={()=>p.openReels({category:c})}><span><img src={example(c).poster} alt="" loading="lazy"/></span><strong>{c==='Haldi & Mehendi'?'Haldi':c==='Baby shower'?'Baby':c}</strong></button>)}</section>
    {p.resume&&<button className="app-resume" onClick={p.resume.open}><span><FolderHeart size={20}/></span><div><small>PICK UP WHERE YOU LEFT OFF</small><strong>{p.resume.title||'Your invitation'}</strong></div><ArrowRight size={17}/></button>}

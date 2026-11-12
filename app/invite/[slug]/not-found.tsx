@@ -1,0 +1,1 @@
+export default function Unavailable(){return <main className="link-unavailable"><span aria-hidden="true">✳</span><h1>This invitation isn’t available.</h1><p>The host may still be preparing it, or may have hidden the link.</p><a href="/invitation-links">Create your own invitation ↗</a></main>}

@@ -37,6 +37,7 @@ import "./celebration-theme.css";
 import "./reel-platform.css";
 import "./mobile-app.css";
 import "./studio-spotlight.css";
+import "./invitation-links.css";
 
 export const viewport: Viewport = {width:'device-width',initialScale:1,viewportFit:'cover',themeColor:'#fff8f2'};
 

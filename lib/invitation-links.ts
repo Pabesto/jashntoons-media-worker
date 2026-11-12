@@ -1,0 +1,11 @@
+import {env} from 'cloudflare:workers';
+import {APIError} from './api';
+import {invitationLinkSchema,type InvitationLinkData,type InvitationLinkView,type SavedInvitationLink} from './invitation-link-data';
+export type InvitationLinkRow={id:string;owner:string;slug:string;draft_data:string;published_data:string|null;version:number;created:number;updated:number};
+export function ownerInvitationLink(row:InvitationLinkRow):SavedInvitationLink{return {id:row.id,slug:row.slug,version:row.version,updated:row.updated,published:!!row.published_data,hasUnpublishedChanges:!!row.published_data&&row.draft_data!==row.published_data,data:invitationLinkSchema.parse(JSON.parse(row.draft_data)),url:'/invite/'+row.slug}}
+export async function publishedInvitation(slug:string){if(!/^[a-f0-9]{32}$/.test(slug))return null;return env.DB!.prepare('SELECT * FROM invitation_links WHERE slug=? AND published_data IS NOT NULL').bind(slug).first<InvitationLinkRow>()}
+export function publicInvitationLink(row:InvitationLinkRow):InvitationLinkView{const {photoId,reelId,...data}=invitationLinkSchema.parse(JSON.parse(row.published_data!));const media='/api/invitation-links/public/'+row.slug+'/media?kind=';return {...data,photo:photoId?media+'photo':null,reel:reelId?media+'reel':null}}
+export async function checkInvitationAssets(owner:string,data:InvitationLinkData){
+ if(data.photoId){const photo=await env.DB!.prepare('SELECT mime FROM media WHERE id=? AND owner=?').bind(data.photoId,owner).first<{mime:string}>();if(!photo||!['image/jpeg','image/png','image/webp'].includes(photo.mime)||!await env.BUCKET!.head(data.photoId))throw new APIError(400,'Choose an available photo from your account.');}
+ if(data.reelId){const reel=await env.DB!.prepare("SELECT mime,payload FROM reel_jobs WHERE id=? AND owner=? AND status='completed'").bind(data.reelId,owner).first<{mime:string;payload:string}>();if(!reel||!['video/mp4','video/webm'].includes(reel.mime))throw new APIError(400,'Choose one of your finished invitation reels.');const payload=JSON.parse(reel.payload);if(!payload.templateId||payload.kind||!await env.BUCKET!.head('reels/'+data.reelId))throw new APIError(400,'This finished reel is unavailable.');}
+}

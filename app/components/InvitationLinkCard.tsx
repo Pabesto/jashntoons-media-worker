@@ -1,0 +1,2 @@
+import {ArrowUpRight,Link2} from 'lucide-react';
+export function InvitationLinkCard(){return <a className="invitation-link-entry" href="/invitation-links"><span className="invitation-link-entry-icon"><Link2 size={24}/></span><div><small>A BEAUTIFUL PAGE FOR YOUR GUESTS</small><strong>Create invitation link</strong><p>Photos, functions, venue & RSVP. Share one link on WhatsApp.</p></div><ArrowUpRight size={22}/></a>}

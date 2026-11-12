@@ -1,0 +1,14 @@
+import {CalendarDays,Clock3,MapPin,MessageCircle,Sparkles} from 'lucide-react';
+import {invitationDate,invitationTime,type InvitationLinkView} from '@/lib/invitation-link-data';
+export function InvitationLinkPage({data,preview=false}:{data:InvitationLinkView;preview?:boolean}){
+ const first=data.events[0],names=data.names||'Your names, your story',initials=(data.names||'Your Celebration').split(/[\s&]+/).filter(Boolean).slice(0,2).map(s=>s[0]).join('');
+ return <article className={'guest-invitation guest-'+data.style+(preview?' guest-preview':'')}>
+  <div className="guest-invitation-edge"/><header className="guest-hero"><span className="guest-flower" aria-hidden="true">✳</span><p className="guest-kicker">YOU ARE WARMLY INVITED</p><span className="guest-occasion">{data.occasion} celebration</span><h1>{names}</h1>{data.host&&<p className="guest-host">With love, {data.host}</p>}
+  {data.photo?<img className="guest-photo" src={data.photo} alt={data.names?'A photo for '+data.names:'Your celebration photo'}/>:<div className="guest-monogram" aria-hidden="true"><span>{initials}</span><Sparkles size={22}/></div>}
+  <p className="guest-main-date">{invitationDate(first.date)}</p><div className="guest-rule"/><p className="guest-message">{data.message}</p></header>
+  {data.reel&&<section className="guest-film"><span className="guest-kicker">A LITTLE FILM, JUST FOR YOU</span><video controls playsInline preload="metadata" src={data.reel} poster={data.photo??undefined} aria-label="Our invitation reel"/></section>}
+  <section className="guest-functions"><p className="guest-kicker">SAVE THESE LITTLE MOMENTS</p><h2>The celebrations</h2>{data.events.map((event,index)=><section className="guest-event" key={index}><span className="guest-event-number">{String(index+1).padStart(2,'0')}</span><div><h3>{event.name||'Your function'}</h3><p><CalendarDays size={16}/>{invitationDate(event.date)}</p>{event.time&&<p><Clock3 size={16}/>{invitationTime(event.time)} <small>local time</small></p>}<p><MapPin size={16}/>{event.venue||'Your venue'}</p>{event.address&&<p className="guest-address">{event.address}</p>}{(event.venue||event.address)&&<a href={'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent([event.venue,event.address].filter(Boolean).join(', '))} target="_blank" rel="noopener noreferrer">Get directions ↗</a>}</div></section>)}</section>
+  {data.rsvpPhone&&<section className="guest-rsvp"><Sparkles size={24}/><h2>It’s better with you.</h2><p>Let us know you’re coming.</p><a href={'https://wa.me/'+data.rsvpPhone.replace('+','')+'?text='+encodeURIComponent('Hi! I received the invitation for '+names+'. I would like to RSVP.')} target="_blank" rel="noopener noreferrer"><MessageCircle size={19}/>RSVP on WhatsApp</a></section>}
+  <footer className="guest-footer"><span aria-hidden="true">✳</span><p>Made for a moment worth sharing.</p><a href="/invitation-links">Create yours with Jashntoons ↗</a></footer>
+ </article>
+}

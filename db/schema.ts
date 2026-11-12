@@ -11,6 +11,9 @@ export const media = sqliteTable('media', {
   size: integer('size').notNull(), created: integer('created').notNull(), digest:text('digest'),
 }, t => [index('media_owner').on(t.owner)]);
 export const aiUsage = sqliteTable('ai_usage', { key: text('key').primaryKey(), count: integer('count').notNull() });
+export const invitationLinks=sqliteTable('invitation_links',{
+ id:text('id').primaryKey(),owner:text('owner').notNull(),slug:text('slug').notNull(),draftData:text('draft_data').notNull(),publishedData:text('published_data'),version:integer('version').notNull().default(1),created:integer('created').notNull(),updated:integer('updated').notNull(),
+},t=>[uniqueIndex('invitation_links_slug').on(t.slug),index('invitation_links_owner').on(t.owner,t.updated)]);
 export const reelJobs = sqliteTable('reel_jobs', {
  id:text('id').primaryKey(),owner:text('owner').notNull(),status:text('status').notNull(),payload:text('payload').notNull(),
  created:integer('created').notNull(),updated:integer('updated').notNull(),mediaId:text('media_id'),providerTask:text('provider_task'),
