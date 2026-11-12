@@ -84,9 +84,10 @@ test('Studio templates use their saved artwork result in the original renderer, 
  assert.equal(creationPreviewKind({...draft,directedReel:result,templateId:'studio-birthday-01'}),'reference');
 });
 
-test('Review restores original studio scene structure while keeping an explicit advanced film regeneration',()=>{
+test('Review preserves explicit movement or avatar-template choice and never silently downgrades movement',()=>{
  const template=getTemplate('studio-wedding-01'),defaults=defaultInvite(template),old={...defaults,creation:{...source().creation,format:'film'},scenes:['opening','events','closing'],photos:cast.sourcePhotos,generatedArt:cast.artId,generatedVideo:'old-adaptation'};
- const next=creationForReview(old);assert.equal(next.creation.format,'template');assert.deepEqual([...next.scenes],[...defaults.scenes]);assert.equal(next.duration,defaults.duration);assert.equal(next.generatedArt,cast.artId);assert.equal(next.generatedVideo,'old-adaptation');
+ const next=creationForReview(old);assert.equal(next,old);assert.equal(next.creation.format,'film');assert.deepEqual([...next.scenes],['opening','events','closing']);assert.equal(next.generatedArt,cast.artId);assert.equal(next.generatedVideo,'old-adaptation');assert.equal(creationPreviewKind(next),'portrait');
  const advanced={...old,creation:{...old.creation,regenerationId:'explicit-new-scene'}};
- assert.equal(creationForReview(advanced),advanced);assert.equal(creationPreviewKind(advanced),'reel');
+ assert.equal(creationForReview(advanced),advanced);assert.equal(creationPreviewKind(advanced),'portrait');
+ const avatarTemplate={...old,creation:{...old.creation,format:'template'}};assert.equal(creationForReview(avatarTemplate),avatarTemplate);
 });

@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-12",
+  "generatedThrough": "Connected Runway workspace",
+  "creditsFromExistingBalance": 7920,
+  "newPurchases": 0,
+  "reels": [
+    {
+      "templateId": "jungle-birthday",
+      "taskId": "d1c6c7bf-c498-4846-897d-e6ded177f97f",
+      "seconds": 10,
+      "video": "/reel-references/jungle-birthday.mp4",
+      "poster": "/reel-references/jungle-birthday.webp"
+    },
+    {
+      "templateId": "candy-carnival",
+      "taskId": "836b9bdf-b1b8-44e1-8dbf-761785f95d39",
+      "seconds": 10,
+      "video": "/reel-references/candy-carnival.mp4",
+      "poster": "/reel-references/candy-carnival.webp"
+    },
+    {
+      "templateId": "disco-birthday",
+      "taskId": "f215338e-30f1-4bc1-9f43-876455c586a3",
+      "seconds": 10,
+      "video": "/reel-references/disco-birthday.mp4",
+      "poster": "/reel-references/disco-birthday.webp"
+    },
+    {
+      "templateId": "eid-moon",
+      "taskId": "4dffd014-9f88-41b9-a828-3af56eb409e1",
+      "seconds": 10,
+      "video": "/reel-references/eid-moon.mp4",
+      "poster": "/reel-references/eid-moon.webp"
+    },
+    {
+      "templateId": "launch-stage",
+      "taskId": "e758287c-860d-40e5-8d10-c0f11d12d3ba",
+      "seconds": 10,
+      "video": "/reel-references/launch-stage.mp4",
+      "poster": "/reel-references/launch-stage.webp"
+    },
+    {
+      "templateId": "boutique-opening",
+      "taskId": "fc21198c-7cd4-4975-b97e-21f9524a9d87",
+      "seconds": 10,
+      "video": "/reel-references/boutique-opening.mp4",
+      "poster": "/reel-references/boutique-opening.webp"
+    },
+    {
+      "templateId": "laurel-library",
+      "taskId": "8f88ebff-1229-48eb-a98c-49b135dc7344",
+      "seconds": 10,
+      "video": "/reel-references/laurel-library.mp4",
+      "poster": "/reel-references/laurel-library.webp"
+    },
+    {
+      "templateId": "campus-celebration",
+      "taskId": "5158b283-3e42-480c-93d6-012ca54d21de",
+      "seconds": 10,
+      "video": "/reel-references/campus-celebration.mp4",
+      "poster": "/reel-references/campus-celebration.webp"
+    },
+    {
+      "templateId": "travel-garden",
+      "taskId": "1d319e3e-4c4e-4f0d-b780-3f7aa4dabdf6",
+      "seconds": 10,
+      "video": "/reel-references/travel-garden.mp4",
+      "poster": "/reel-references/travel-garden.webp"
+    },
+    {
+      "templateId": "cradle-lotus",
+      "taskId": "0f3c3919-1cff-4eab-bfba-ea8a21c44baf",
+      "seconds": 10,
+      "video": "/reel-references/cradle-lotus.mp4",
+      "poster": "/reel-references/cradle-lotus.webp"
+    },
+    {
+      "templateId": "haldi-courtyard",
+      "taskId": "fd98ff4d-db3f-411c-9434-9a3d0e94b6df",
+      "seconds": 10,
+      "video": "/reel-references/haldi-courtyard.mp4",
+      "poster": "/reel-references/haldi-courtyard.webp"
+    },
+    {
+      "templateId": "mehendi-mandap",
+      "taskId": "8769b545-6311-4080-8ec4-600f8cd59c36",
+      "seconds": 10,
+      "video": "/reel-references/mehendi-mandap.mp4",
+      "poster": "/reel-references/mehendi-mandap.webp"
+    },
+    {
+      "templateId": "garden-bloom",
+      "taskId": "be234cc3-c769-4590-bae8-4f18c3ccbde8",
+      "seconds": 10,
+      "video": "/worlds/garden-bloom.mp4",
+      "poster": "/reel-references/garden-bloom.webp"
+    },
+    {
+      "templateId": "neon-sangeet",
+      "taskId": "f76c7ae9-c17d-44a8-aad7-25e7ecdb91cc",
+      "seconds": 10,
+      "video": "/worlds/neon-sangeet.mp4",
+      "poster": "/reel-references/neon-sangeet.webp"
+    },
+    {
+      "templateId": "cosmic-birthday",
+      "taskId": "1b1a711d-beab-40a9-830b-49acd4c3ce79",
+      "seconds": 10,
+      "video": "/worlds/cosmic-birthday.mp4",
+      "poster": "/reel-references/cosmic-birthday.webp"
+    },
+    {
+      "templateId": "little-cloud",
+      "taskId": "bfee6bb9-dc44-4cac-a025-e7c3a7a4687a",
+      "seconds": 10,
+      "video": "/worlds/little-cloud.mp4",
+      "poster": "/reel-references/little-cloud.webp"
+    },
+    {
+      "templateId": "reference-vintage-date",
+      "taskId": "178f72dd-a9aa-405f-97b0-e1ec7628ce1b",
+      "seconds": 14,
+      "video": "/reel-references/reference-vintage-date.mp4",
+      "poster": "/reel-references/reference-vintage-date.webp"
+    },
+    {
+      "templateId": "blush-engagement",
+      "taskId": "ed4e5a8e-4938-43ad-962f-c866e33e4987",
+      "seconds": 10,
+      "video": "/reel-references/blush-engagement.mp4",
+      "poster": "/reel-references/blush-engagement.webp"
+    },
+    {
+      "templateId": "lotus-engagement",
+      "taskId": "ea8a4a9a-0459-4759-8a86-1470415c32dc",
+      "seconds": 10,
+      "video": "/reel-references/lotus-engagement.mp4",
+      "poster": "/reel-references/lotus-engagement.webp"
+    },
+    {
+      "templateId": "candle-anniversary",
+      "taskId": "e2c0c86e-5953-4bc4-b2dd-85a5f8db899d",
+      "seconds": 10,
+      "video": "/reel-references/candle-anniversary.mp4",
+      "poster": "/reel-references/candle-anniversary.webp"
+    },
+    {
+      "templateId": "golden-anniversary",
+      "taskId": "3a1c1b03-7f59-4c76-bb36-67511709cceb",
+      "seconds": 10,
+      "video": "/reel-references/golden-anniversary.mp4",
+      "poster": "/reel-references/golden-anniversary.webp"
+    },
+    {
+      "templateId": "balloon-sky",
+      "taskId": "69b4d254-9386-4c18-8378-42cee53fdc30",
+      "seconds": 10,
+      "video": "/reel-references/balloon-sky.mp4",
+      "poster": "/reel-references/balloon-sky.webp"
+    },
+    {
+      "templateId": "storybook-cradle",
+      "taskId": "7cca88a0-9eb8-43d0-8914-9e2aab8cfb76",
+      "seconds": 10,
+      "video": "/reel-references/storybook-cradle.mp4",
+      "poster": "/reel-references/storybook-cradle.webp"
+    },
+    {
+      "templateId": "marigold-home",
+      "taskId": "ac496000-5b30-45d2-8c46-ab9297e1ade0",
+      "seconds": 10,
+      "video": "/reel-references/marigold-home.mp4",
+      "poster": "/reel-references/marigold-home.webp"
+    },
+    {
+      "templateId": "modern-villa",
+      "taskId": "926ae2cd-6714-47df-bc4f-5d85482d6292",
+      "seconds": 10,
+      "video": "/reel-references/modern-villa.mp4",
+      "poster": "/reel-references/modern-villa.webp"
+    },
+    {
+      "templateId": "diwali-courtyard",
+      "taskId": "d8e2c63b-4bbb-429c-a145-b940346ae9b4",
+      "seconds": 10,
+      "video": "/reel-references/diwali-courtyard.mp4",
+      "poster": "/reel-references/diwali-courtyard.webp"
+    }
+  ],
+  "reference": "The vintage save-the-date is an original generation inspired by the user-provided Nancy_Naitik_Save_The_Date_14s.mp4. Generated samples use fictional celebration names. No uploaded customer photos are published."
+}

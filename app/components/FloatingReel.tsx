@@ -8,6 +8,7 @@ export function FloatingReel({active,motion,onWatch}:{active:boolean;motion:bool
  const [collapsed,setCollapsed]=useState(false),[muted,setMuted]=useState(true),[paused,setPaused]=useState(false),[playing,setPlaying]=useState(false);
  const video=useRef<HTMLVideoElement>(null),manual=useRef(false);
  const [otherPlaying,setOtherPlaying]=useState(false);
+ useEffect(()=>{const media=matchMedia('(max-width:1100px)'),sync=()=>{if(media.matches)setCollapsed(true)};sync();media.addEventListener('change',sync);return()=>media.removeEventListener('change',sync)},[]);
  // Muted background previews can run alongside the dock. A visible film with
  // sound or native playback controls takes priority when someone watches it.
  useEffect(()=>{let frame=0;const sync=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>setOtherPlaying([...document.querySelectorAll('video')].some(v=>{if(v===video.current||v.paused||(!v.controls&&(v.muted||v.volume===0)))return false;const r=v.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.width>0})));};document.addEventListener('play',sync,true);document.addEventListener('pause',sync,true);document.addEventListener('volumechange',sync,true);window.addEventListener('scroll',sync,{passive:true});sync();return()=>{cancelAnimationFrame(frame);document.removeEventListener('play',sync,true);document.removeEventListener('pause',sync,true);document.removeEventListener('volumechange',sync,true);window.removeEventListener('scroll',sync)}},[]);

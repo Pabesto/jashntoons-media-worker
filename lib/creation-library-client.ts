@@ -1,4 +1,4 @@
-import {getTemplate,defaultInvite,type Invite} from './templates';
+import {getTemplate,type Invite} from './templates';
 import {creationBrief,previewSavedCast} from './director-contract';
 import {referenceEditSource} from './reference-edit-contract';
 
@@ -29,18 +29,19 @@ export function creationPreviewKind(data:Invite,artId=data.generatedArt):'card'|
  // Older adaptations, changed people, and another source's completed film do
  // not satisfy the current source edit. Keep those outputs in My reels.
  if(source)return result?.referenceEdit===true&&result.sourceReferenceId===source.id&&!!result.videoId&&data.generatedVideo===result.videoId&&JSON.stringify(result.sourcePhotos)===JSON.stringify(data.photos)?'reel':'reference';
- if(template.studio&&!(b.format==='film'&&b.regenerationId))return b.format==='template'&&!!result&&!result.videoId&&!data.generatedVideo&&result.artId===data.generatedArt&&result.sourceTemplateId===template.id&&JSON.stringify(result.sourcePhotos)===JSON.stringify(data.photos)?'reel':'reference';
+ if(template.studio&&b.format==='template')return !!result&&!result.videoId&&!data.generatedVideo&&result.artId===data.generatedArt&&result.sourceTemplateId===template.id&&JSON.stringify(result.sourcePhotos)===JSON.stringify(data.photos)?'reel':'reference';
+ if(b.format==='film')return !!result?.videoId&&data.generatedVideo===result.videoId&&result.sourceTemplateId===template.id&&JSON.stringify(result.sourcePhotos)===JSON.stringify(data.photos)?'reel':artId?'portrait':template.studio?'reference':'style';
  if(result?.videoId||data.generatedVideo)return 'reel';
- if(b.format==='template'&&data.directedReel)return 'reel';
+ if(b.format==='template'&&data.directedReel&&!result?.videoId)return 'reel';
  return artId?'portrait':'style';
 }
 
 // Called only by the explicit Review action. Opening an old draft must not
 // rewrite an in-flight job or approve another generation automatically.
 export function creationForReview(data:Invite):Invite{
- const brief=creationBrief(data),template=getTemplate(data.templateId);
+ const brief=creationBrief(data);
  if(data.pendingCreationId||['image','card'].includes(brief.format))return data;
- if(template.studio&&brief.format==='film'&&!brief.regenerationId){const defaults=defaultInvite(template);return {...data,scenes:defaults.scenes,duration:defaults.duration,creation:{...brief,format:'template'}};}
+ // Movement is an explicit choice. Never downgrade it to a static avatar reel.
  if(brief.format==='template'&&referenceEditSource(data))return {...data,creation:{...brief,format:'film'}};
  return data;
 }

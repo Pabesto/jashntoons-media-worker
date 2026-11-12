@@ -1,3 +1,4 @@
+import {isReelBrief,reelBriefError,reelSource} from './reel-experience';
 import {env} from 'cloudflare:workers';
 import {resolveSavedCreationAvatar} from './creation-library';
 import {referenceEditSource,isReferenceEdit,referenceAssetKey,referenceAssetName,referenceEditCredits,referenceEditRequest,referenceVideoPrompt,REFERENCE_SOURCE_VERSION} from './reference-edit-contract';
@@ -15,7 +16,7 @@ import {getTemplate,type Invite} from './templates';
 import {generationFailure,type GenerationFailure} from './generation-failure';
 
 type Step={kind:'art'|'voice'|'speech'|'film'|'reference-film'|'assembly';segment?:number;key:string;credits:number;label:string;existing?:string};
-type JobPayload={kind:'directed-reel';data:Invite;steps:Step[];index:number;partIds?:string[];artId?:string;voiceId?:string;audioId?:string;videoId?:string;result?:DirectedReel;failure?:GenerationFailure;diagnosticsChecked?:boolean};
+type JobPayload={kind:'directed-reel';data:Invite;steps:Step[];index:number;partIds?:string[];artId?:string;voiceId?:string;audioId?:string;videoId?:string;result?:DirectedReel;failure?:GenerationFailure;referenceError?:{message:string;failure?:GenerationFailure};diagnosticsChecked?:boolean};
 type Asset={kind:'director-asset';type:Step['kind'];remoteVoice?:string;failure?:GenerationFailure;parentJobId?:string};
 class AssetFailedError extends APIError{constructor(public failure:GenerationFailure){super(502,failure.message)}}
 const db=()=>env.DB!;
@@ -23,7 +24,7 @@ const get=(owner:string,id:string)=>db().prepare('SELECT * FROM reel_jobs WHERE 
 const cached=(owner:string,key:string)=>db().prepare("SELECT * FROM reel_jobs WHERE owner=? AND generation_key=?").bind(owner,key).first<ReelJob>();
 
 export async function creationJob(owner:string,id:string){const j=await get(owner,id);if(!j||JSON.parse(j.payload).kind!=='directed-reel')throw new APIError(404,'This creation is not in your account.');return j;}
-export function creationView(j:ReelJob):CreationView{const p=JSON.parse(j.payload) as JobPayload;return {id:j.id,status:j.status,phase:p.steps[p.index]?.label??'Your invitation is ready',error:j.error??undefined,result:p.result,savedArtId:p.artId,failure:p.failure};}
+export function creationView(j:ReelJob):CreationView{const p=JSON.parse(j.payload) as JobPayload,reference=p.steps[p.index]?.kind==='reference-film',completed=p.index+(reference?(p.partIds??[]).filter(Boolean).length:0);return {id:j.id,status:j.status,phase:p.referenceError&&j.status!=='failed'?'Saving scenes already in progress before stopping':reference?'Animating your people in the original scenes (up to 2 parts together)':p.steps[p.index]?.label??'Your invitation is ready',error:j.error??undefined,result:p.result,savedArtId:p.artId,failure:p.failure,progress:{completed:Math.min(completed,p.steps.length),total:p.steps.length,startedAt:j.created}};}
 
 async function recordFailure(asset:ReelJob,key:string,remote:{failureCode?:string;failure?:string}){
  const p=JSON.parse(asset.payload) as Asset,failure=generationFailure(remote,p.type==='art'?'avatar':['film','reference-film','assembly'].includes(p.type)?'video':p.type as 'voice'|'speech');
@@ -78,20 +79,31 @@ async function saveOutput(owner:string,url:string|undefined,type:'art'|'speech'|
 async function plan(owner:string,data:Invite){
  if(!data.photos.length||(creationBrief(data).format!=='image'&&(!data.names.trim()||!data.date||!data.venue.trim())))throw new APIError(400,'Add names, date, venue and at least one clear photo first.');
  await validateCreation(owner,data);await ownedMedia(owner,data.photos);const b=creationBrief(data);const source=isReferenceEdit(data)?referenceEditSource(data):null;
- if(source){if(b.voice!=='none')throw new APIError(400,'Voice lip-sync for this exact reference film is not connected yet. Choose music only to keep the original scenes and movement.');if(!workerReady())throw new APIError(503,'Reference film finishing is temporarily unavailable. Your saved people and brief are safe.');for(const segment of source.segments){if(!await env.BUCKET!.head(referenceAssetKey(source.id,referenceAssetName(segment.index))))throw new APIError(503,'This exact reference film is still being prepared. No credits have been used.');}}
+ if(isReelBrief(data)&&b.format==='film'&&!source)throw new APIError(400,'Choose a playable reference reel.');
+ if(source){const problem=reelBriefError(data,source.seconds);if(problem)throw new APIError(400,problem);if(b.voice!=='none')throw new APIError(400,'Voice lip-sync for this exact reference film is not connected yet. Choose music only to keep the original scenes and movement.');if(!workerReady())throw new APIError(503,'Reference film finishing is temporarily unavailable. Your saved people and brief are safe.');for(const segment of source.segments){if(!source.direct&&!await env.BUCKET!.head(referenceAssetKey(source.assetSourceId??source.id,referenceAssetName(segment.index))))throw new APIError(503,'This exact reference film is still being prepared. No credits have been used.');}}
  if(getTemplate(data.templateId).studio&&b.format==='template'&&b.voice!=='none')throw new APIError(400,'This template keeps its original animation with music. Voice lip-sync for this fixed template is not connected yet.');
  if(['image','card'].includes(b.format)&&b.voice!=='none')throw new APIError(400,'Voice is available for video reels.');if(b.voice!=='none'&&!b.consent)throw new APIError(400,'Confirm that you own this voice or have permission to use it.');
  if(['recording','clone'].includes(b.voice)){if(!b.audioId)throw new APIError(400,'Attach your recording first.');const object=await env.BUCKET!.get(b.audioId);if(!object)throw new APIError(400,'The recording is missing.');const info=wavInfo(new Uint8Array(await object.arrayBuffer()));if(info.duration>30||(b.voice==='clone'&&info.duration<10))throw new APIError(400,b.voice==='clone'?'For voice cloning, upload 10–30 seconds of clear speech.':'Use a speech recording up to 30 seconds.');}
  if(b.voice==='saved'&&!b.voiceId)throw new APIError(400,'Choose a saved voice.');
  const selected=b.selectedAvatarId?await resolveSavedCreationAvatar(owner,b.selectedAvatarId):null;
- const d=directReel(data),artKey=selected?(selected.job.generation_key??'saved-cast:'+selected.job.id):'director-art-v1:'+await generationFingerprint([data.photos,invitationStyle(data).id==='watercolor'?"reusable-illustrated-cast":"cast-style:"+invitationStyle(data).id]),steps:Step[]=[{kind:'art',key:artKey,credits:selected?0:1,...(selected?{existing:selected.job.id}:{}),label:selected?'Using your saved character':'Reading all photos and illustrating your people'}];
+ const d=directReel(data),artKey=selected?(selected.job.generation_key??'saved-cast:'+selected.job.id):'director-art-v1:'+await generationFingerprint([data.photos,invitationStyle(data).id==='watercolor'?"reusable-illustrated-cast":"cast-style:"+invitationStyle(data).id,...(isReelBrief(data)?[data.templateId,b.wardrobe??'auto',b.outfit??''] :[])]),steps:Step[]=[{kind:'art',key:artKey,credits:selected?0:1,...(selected?{existing:selected.job.id}:{}),label:selected?'Using your saved character':'Reading all photos and illustrating your people'}];
  let voiceKey=b.voiceId??'';
  if(b.voice==='clone'){const row=await db().prepare('SELECT digest FROM media WHERE id=? AND owner=?').bind(b.audioId,owner).first<{digest:string}>();voiceKey='voice:'+row!.digest;steps.push({kind:'voice',key:voiceKey,credits:1,label:'Saving your reusable voice'});}
  if(b.voice==='clone'||b.voice==='saved')steps.push({kind:'speech',key:'director-speech-v1:'+await generationFingerprint([voiceKey,d.dialogue]),credits:1,label:'Preparing your invitation dialogue'});
- if(source){for(const segment of source.segments)steps.push({kind:'reference-film',segment:segment.index,key:'reference-edit-v1:'+await generationFingerprint([REFERENCE_SOURCE_VERSION,source.id,segment,artKey,referenceVideoPrompt(),b.regenerationId??'']),credits:referenceEditCredits(segment.seconds),label:`Replacing your people in original footage ${segment.index+1}/${source.segments.length}`});steps.push({kind:'assembly',key:'reference-join-v1:'+await generationFingerprint(steps.map(s=>s.key)),credits:0,label:'Joining the complete film at its original timing'});}
- else if(b.format==='film'||b.voice!=='none')steps.push({kind:'film',key:'director-film-v1:'+await generationFingerprint([artKey,d.video,b.voice,b.audioId??'',voiceKey,d.dialogue,...(b.regenerationId?[b.regenerationId]:[])]),credits:7,label:'Creating scenes, movement and speech together'});
+ if(source){for(const segment of source.segments)steps.push({kind:'reference-film',segment:segment.index,key:'reference-edit-v1:'+await generationFingerprint([REFERENCE_SOURCE_VERSION,source.id,segment,artKey,referenceVideoPrompt(data),b.regenerationId??'']),credits:referenceEditCredits(segment.seconds),label:`Replacing your people in original footage ${segment.index+1}/${source.segments.length}`});steps.push({kind:'assembly',key:'reference-join-v1:'+await generationFingerprint(steps.map(s=>s.key)),credits:0,label:'Joining the complete film at its original timing'});}
+ else if(b.format==='film'||b.voice!=='none'){
+  const step:Step={kind:'film',key:'director-film-v1:'+await generationFingerprint([artKey,d.video,b.voice,b.audioId??'',voiceKey,d.dialogue,...(b.regenerationId?[b.regenerationId]:[])]),credits:7,label:'Creating scenes, movement and speech together'};
+  // A prompt improvement must not charge for an unchanged finished film.
+  // Explicit regeneration and actual visual changes still get a fresh quote.
+  const prior=data.directedReel;
+  if(prior?.videoId&&prior.sourceVisualKey===invitationVisualKey(data)&&prior.sourceTemplateId===data.templateId&&JSON.stringify(prior.sourcePhotos)===JSON.stringify(data.photos)){
+   const parent=JSON.parse((await creationJob(owner,prior.jobId)).payload) as JobPayload;
+   if(creationBrief(parent.data).regenerationId===b.regenerationId){const asset=await db().prepare("SELECT * FROM reel_jobs WHERE owner=? AND media_id=? AND status='ready' AND json_extract(payload,'$.type')='film'").bind(owner,prior.videoId).first<ReelJob>();if(asset)step.existing=asset.id;}
+  }
+  steps.push(step);
+ }
  const key='director-v1:'+await generationFingerprint([steps.map(s=>s.key),...(['image','card'].includes(b.format)?[b.format]:[]),source?.seconds??(steps.some(s=>s.kind==='film')?30:data.duration)]);const previous=await cached(owner,key);const reused:string[]=[];
- for(const s of steps){let asset=s.existing?await get(owner,s.existing):await cached(owner,s.key);if(asset?.status==='failed'){const failure=(JSON.parse(asset.payload) as Asset).failure;if(failure&&!failure.retryable)throw new APIError(409,failure.message+' Your completed avatar stays in your private library. Contact support before repeating this request.');}if(!asset&&s.kind==='art'&&invitationStyle(data).id==='watercolor'&&data.photos.length<=2){const prior=await db().prepare("SELECT * FROM reel_jobs WHERE owner=? AND status IN ('ready','completed') AND media_id IS NOT NULL AND json_extract(payload,'$.invite.avatarMode')='cutout' ORDER BY created DESC LIMIT 100").bind(owner).all<ReelJob>();asset=prior.results.find(j=>JSON.stringify(JSON.parse(j.payload).invite?.photos)===JSON.stringify(data.photos))??null;}if(asset&&['ready','completed'].includes(asset.status)){s.credits=0;s.existing=asset.id;reused.push(s.kind==='art'?'Saved character':s.kind==='voice'?'Saved voice':s.kind==='speech'?'Saved dialogue':'Saved film');}}
+ for(const s of steps){let asset=s.existing?await get(owner,s.existing):await cached(owner,s.key);if(asset?.status==='failed'){const failure=(JSON.parse(asset.payload) as Asset).failure;if(failure&&!failure.retryable)throw new APIError(409,failure.message+' Your completed avatar stays in your private library. Contact support before repeating this request.');}if(!asset&&!isReelBrief(data)&&s.kind==='art'&&invitationStyle(data).id==='watercolor'&&data.photos.length<=2){const prior=await db().prepare("SELECT * FROM reel_jobs WHERE owner=? AND status IN ('ready','completed') AND media_id IS NOT NULL AND json_extract(payload,'$.invite.avatarMode')='cutout' ORDER BY created DESC LIMIT 100").bind(owner).all<ReelJob>();asset=prior.results.find(j=>JSON.stringify(JSON.parse(j.payload).invite?.photos)===JSON.stringify(data.photos))??null;}if(asset&&['ready','completed'].includes(asset.status)){s.credits=0;s.existing=asset.id;reused.push(s.kind==='art'?'Saved character':s.kind==='voice'?'Saved voice':s.kind==='speech'?'Saved dialogue':'Saved film');}}
  const quote:CreationQuote={key,credits:previous&&previous.status!=='failed'?0:steps.reduce((n,s)=>n+s.credits,0),reused,steps:steps.map(s=>({label:s.label,credits:s.credits})),dialogue:d.dialogue,shots:source?source.segments.map(s=>`${s.start.toFixed(1)}?${(s.start+s.seconds).toFixed(1)}s ? Original ${source.name} footage, your character replacement`):d.shots};return {steps,quote,previous};
 }
 export async function quoteCreation(owner:string,data:Invite){return (await plan(owner,data)).quote;}
@@ -116,10 +128,10 @@ async function readyAsset(j:ReelJob,s:Step,p:JobPayload){
   const r=await reserve(j.owner,crypto.randomUUID(),JSON.stringify({kind:'director-asset',type:s.kind,parentJobId:j.id} satisfies Asset),'processing',{cost:0,generationKey:s.key});asset=r.job;
   if(r.created){try{
    const b=creationBrief(p.data),d=directReel(p.data);let remote;
-   if(s.kind==='art')remote=await voiceRequest('text_to_image',{model:'gpt_image_2_6_flare',ratio:'auto',background:'transparent',quality:'medium',reasoningEffort:'medium',promptText:d.art,referenceImages:await Promise.all(p.data.photos.map(async id=>({uri:await reference(j.owner,id,'image')})))});
+   if(s.kind==='art')remote=await voiceRequest('text_to_image',{model:'gpt_image_2_6_flare',ratio:'auto',background:'transparent',quality:'medium',reasoningEffort:'medium',promptText:d.art,referenceImages:[...await Promise.all(p.data.photos.map(async id=>({uri:await reference(j.owner,id,'image')}))),...(isReelBrief(p.data)&&reelSource(getTemplate(p.data.templateId))?.poster?[{uri:'https://jashntoons.ai'+reelSource(getTemplate(p.data.templateId))!.poster}]:[])]});
    else if(s.kind==='voice')remote=await voiceRequest('voices',{name:'My Jashntoons voice',from:{type:'audio',audio:await reference(j.owner,b.audioId!,'audio')}});
    else if(s.kind==='speech')remote=await voiceRequest('text_to_speech',{model:'eleven_v4',promptText:d.dialogue,voice:{type:'custom',id:p.voiceId}});
-   else if(s.kind==='reference-film'){const source=referenceEditSource(p.data)!;remote=await voiceRequest('video_to_video',referenceEditRequest(source,source.segments[s.segment!],await reference(j.owner,p.artId!,'image')));}
+   else if(s.kind==='reference-film'){const source=referenceEditSource(p.data)!;remote=await voiceRequest('video_to_video',referenceEditRequest(source,source.segments[s.segment!],await reference(j.owner,p.artId!,'image'),p.data));}
    else remote=await voiceRequest('image_to_video',{model:'seedance2_5',duration:30,ratio:'720:1280',outputFormat:'mp4',audio:b.voice!=='none',promptText:d.video,promptImage:[{uri:await reference(j.owner,p.artId!,'image')},...directorReferences(p.data).map(path=>({uri:'https://jashntoons.ai'+path}))],...(p.audioId?{referenceAudio:[{type:'audio',uri:await reference(j.owner,p.audioId,'audio')}]}:{})});
    await db().prepare("UPDATE reel_jobs SET provider_task=?,status='generating',updated=? WHERE id=?").bind(remote.id,Date.now(),asset.id).run();
   }catch{await db().prepare("UPDATE reel_jobs SET status='failed',error=?,updated=? WHERE id=?").bind('The provider did not confirm this request. Contact support before submitting it again; we will not automatically repeat a potentially billable request.',Date.now(),asset.id).run();}
@@ -136,13 +148,34 @@ async function readyAsset(j:ReelJob,s:Step,p:JobPayload){
  const lock=await db().prepare("UPDATE reel_jobs SET status='processing',updated=? WHERE id=? AND status='generating' RETURNING id").bind(Date.now(),asset.id).first();if(!lock)return null;
  try{const media=s.kind==='voice'?null:await saveOutput(j.owner,remote.output?.[0],s.kind==='reference-film'?'film':s.kind);await db().prepare("UPDATE reel_jobs SET media_id=?,status='ready',updated=? WHERE id=?").bind(media,Date.now(),asset.id).run();return (await get(j.owner,asset.id))!;}catch(e){await db().prepare("UPDATE reel_jobs SET status='generating',updated=? WHERE id=?").bind(Date.now(),asset.id).run();throw e;}
 }
+// Submit at most two independent source edits. The provider works concurrently,
+// but downloads stay sequential to bound server memory. Never abandon a paid
+// in-flight part when its neighbour fails: save it before failing the parent.
+async function advanceReferenceParts(job:ReelJob,p:JobPayload){
+ const steps=p.steps.filter(s=>s.kind==='reference-film');p.partIds??=[];
+ const batch=steps.filter(s=>!p.partIds![s.segment!]).slice(0,2);let pending=false;
+ for(const step of batch){
+  if(p.referenceError&&!await cached(job.owner,step.key))continue;
+  try{const asset=await readyAsset(job,step,p);if(asset)p.partIds[step.segment!]=asset.media_id!;else pending=true;}
+  catch(e){if(e instanceof APIError&&[429,503].includes(e.status))throw e;p.referenceError={message:e instanceof APIError?e.message:'A source scene could not be completed.',...(e instanceof AssetFailedError?{failure:e.failure}:{})};}
+ }
+ if(p.referenceError){if(pending)return false;if(p.referenceError.failure)throw new AssetFailedError(p.referenceError.failure);throw new APIError(502,p.referenceError.message);}
+ if(steps.every(s=>!!p.partIds![s.segment!])){p.index=p.steps.findIndex(s=>s.kind==='assembly');return true;}
+ return false;
+}
 export async function advanceCreation(job:ReelJob){
  if(['ready','failed'].includes(job.status))return creationView(job.status==='failed'?await recoverFailure(job):job);
  if(job.status==='processing'){if(Date.now()-job.updated>180000){await db().prepare("UPDATE reel_jobs SET status='generating' WHERE id=? AND status='processing'").bind(job.id).run();}else return creationView(job);}
  const lock=await db().prepare("UPDATE reel_jobs SET status='processing',updated=? WHERE id=? AND status='generating' RETURNING id").bind(Date.now(),job.id).first();if(!lock)return creationView(job);
  const p=JSON.parse(job.payload) as JobPayload;
  try{
-  const step=p.steps[p.index];if(step){const asset=await readyAsset(job,step,p);if(!asset)return update(job,p);if(step.kind==='art')p.artId=asset.media_id!;if(step.kind==='voice')p.voiceId=asset.provider_task!;if(step.kind==='speech')p.audioId=asset.media_id!;if(step.kind==='film'||step.kind==='assembly')p.videoId=asset.media_id!;if(step.kind==='reference-film'){p.partIds??=[];p.partIds[step.segment!]=asset.media_id!;}p.index++;}
+  // Cached dependencies do not each need another five-second polling round.
+  for(let n=0;n<8&&p.index<p.steps.length;n++){
+   const step=p.steps[p.index];
+   if(step.kind==='reference-film'){if(!await advanceReferenceParts(job,p))return update(job,p);continue;}
+   const asset=await readyAsset(job,step,p);if(!asset)return update(job,p);
+   if(step.kind==='art')p.artId=asset.media_id!;if(step.kind==='voice')p.voiceId=asset.provider_task!;if(step.kind==='speech')p.audioId=asset.media_id!;if(step.kind==='film'||step.kind==='assembly')p.videoId=asset.media_id!;p.index++;
+  }
   if(p.index===p.steps.length){const source=p.steps.some(s=>s.kind==='reference-film')?referenceEditSource(p.data):null;p.result={...(source?{referenceEdit:true,sourceReferenceId:source.id}:{}),sourceVisualKey:invitationVisualKey(p.data),sourceTemplateId:p.data.templateId,sourcePhotos:p.data.photos,jobId:job.id,artId:p.artId!,...(p.videoId?{videoId:p.videoId}:{}),...(p.audioId?{audioId:p.audioId}:{}),hasSpeech:creationBrief(p.data).voice!=='none',duration:source?.seconds??(p.videoId?30:getTemplate(p.data.templateId).studio?getTemplate(p.data.templateId).duration??30:p.data.duration)};
    await update(job,p,'ready');const project=await requireProject(job.owner,job.project_id!);const latest=JSON.parse(project.payload) as Invite;
    if(latest.pendingCreationId===job.id)await db().prepare('UPDATE projects SET payload=?,updated=? WHERE id=? AND owner=?').bind(JSON.stringify(applyDirectedReel(latest,p.result)),Date.now(),job.project_id,job.owner).run();return creationView((await get(job.owner,job.id))!);

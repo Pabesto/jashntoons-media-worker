@@ -1,41 +1,51 @@
 {
   "format": 1,
-  "applicationCommit": "e316b05f21b39ae3fd666cc224d64722b607d8e9",
+  "applicationCommit": "36d3cddbfdeac09aad168837a436b24e247cebe9",
   "repository": "Pabesto/jashntoons-media-worker",
   "branch": "jashntoons-web-source",
   "archive": {
     "storageOrigin": "https://jashntoons.jocoseavocet1.chatgpt.site",
-    "commit": "e316b05f21b39ae3fd666cc224d64722b607d8e9",
-    "sha256": "ccfd4e5fa9723dd79b81bb8a54c4257207d2c24be5cf0608f06438c2c8369612",
-    "size": 253380823,
+    "commit": "36d3cddbfdeac09aad168837a436b24e247cebe9",
+    "sha256": "9954dd25d5b32de1b1fd32ffd9568ab9f3470166ea2d74fa5d871cf907364a2c",
+    "size": 400124930,
     "chunks": [
       {
-        "key": "releases/e316b05f21b39ae3fd666cc224d64722b607d8e9/part-0",
+        "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/part-0",
         "size": 60000000,
-        "sha256": "203d6bc1840527cd542412d9677f248d98ab22e6d4cf0f67b0965089074757b2"
+        "sha256": "64afb32e41ae3078650644400328ed4b6ace596cd15e9c7ef87f933217ffac13"
       },
       {
-        "key": "releases/e316b05f21b39ae3fd666cc224d64722b607d8e9/part-1",
+        "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/part-1",
         "size": 60000000,
-        "sha256": "b4cc6f733da7eeaf290a994b6fa1395a2b02640653822b38469c36da7aa8b3da"
+        "sha256": "df639be1717bec7c67a4bea39c6963067ff9ebad9909e0eab529704cc1cb6a87"
       },
       {
-        "key": "releases/e316b05f21b39ae3fd666cc224d64722b607d8e9/part-2",
+        "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/part-2",
         "size": 60000000,
-        "sha256": "bff68432daffcab6d43be64418d5ee428ab357fd297eae42b575cae99539e67f"
+        "sha256": "8919311c3fd3dd5f136d6d9023e37896b4855421c94bf02baef9737fe9863951"
       },
       {
-        "key": "releases/e316b05f21b39ae3fd666cc224d64722b607d8e9/part-3",
+        "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/part-3",
         "size": 60000000,
-        "sha256": "a6a332bb9e65c9c3150c24b5239e57a6ab688ad919aab339c626c1b2b70b777a"
+        "sha256": "ff55a1e99e80030fcdd5b4bb80b1b5ad2bfe537f6a74f249df11a5517f4b5b44"
       },
       {
-        "key": "releases/e316b05f21b39ae3fd666cc224d64722b607d8e9/part-4",
-        "size": 13380823,
-        "sha256": "a8ffbb7501da1b0a6f956270b9474a967dbcdf10d2028f56cc3f59baf1d81aa5"
+        "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/part-4",
+        "size": 60000000,
+        "sha256": "a20730e5c344f4bb5bd052876ab06e634483e341d61d9032e40c0db89cc46097"
+      },
+      {
+        "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/part-5",
+        "size": 60000000,
+        "sha256": "0c114f7ca084096e9548862727453a162f14b7403cd6ec9fca87beedbb9ea055"
+      },
+      {
+        "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/part-6",
+        "size": 40124930,
+        "sha256": "4e6289f348ad904955e2d6bd6eee2beae58d83c0350e91e396f4519d9007bd53"
       }
     ],
-    "key": "releases/e316b05f21b39ae3fd666cc224d64722b607d8e9/manifest.json"
+    "key": "releases/36d3cddbfdeac09aad168837a436b24e247cebe9/manifest.json"
   },
   "binaryAssets": [
     {
@@ -547,6 +557,312 @@
       "mode": "100644",
       "sha": "33cf6ce014749b80b3c3b5fd3f43d197c8c161c2",
       "size": 474900
+    },
+    {
+      "path": "public/reel-references/balloon-sky.mp4",
+      "mode": "100644",
+      "sha": "aa5d908f26c80208d4e6fa9c89dcd5f139a049e8",
+      "size": 3276157
+    },
+    {
+      "path": "public/reel-references/balloon-sky.webp",
+      "mode": "100644",
+      "sha": "9ecee70104fba3f8685951a2914b7c2faa6a45e5",
+      "size": 26562
+    },
+    {
+      "path": "public/reel-references/blush-engagement.mp4",
+      "mode": "100644",
+      "sha": "944a7d80a1e918ce76d28135b5b079e9100befae",
+      "size": 5459812
+    },
+    {
+      "path": "public/reel-references/blush-engagement.webp",
+      "mode": "100644",
+      "sha": "613e415a57244cf81707f4fa2f52c54febbe0233",
+      "size": 53738
+    },
+    {
+      "path": "public/reel-references/boutique-opening.mp4",
+      "mode": "100644",
+      "sha": "26ad97c79c9f0be8063a3bb46bdccbad20838bf8",
+      "size": 3652858
+    },
+    {
+      "path": "public/reel-references/boutique-opening.webp",
+      "mode": "100644",
+      "sha": "102fa88be3c3659e00d7e6fd10f50f16262e24d3",
+      "size": 67130
+    },
+    {
+      "path": "public/reel-references/campus-celebration.mp4",
+      "mode": "100644",
+      "sha": "606c9b4e50fb0b71bab436ad9f983c8a52b9a647",
+      "size": 4721812
+    },
+    {
+      "path": "public/reel-references/campus-celebration.webp",
+      "mode": "100644",
+      "sha": "e1a6cbf48ed800b2bf042c1eec30880288e4863c",
+      "size": 48106
+    },
+    {
+      "path": "public/reel-references/candle-anniversary.mp4",
+      "mode": "100644",
+      "sha": "b9ecdacb34d99ba1e37c03857f07b297dca02d3f",
+      "size": 4776755
+    },
+    {
+      "path": "public/reel-references/candle-anniversary.webp",
+      "mode": "100644",
+      "sha": "33b6cc698dce3f242ba3d7988550bc8bc7f2ffd3",
+      "size": 33620
+    },
+    {
+      "path": "public/reel-references/candy-carnival.mp4",
+      "mode": "100644",
+      "sha": "1d9ae67bebefb9d2d878d3ea73fd3a79523885fa",
+      "size": 3776026
+    },
+    {
+      "path": "public/reel-references/candy-carnival.webp",
+      "mode": "100644",
+      "sha": "d6491680dbf5ea2931223ba0703abc7dac8ca695",
+      "size": 37806
+    },
+    {
+      "path": "public/reel-references/cosmic-birthday.webp",
+      "mode": "100644",
+      "sha": "075bdbfb2a6fff78512603623a59816183e4061c",
+      "size": 32808
+    },
+    {
+      "path": "public/reel-references/cradle-lotus.mp4",
+      "mode": "100644",
+      "sha": "9f94e6a312c286354815b3ff54c7af4c64e1963e",
+      "size": 4096868
+    },
+    {
+      "path": "public/reel-references/cradle-lotus.webp",
+      "mode": "100644",
+      "sha": "964eef41e3653a30d38ddcc7aee489091a9a5736",
+      "size": 53404
+    },
+    {
+      "path": "public/reel-references/disco-birthday.mp4",
+      "mode": "100644",
+      "sha": "149002167bc4b0750a0cb742c991516787ac7dc1",
+      "size": 5116443
+    },
+    {
+      "path": "public/reel-references/disco-birthday.webp",
+      "mode": "100644",
+      "sha": "38f85545c941cbe9a52a6df3efdc9efe98befc04",
+      "size": 42332
+    },
+    {
+      "path": "public/reel-references/diwali-courtyard.mp4",
+      "mode": "100644",
+      "sha": "25afd53ad921f7625dc7f9c8b512ed1c077c4b45",
+      "size": 4072138
+    },
+    {
+      "path": "public/reel-references/diwali-courtyard.webp",
+      "mode": "100644",
+      "sha": "c0a2f45a2debb92ba5cbab9c7fc96f367de7ca7d",
+      "size": 36424
+    },
+    {
+      "path": "public/reel-references/eid-moon.mp4",
+      "mode": "100644",
+      "sha": "5b582b722e44ae26649ffcc2049378afae5683ba",
+      "size": 5058677
+    },
+    {
+      "path": "public/reel-references/eid-moon.webp",
+      "mode": "100644",
+      "sha": "56b333712c4d0095ec193a833047995204038e99",
+      "size": 49786
+    },
+    {
+      "path": "public/reel-references/garden-bloom.webp",
+      "mode": "100644",
+      "sha": "03ff1b672b3c8852805cdad8ea8f7c45f49b2e08",
+      "size": 60852
+    },
+    {
+      "path": "public/reel-references/golden-anniversary.mp4",
+      "mode": "100644",
+      "sha": "4ea1a21d513acbc5139e4d685bc5c5698436e6c7",
+      "size": 5308136
+    },
+    {
+      "path": "public/reel-references/golden-anniversary.webp",
+      "mode": "100644",
+      "sha": "c9913500c186c7194d1098375c12b2929efe4a06",
+      "size": 64174
+    },
+    {
+      "path": "public/reel-references/haldi-courtyard.mp4",
+      "mode": "100644",
+      "sha": "ca975a305d46dc3a02935681ee4fe88ebd4aa665",
+      "size": 5164093
+    },
+    {
+      "path": "public/reel-references/haldi-courtyard.webp",
+      "mode": "100644",
+      "sha": "b5acb77f163557a3c792fd94652d7be55cac39cd",
+      "size": 59528
+    },
+    {
+      "path": "public/reel-references/jungle-birthday.mp4",
+      "mode": "100644",
+      "sha": "0f5b232e55356991284524cc4e21cc7984738608",
+      "size": 4113326
+    },
+    {
+      "path": "public/reel-references/jungle-birthday.webp",
+      "mode": "100644",
+      "sha": "7f7dbefc7b4df057ac8a8f2662c557baba76f581",
+      "size": 48542
+    },
+    {
+      "path": "public/reel-references/launch-stage.mp4",
+      "mode": "100644",
+      "sha": "de1784dde6d83986ce02f7a4303db691e26c236d",
+      "size": 4284143
+    },
+    {
+      "path": "public/reel-references/launch-stage.webp",
+      "mode": "100644",
+      "sha": "ca8ff5c92d3cc79193a9b8c742cdb41ac659a28f",
+      "size": 52050
+    },
+    {
+      "path": "public/reel-references/laurel-library.mp4",
+      "mode": "100644",
+      "sha": "7c7ab29b8e8ac9d442d6f12f53e025741c114f7f",
+      "size": 4456034
+    },
+    {
+      "path": "public/reel-references/laurel-library.webp",
+      "mode": "100644",
+      "sha": "d48c422633e2e2e39247378d88e394a2d9b7e638",
+      "size": 40938
+    },
+    {
+      "path": "public/reel-references/little-cloud.webp",
+      "mode": "100644",
+      "sha": "7695cc046e2158986cde8fde79f371f43c60ce16",
+      "size": 30456
+    },
+    {
+      "path": "public/reel-references/lotus-engagement.mp4",
+      "mode": "100644",
+      "sha": "f45f47a651685ec198b65db0e0e26ee6683be172",
+      "size": 4411005
+    },
+    {
+      "path": "public/reel-references/lotus-engagement.webp",
+      "mode": "100644",
+      "sha": "09fa8c4f14b195e62708b5a3ff17425eb8692444",
+      "size": 61658
+    },
+    {
+      "path": "public/reel-references/marigold-home.mp4",
+      "mode": "100644",
+      "sha": "f299215f1405327efe03ba5c1694a26ba2efb872",
+      "size": 3727187
+    },
+    {
+      "path": "public/reel-references/marigold-home.webp",
+      "mode": "100644",
+      "sha": "bfa87843f244638c73460ad9f75a70c899d83e8c",
+      "size": 65170
+    },
+    {
+      "path": "public/reel-references/mehendi-mandap.mp4",
+      "mode": "100644",
+      "sha": "cd2b0cc92a032b37f79f34ec379a9753266a8ca1",
+      "size": 5961021
+    },
+    {
+      "path": "public/reel-references/mehendi-mandap.webp",
+      "mode": "100644",
+      "sha": "4af35d8ae72e400eed3ca22e3ac1a39bb05f5ca1",
+      "size": 53292
+    },
+    {
+      "path": "public/reel-references/modern-villa.mp4",
+      "mode": "100644",
+      "sha": "9350c54d915c83c7bfc994f1bbdd4ec9e0869a82",
+      "size": 4742666
+    },
+    {
+      "path": "public/reel-references/modern-villa.webp",
+      "mode": "100644",
+      "sha": "155be3f0f4cb863f230e09f769a583d0caad3eaa",
+      "size": 29358
+    },
+    {
+      "path": "public/reel-references/neon-sangeet.webp",
+      "mode": "100644",
+      "sha": "f84102d7457057473dc1cb86dc2418fdfd2b53e9",
+      "size": 36816
+    },
+    {
+      "path": "public/reel-references/reference-heritage-scroll.mp4",
+      "mode": "100644",
+      "sha": "d8cc1918066e1ff4cdeabca55105eefa22337f4a",
+      "size": 7451124
+    },
+    {
+      "path": "public/reel-references/reference-rajasthan-folk.mp4",
+      "mode": "100644",
+      "sha": "f56acdd44f92e82b00afa442f43190f6be21c72d",
+      "size": 8199586
+    },
+    {
+      "path": "public/reel-references/reference-vintage-date.mp4",
+      "mode": "100644",
+      "sha": "efdc7650a509f208e1612996d3d37f6b284702fc",
+      "size": 6546107
+    },
+    {
+      "path": "public/reel-references/reference-vintage-date.webp",
+      "mode": "100644",
+      "sha": "8b528600b1661631c54df5f50850050c83fea730",
+      "size": 73406
+    },
+    {
+      "path": "public/reel-references/reference-wedding-street.mp4",
+      "mode": "100644",
+      "sha": "197b6642f6a6b307127b45403bd1deb65e9ac7c1",
+      "size": 12356214
+    },
+    {
+      "path": "public/reel-references/storybook-cradle.mp4",
+      "mode": "100644",
+      "sha": "2bfe824a3dc49ebeaec8cb8682929be0d0e1303b",
+      "size": 4111029
+    },
+    {
+      "path": "public/reel-references/storybook-cradle.webp",
+      "mode": "100644",
+      "sha": "2dcee342187a09a90faff0055e0ef109c561e1ff",
+      "size": 43816
+    },
+    {
+      "path": "public/reel-references/travel-garden.mp4",
+      "mode": "100644",
+      "sha": "5f2a69e5abccb1d3aa4b6504b3aef05c44fc0739",
+      "size": 4818410
+    },
+    {
+      "path": "public/reel-references/travel-garden.webp",
+      "mode": "100644",
+      "sha": "a633472ee1f6eb153655b21d1612ba9b6f374b8e",
+      "size": 44546
     },
     {
       "path": "public/reference-films/heritage-scroll-scene-1.webp",
@@ -3429,16 +3745,34 @@
       "size": 237240
     },
     {
+      "path": "public/worlds/cosmic-birthday.mp4",
+      "mode": "100644",
+      "sha": "c7b2afa3d7cc3449dcf306f72701dbce8b72b776",
+      "size": 3072682
+    },
+    {
       "path": "public/worlds/cosmic-birthday.webp",
       "mode": "100644",
       "sha": "32a25e4d1307cd51e84cc1133f28695e1204701f",
       "size": 85988
     },
     {
+      "path": "public/worlds/garden-bloom.mp4",
+      "mode": "100644",
+      "sha": "d3ec555ff4775e0a07739c9816440a17df68a802",
+      "size": 5401266
+    },
+    {
       "path": "public/worlds/garden-bloom.webp",
       "mode": "100644",
       "sha": "84d946e4ecf588dc160ae9489605c4d33a3de0b3",
       "size": 229920
+    },
+    {
+      "path": "public/worlds/little-cloud.mp4",
+      "mode": "100644",
+      "sha": "7ca9302fe0431fc7e187f0bc39d4e5b3df6a84cf",
+      "size": 2377571
     },
     {
       "path": "public/worlds/little-cloud.webp",
@@ -3463,6 +3797,12 @@
       "mode": "100644",
       "sha": "4d2c5f5ea4b40d96e4ba81216b84581ff9515dca",
       "size": 163154
+    },
+    {
+      "path": "public/worlds/neon-sangeet.mp4",
+      "mode": "100644",
+      "sha": "bcaa0e7a83fc1615894e6031a19d8fccd47dab2f",
+      "size": 5177335
     },
     {
       "path": "public/worlds/neon-sangeet.webp",

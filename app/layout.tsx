@@ -34,6 +34,7 @@ import "./creation-workbench.css";
 import "./editor-workbench.css";
 import "./reels-viewer.css";
 import "./celebration-theme.css";
+import "./reel-platform.css";
 
 export const metadata: Metadata = {
   ...pageMetadata("AI Invitation Maker — 2 Free Reel Credits | Jashntoons",siteDescription,"/"),

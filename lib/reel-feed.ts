@@ -1,12 +1,9 @@
-import {referenceFilms,referenceFile} from './reference-films';
-import {invitationDirections,directionPoster,directionVideo} from './invitation-directions';
-import {studioTemplates} from './studio-catalog';
-import {photoReelFile} from './photo-scenes';
-
+import {templates} from './templates';
+import {reelSource} from './reel-experience';
 export type ReelFeedItem={id:string;templateId:string;name:string;seconds:number;tag:string;description:string;shots:string[];video:string;poster:string;kind:'film'|'template';note:string};
-const filmNote='Sample people and details are shown. Personalise the complete original film with your saved avatar and invitation text. Its scenes and camera guide the edit; music only, and AI edits can vary.';
-export const reelFeed:ReelFeedItem[]=[
- ...referenceFilms.map(f=>({...f,templateId:'reference-'+f.id,video:referenceFile(f.id),poster:referenceFile(f.id,'poster'),kind:'film' as const,note:filmNote})),
- ...invitationDirections.map(d=>({id:'invitation-'+d.id,templateId:'invitation-'+d.id,name:d.name,seconds:15,tag:d.category,description:d.description,shots:d.shots,video:directionVideo(d.id),poster:directionPoster(d.id),kind:'film' as const,note:filmNote})),
- ...studioTemplates.map(t=>({id:t.id,templateId:t.id,name:t.name,seconds:t.duration??30,tag:t.category,description:t.mood,shots:[],video:photoReelFile(t.id),poster:t.poster!,kind:'template' as const,note:'This sample uses the selected template animation. Your saved avatar replaces the sample people in the same scenes and layout, with editable details and music. No AI video charge.'})),
-];
+export const reelFeed:ReelFeedItem[]=templates.flatMap(t=>{const source=reelSource(t);return source?[{id:t.referenceFilm??t.id,templateId:t.id,name:t.name,seconds:source.seconds,tag:t.category,description:t.mood,shots:[],video:source.url,poster:source.poster,kind:t.studio?'template' as const:'film' as const,note:'This is the actual reference used for your new reel. Add your photos, outfits, decoration choices and complete event details in one brief. The AI edits this video with your people; exact motion and likeness can vary. Review the credit total before creating.'}]:[];});
+
+// Feature complete original motion before the wider portrait-animation library.
+const featured=['reference-vintage-date','invitation-sunehri-darwaze','reference-shaadi-haveli','haldi-courtyard','jungle-birthday','lotus-engagement','candy-carnival','neon-sangeet','balloon-sky','garden-bloom','marigold-home','disco-birthday'];
+reelFeed.sort((a,b)=>{const priority=(r:ReelFeedItem)=>featured.includes(r.templateId)?featured.indexOf(r.templateId):getPriority(r);return priority(a)-priority(b)});
+function getPriority(r:ReelFeedItem){return r.kind==='template'?100:20;}
