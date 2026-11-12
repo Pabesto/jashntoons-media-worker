@@ -15,7 +15,7 @@ const duration=(r:ReelFeedItem)=>Math.round(r.seconds)+'s';
 
 export function MobileApp(p:Props){
  const [reelsOpened,setReelsOpened]=useState(p.tab==='reels');useEffect(()=>{if(p.tab==='reels')setReelsOpened(true)},[p.tab]);
- return <div className={'mobile-app mobile-app-'+p.tab}>
+ return <><div className={'mobile-app mobile-app-'+p.tab}>
   {p.tab==='home'&&<main className="app-home" aria-label="Your invitation studio">
    <div className="app-welcome"><div><p>{p.name?'HELLO, '+p.name.split(' ')[0].toUpperCase():'A LITTLE MAGIC, ALL YOURS'}</p><h1>Make a moment.<br/><em>Make it yours.</em></h1></div><span className="app-welcome-mark"><BrandMark/></span></div>
    <button className="app-search" onClick={()=>p.openReels({browse:true})}><Search size={19}/><span>Find your invitation reel</span><span className="app-search-key"><Sparkles size={14}/></span></button>
@@ -30,14 +30,14 @@ export function MobileApp(p:Props){
    <div className="app-help-links"><button onClick={()=>p.onTab('help')}>Help & FAQs</button><button onClick={p.openLibrary}>My reels & avatars</button><a href="/privacy">Privacy</a><a href="/terms">Terms</a>{p.signout&&<a href={p.signout.url} target="_top" onClick={p.signout.clear}>Sign out</a>}</div>
   </main>}
   {(reelsOpened||p.tab==='reels')&&<div hidden={p.tab!=='reels'}><MobileReels key={p.intent.key} intent={p.intent} create={p.create} active={p.active&&p.tab==='reels'}/></div>}
-  <nav className={'app-bottom-nav'+(p.tab==='reels'?' app-bottom-dark':'')} aria-label="App navigation" hidden={!p.active}>
+ </div><nav className={'app-bottom-nav'+(p.tab==='reels'?' app-bottom-dark':'')} aria-label="App navigation" hidden={!p.active}>
    <button aria-current={['home','creators','help'].includes(p.tab)?'page':undefined} onClick={()=>p.onTab('home')}><Home size={22}/><span>Home</span></button>
-   <button aria-current={p.tab==='reels'?'page':undefined} onClick={()=>p.onTab('reels')}><Clapperboard size={22}/><span>Reels</span></button>
-   <button className="app-create" onClick={()=>p.openReels({browse:true})} aria-label="Create an invitation"><span><Plus size={26}/></span><small>Create</small></button>
+   <button onClick={()=>p.openReels({browse:true})} aria-label="Create an invitation"><Plus size={24}/><span>Create</span></button>
+   <button className="app-reels-button" aria-current={p.tab==='reels'?'page':undefined} onClick={()=>p.onTab('reels')}><span><Clapperboard size={24}/></span><small>Reels</small></button>
    <button aria-current={p.tab==='plans'?'page':undefined} onClick={()=>p.onTab('plans')}><Coins size={22}/><span>Plans</span></button>
    <button onClick={p.openLibrary}><FolderHeart size={22}/><span>My reels</span></button>
   </nav>
- </div>;
+ </>;
 }
 
 function MobileReels({intent,create,active}:{intent:AppReelIntent;create:Props['create'];active:boolean}){
