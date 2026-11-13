@@ -1,56 +1,56 @@
 {
   "format": 1,
-  "applicationCommit": "36315268dbb5f4e199f4ccce10d72dada99ac855",
+  "applicationCommit": "7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6",
   "repository": "Pabesto/jashntoons-media-worker",
   "branch": "jashntoons-web-source",
   "archive": {
     "storageOrigin": "https://jashntoons.jocoseavocet1.chatgpt.site",
-    "commit": "36315268dbb5f4e199f4ccce10d72dada99ac855",
-    "sha256": "cd387f71937866eefb5f101ae0e125a7b46d8d4fa6bc24f49142f405c0acba27",
-    "size": 448174332,
+    "commit": "7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6",
+    "sha256": "0e31446fe9e75e3ec4fcd4b5c12917eec07d4d9b987ef65262d091ac9eb79753",
+    "size": 448174595,
     "chunks": [
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-0",
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-0",
         "size": 60000000,
-        "sha256": "af213736b660d1167540362905c3d883570b0b2c3bac5ffa73ce476f8d960c73"
+        "sha256": "8da38bdb9cbf249fd36c34ff4fe0587bde352e4c8a0c1ea43e4023f61359814b"
       },
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-1",
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-1",
         "size": 60000000,
-        "sha256": "ab6fe8447ba4ec1759312b5c3570f3e89110b3d60dfc36a9f905c81ce528f8a0"
+        "sha256": "55ad70a78a1d48668b0d10bfc4c0f24c74a5671d7edf0b0003da61e82c041624"
       },
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-2",
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-2",
         "size": 60000000,
-        "sha256": "c305967ea8195316229f41978c74c806bb665f2b0f1076dede9af09c732c255e"
+        "sha256": "fb2ab5f1b2986460832d1250555f04277bf0b07cc6d9bc0b111345fcc025d4bd"
       },
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-3",
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-3",
         "size": 60000000,
-        "sha256": "b31c65b60b8b3dc635a028019716dd1fe303321e433f7d423bdcbd0d94edc0fb"
+        "sha256": "0c911162f4dff766e81f3ce9d83ff0e7aeafa29880ec74a5d70863abc7788059"
       },
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-4",
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-4",
         "size": 60000000,
-        "sha256": "97c6050d76f742920db73166bdb88a652cb6c5367ff285708900f54d0043d2f3"
+        "sha256": "6cf58cacde5884221b59968d5e1cd2ea76c09823bc7a3510bd5d057468bb6c80"
       },
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-5",
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-5",
         "size": 60000000,
-        "sha256": "9a16708e5499cc4fb8b2d5adb014a81731eac03ae52f44588b555169b0166834"
+        "sha256": "99f258d072d6cc2f0098e4718b2d974307a5e50a25553e57b739e159501622f6"
       },
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-6",
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-6",
         "size": 60000000,
-        "sha256": "195a528f726369192e334c8e873d49d70a82bc676b0b08220e71e6c9edc26a7f"
+        "sha256": "6c2694a131c3037456eef1c835dfd543aeeab11b9e56a7e61efc409ff6fbc6ad"
       },
       {
-        "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/part-7",
-        "size": 28174332,
-        "sha256": "b46c9bf08422cbf588c498c3e042b05f295b4ded7e2e5dc5f974953a0e94e607"
+        "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/part-7",
+        "size": 28174595,
+        "sha256": "b9ae873ca64c3be56a2564e2f56608a4c72cbc59f2145146149102f7ac133798"
       }
     ],
-    "key": "releases/36315268dbb5f4e199f4ccce10d72dada99ac855/manifest.json"
+    "key": "releases/7a5c8eb05215e0f2a5cfeab19f52716e8ed251e6/manifest.json"
   },
   "binaryAssets": [
     {
