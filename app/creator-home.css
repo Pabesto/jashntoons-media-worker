@@ -19,7 +19,7 @@
 @media(min-width:1200px) and (min-height:601px){
  .jashntoons[data-app-tab=home]{--home-reel-rail:244px}
  .jashntoons[data-app-tab=home]>.desktop-home-content,.jashntoons[data-app-tab=home]>.site-footer{margin-left:var(--home-reel-rail)}
- .jashntoons[data-app-tab=home]>.reel-dock,.jashntoons[data-app-tab=home]>.reel-dock-reopen{left:max(18px,env(safe-area-inset-left));right:auto;top:124px;bottom:auto}
+ .jashntoons[data-app-tab=home]>.reel-dock,.jashntoons[data-app-tab=home]>.reel-dock-reopen{left:max(18px,env(safe-area-inset-left));right:auto;top:50%;bottom:auto;translate:0 -50%}
  .jashntoons[data-app-tab=home]>.reel-dock{width:min(208px,calc((100svh - 322px)*.5625));border-radius:15px;box-shadow:0 10px 30px #4f2b1b24}
  .jashntoons[data-app-tab=home] .reel-dock-heading{height:40px}
  .jashntoons[data-app-tab=home] .reel-dock-screen{height:auto;aspect-ratio:9/16}
