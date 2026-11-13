@@ -1,0 +1,78 @@
+{
+  "created": "2026-11-13",
+  "generator": "OpenAI Imagegen",
+  "disclosure": "Fictional AI-created style studies, not customer photos or actual product generation results. UI labels disclose this. Actual output can vary.",
+  "format": "Equal before/after 3:4 panels in a 3:2 diptych; CSS clips either half.",
+  "assets": [
+    {
+      "id": "premium-3d",
+      "asset": "public/home-demos/premium-3d.webp",
+      "original": "exec-39f3e4cf-3169-467a-8f10-76296ca7a54a.png",
+      "prompt": "Create a premium website asset for an Indian celebration avatar studio: a precisely divided side-by-side diptych, wide 3:2 image, no gutter, no borders, no words or letters or logos anywhere. Both halves are equal 3:4 portraits and show the SAME entirely fictional Indian couple in their late twenties, waist-up, matching face positions, both heads at the same height, friendly natural expressions. LEFT HALF: a photorealistic natural portrait, subtle skin texture, woman with long dark wavy hair in a plain peach kurta, man with short dark hair and neat beard in an ivory cotton shirt, simple softly lit warm beige studio backdrop, ordinary camera photograph. RIGHT HALF: transform exactly those same people into beautifully crafted high-end 3D animated film characters, recognisable matching facial features, elegant maroon and gold bridal lehenga and ivory sherwani, refined gold jewellery, a dreamy Indian palace garden with marigolds and warm lights. Sophisticated textured 3D rendering, expressive faces, rich fabric, very polished believable anatomy. Both subjects fully inside each half, avoid any cross-panel overlap. Restrained luxurious colours, strong face readability at mobile thumbnail size. This is a labelled fictional style-study demo, not a real customer before/after.",
+      "bytes": 188256
+    },
+    {
+      "id": "watercolor",
+      "asset": "public/home-demos/watercolor.webp",
+      "original": "exec-18a2f1b1-61b5-4d15-9b14-32cfcdbc0944.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One Indian couple age 28: woman with deep brown skin, shoulder-length curly hair, round face; man with medium brown skin, close cropped hair and trimmed moustache. Right: refined watercolour and ink painting, coral and mint engagement outfits, lotus garden, expressive recognisable faces, delicate paper grain and painterly edges.",
+      "bytes": 210346
+    },
+    {
+      "id": "cinematic-real",
+      "asset": "public/home-demos/cinematic-real.webp",
+      "original": "exec-bb187917-b54b-4d46-a2d4-d2c7bd732508.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One Indian adult man age 30 with medium dark skin, short wavy hair and neatly trimmed beard. Left wears a simple blue shirt. Right: luxurious cinematic photographic wedding portrait, emerald sherwani and muted gold turban, bokeh-lit baraat evening with marigolds, natural pores, evocative film lighting and regal joyful expression; realistic, not illustration.",
+      "bytes": 187888
+    },
+    {
+      "id": "royal-miniature",
+      "asset": "public/home-demos/royal-miniature.webp",
+      "original": "exec-d23c5da8-35a0-46f4-b915-96fc8b2a1bc3.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One Indian adult couple age 32: woman in a plain pale green blouse with straight shoulder-length black hair, man in a cream casual shirt with round spectacles and short black hair. Right: exquisitely detailed contemporary Rajasthani miniature painting of the SAME faces, jewel blue lehenga and wine sherwani, gold textile details and symmetrical palace garden, flat painterly depth with ornate architecture.",
+      "bytes": 264774
+    },
+    {
+      "id": "storybook",
+      "asset": "public/home-demos/storybook.webp",
+      "original": "exec-2c48c000-4172-4e04-a1ca-a713f09d2bce.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One fictional Indian little girl age 6 with brown skin, a sweet round face, curly pigtails, a simple pink cotton dress in the left portrait. Right: delightful hand painted gouache storybook character of the SAME child, modest pastel lavender party dress and little birthday crown, giant flowers and a whimsical hot-air-balloon birthday garden; soft hand painted texture, charming rounded shapes and recognisable face.",
+      "bytes": 153714
+    },
+    {
+      "id": "clay-animation",
+      "asset": "public/home-demos/clay-animation.webp",
+      "original": "exec-61b7a596-6c3c-45eb-857e-98a7ca4a8a19.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One fictional Indian family of three, parents about 35 and their boy about 7, all in modest casual clothes, relaxed portrait group. Right: beautifully handcrafted stop-motion clay figures of the SAME family, clearly tactile clay and tiny fabric-like texture, joyful pastel birthday party, small balloons and confetti, soft studio lighting, recognisable faces and subtle finger marks on sculpted clay.",
+      "bytes": 171276
+    },
+    {
+      "id": "paper-craft",
+      "asset": "public/home-demos/paper-craft.webp",
+      "original": "exec-e903ca5b-3dd3-4006-b493-aac255b57128.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One fictional Indian woman age 26 with long black braid, warm brown skin, expressive almond-shaped eyes and a simple off-white kurta on left. Right: premium layered paper-art character of the SAME woman in a bright mustard haldi outfit, visible handmade paper fibres, dimensional cut-paper marigolds and terracotta arches, delicate layered facial features and playful soft shadows.",
+      "bytes": 179254
+    },
+    {
+      "id": "ink-and-gold",
+      "asset": "public/home-demos/ink-and-gold.webp",
+      "original": "exec-80467ad7-fa4d-49af-bc4e-e425ef9e71d9.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One fictional Indian older couple about 65, woman with silver hair in a neat bun and a simple beige sari, man with grey hair and a salt-and-pepper moustache in a light cotton shirt, gentle genuine smiles and natural wrinkles. Right: elegant black ink-and-wash portrait with restrained gold foil accents, ivory paper, richly expressive same faces with age preserved, celebratory cream sari and dark bandhgala, subtle golden anniversary floral frame.",
+      "bytes": 198182
+    },
+    {
+      "id": "anime-cinema",
+      "asset": "public/home-demos/anime-cinema.webp",
+      "original": "exec-3e568262-a170-4f94-9a3d-7fcad12cf696.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One fictional Indian couple age 24: woman with medium brown skin and long wavy dark hair, man with dark brown skin, short textured hair and clean-shaven face, plain casual clothes. Right: original cinematic anime illustration of the SAME couple in coordinated coral and blue party outfits beneath a dreamy lantern-lit dusk garden; coherent refined anatomy, nuanced expressive eyes, detailed fabric and hand-painted atmospheric background. No known franchise characters.",
+      "bytes": 174176
+    },
+    {
+      "id": "vintage-film",
+      "asset": "public/home-demos/vintage-film.webp",
+      "original": "exec-df1d2230-283b-4a4b-85d1-863b7506ba67.png",
+      "prompt": "Generate one premium asset for a celebration avatar website: a wide landscape 3:2 DIPTYCH, split exactly down the centre into two equal 3:4 portraits, no gutter, no text, no labels, no logos, no borders. LEFT: a natural photorealistic ordinary camera portrait with skin texture, casual simple clothing, warm neutral studio background. RIGHT: the EXACT SAME fictional people transformed into the specified artistic celebration style. Both halves must match subject count, face identity, head positions, crop and scale for an interactive before/after comparison; hands and faces anatomically coherent. Composition waist up, all people fully within their respective half, no cross-panel overlaps. This is an illustrative fictional studio style study. One fictional Indian couple about 45: woman with warm brown skin and shoulder-length dark hair, man with medium brown skin, short hair with a little grey and a neat moustache; ordinary cream and sage casual clothing on left. Right: romantic 35mm analogue cinematic portrait of the SAME couple at an elegant anniversary celebration, rose sari and ivory tailored jacket, glowing palace corridor, champagne and soft pink florals, warm sepia colour grade, delicate grain, realistic faces.",
+      "bytes": 126668
+    }
+  ]
+}

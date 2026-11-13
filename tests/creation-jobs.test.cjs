@@ -1,6 +1,20 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),ts=require('typescript'),{DatabaseSync}=require('node:sqlite');
 const root=path.resolve(__dirname,'..');
 
+test('Homepage style choices survive sign-in and open the matching real avatar template',()=>{
+ const h=harness(),entry=h.load('lib/creation-entry.ts'),demos=h.load('lib/home-avatar-demos.ts').homeAvatarDemos,{templates}=h.load('lib/templates.ts');
+ assert.equal(demos.length,10);assert.equal(new Set(demos.map(d=>d.styleId)).size,10);
+ for(const demo of demos){const template=templates.find(t=>t.id===demo.templateId);assert.ok(template,demo.templateId);assert.equal(template.category,demo.category);const intent=entry.readCreationIntent(JSON.stringify({templateId:demo.templateId,output:'image',styleId:demo.styleId}));const data=entry.creationIntentData(intent);assert.equal(data.creation.styleId,demo.styleId);assert.equal(data.creation.format,'image');assert.equal(data.creation.consent,false);assert.ok(fs.statSync(path.join(root,'public',demo.image)).size>10000);}
+ assert.equal(h.calls.length,0,'opening a style must not spend credits or call AI');
+});
+
+test('Homepage AI moments preserve category-safe actions and reject invented look values',()=>{
+ const h=harness(),entry=h.load('lib/creation-entry.ts');
+ const restore=v=>entry.readCreationIntent(JSON.stringify({templateId:'studio-wedding-01',output:'video',...v}));
+ const data=entry.creationIntentData(restore({styleId:'premium-3d',momentId:'wedding-gentle-twirl'}));assert.equal(data.creation.momentId,'wedding-gentle-twirl');assert.equal(data.creation.styleId,'premium-3d');assert.equal(data.creation.experience,undefined);
+ const invalid=restore({styleId:'invented',momentId:'birthday-candle-wish'});assert.equal(invalid.styleId,undefined);assert.equal(invalid.momentId,undefined);assert.equal(h.calls.length,0);
+});
+
 test('Use this reel preserves the exact selected source through sign-in and limits new films to sixty seconds',()=>{
  const h=harness(),entry=h.load('lib/creation-entry.ts'),{templates}=h.load('lib/templates.ts'),contract=h.load('lib/reference-edit-contract.ts'),feed=h.load('lib/reel-feed.ts').reelFeed;
  const active=templates.filter(t=>!t.archived);assert.equal(feed.length,active.length);assert.equal(new Set(feed.map(r=>r.templateId)).size,active.length);

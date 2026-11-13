@@ -4,38 +4,26 @@ import {ArrowLeft,ArrowRight,ArrowUpRight,Bookmark,Check,Clapperboard,Coins,Fold
 import {reelFeed,type ReelFeedItem} from '@/lib/reel-feed';
 import {getTemplate,type Template} from '@/lib/templates';
 import {ReferencePlayer} from './ReferencePlayer';
-import {BrandMark} from './BrandLogo';
-import {InvitationLinkCard} from './InvitationLinkCard';
-import {StudioSpotlight,type SpotlightIntent} from './StudioSpotlight';
+import {CreatorHome} from './CreatorHome';
+import type {CreationIntent} from '@/lib/creation-entry';
+import {type SpotlightIntent} from './StudioSpotlight';
 
 export type AppTab='home'|'reels'|'plans'|'creators'|'help';
 export type AppReelIntent=SpotlightIntent&{key:number};
-type Props={tab:AppTab;onTab:(tab:AppTab)=>void;intent:AppReelIntent;openReels:(intent?:Omit<AppReelIntent,'key'>)=>void;create:(t:Template)=>void;openLibrary:()=>void;active:boolean;name?:string;credits?:number;signout?:{url:string;clear:()=>void};resume?:{title:string;open:()=>void}};
-const occasions=['Wedding','Birthday','Haldi & Mehendi','Engagement','Baby shower','Party'];
-const example=(category:string)=>reelFeed.find(r=>getTemplate(r.templateId).category===category)??reelFeed[0];
+type Props={tab:AppTab;onTab:(tab:AppTab)=>void;intent:AppReelIntent;openReels:(intent?:Omit<AppReelIntent,'key'>)=>void;create:(t:Template)=>void;begin:(intent:CreationIntent)=>void;openLibrary:()=>void;active:boolean;name?:string;credits?:number;signout?:{url:string;clear:()=>void};resume?:{title:string;open:()=>void}};
 const duration=(r:ReelFeedItem)=>Math.round(r.seconds)+'s';
 
 export function MobileApp(p:Props){
  const [reelsOpened,setReelsOpened]=useState(p.tab==='reels');useEffect(()=>{if(p.tab==='reels')setReelsOpened(true)},[p.tab]);
  return <><div className={'mobile-app mobile-app-'+p.tab}>
   {p.tab==='home'&&<main className="app-home" aria-label="Your invitation studio">
-   <div className="app-welcome"><div><p>{p.name?'HELLO, '+p.name.split(' ')[0].toUpperCase():'A LITTLE MAGIC, ALL YOURS'}</p><h1>Make a moment.<br/><em>Make it yours.</em></h1></div><span className="app-welcome-mark"><BrandMark/></span></div>
-   <InvitationLinkCard/>
-   <button className="app-search" onClick={()=>p.openReels({browse:true})}><Search size={19}/><span>Find your invitation reel</span><span className="app-search-key"><Sparkles size={14}/></span></button>
-   <section className="app-occasions" aria-label="Choose your celebration">{occasions.map(c=><button key={c} onClick={()=>p.openReels({category:c})}><span><img src={example(c).poster} alt="" loading="lazy"/></span><strong>{c==='Haldi & Mehendi'?'Haldi':c==='Baby shower'?'Baby':c}</strong></button>)}</section>
-   {p.resume&&<button className="app-resume" onClick={p.resume.open}><span><FolderHeart size={20}/></span><div><small>PICK UP WHERE YOU LEFT OFF</small><strong>{p.resume.title||'Your invitation'}</strong></div><ArrowRight size={17}/></button>}
-   <StudioSpotlight onExplore={p.openReels} active={p.active&&p.tab==='home'}/>
-   <section className="app-picks" aria-labelledby="app-picks-title"><div className="app-section-heading"><div><span>FIND YOUR NEXT FAVOURITE</span><h2 id="app-picks-title">Made for your moment</h2></div><button onClick={()=>p.openReels({browse:true})} aria-label="See all invitation reels"><ArrowRight size={20}/></button></div><div className="app-picks-track">{[example('Wedding'),example('Birthday'),example('Engagement'),example('Baby shower')].map(r=><button className="app-pick" key={r.id} onClick={()=>p.openReels({id:r.id})}><div><img src={r.poster} alt="" loading="lazy"/><span><Play size={11} fill="currentColor"/> {duration(r)}</span><i><ArrowUpRight size={16}/></i></div><small>{getTemplate(r.templateId).category}</small><strong>{r.name}</strong></button>)}</div></section>
-   <button className="app-long-reel" onClick={()=>p.openReels({id:reelFeed.find(r=>r.seconds>=45)?.id})}><span><Layers3 size={23}/></span><div><small>ONE INVITATION. EVERY FUNCTION.</small><strong>From haldi to happily ever after.</strong><p>Bring the whole celebration into one reel.</p></div><ArrowUpRight size={18}/></button>
-   <section className="app-three-steps" aria-label="How it works">{[[Clapperboard,'Pick a reel'],[Heart,'Add your people'],[Sparkles,'Make it yours']].map(([Icon,label],i)=>{const I=Icon as typeof Heart;return <div key={String(label)}><span><I size={19}/></span><small>0{i+1}</small><strong>{String(label)}</strong></div>})}</section>
-   <button className="app-wallet-card" onClick={()=>p.onTab('plans')}><span><Coins size={22}/></span><div><small>YOUR CREATIVE WALLET</small><strong>{p.credits!==undefined?p.credits+' credits ready':'Start with 2 free credits'}</strong><p>Review the cost before you create.</p></div><ArrowRight size={18}/></button>
-   <button className="app-community-card" onClick={()=>p.onTab('creators')}><span><Heart size={20}/></span><div><small>THE CREATOR SPOTLIGHT</small><strong>Real people. Their big moments.</strong><p>See before & after reels from the community.</p></div><ArrowUpRight size={18}/></button>
+   <CreatorHome mobile active={p.active&&p.tab==='home'} onExplore={p.openReels} onCreate={p.begin} onLibrary={p.openLibrary} onPlans={()=>p.onTab('plans')} onCommunity={()=>p.onTab('creators')} name={p.name} credits={p.credits} resume={p.resume}/>
    <div className="app-help-links"><button onClick={()=>p.onTab('help')}>Help & FAQs</button><button onClick={p.openLibrary}>My reels & avatars</button><a href="/privacy">Privacy</a><a href="/terms">Terms</a>{p.signout&&<a href={p.signout.url} target="_top" onClick={p.signout.clear}>Sign out</a>}</div>
   </main>}
   {(reelsOpened||p.tab==='reels')&&<div hidden={p.tab!=='reels'}><MobileReels key={p.intent.key} intent={p.intent} create={p.create} active={p.active&&p.tab==='reels'}/></div>}
  </div><nav className={'app-bottom-nav'+(p.tab==='reels'?' app-bottom-dark':'')} aria-label="App navigation" hidden={!p.active}>
    <button aria-current={['home','creators','help'].includes(p.tab)?'page':undefined} onClick={()=>p.onTab('home')}><Home size={22}/><span>Home</span></button>
-   <button onClick={()=>p.openReels({browse:true})} aria-label="Create an invitation"><Plus size={24}/><span>Create</span></button>
+   <button onClick={()=>{p.onTab('home');requestAnimationFrame(()=>document.getElementById((matchMedia('(max-width:760px)').matches?'phone':'desktop')+'-creation-tools')?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}))}} aria-label="Create an invitation"><Plus size={24}/><span>Create</span></button>
    <button className="app-reels-button" aria-current={p.tab==='reels'?'page':undefined} onClick={()=>p.onTab('reels')}><span><Clapperboard size={24}/></span><small>Reels</small></button>
    <button aria-current={p.tab==='plans'?'page':undefined} onClick={()=>p.onTab('plans')}><Coins size={22}/><span>Plans</span></button>
    <button onClick={p.openLibrary}><FolderHeart size={22}/><span>My reels</span></button>

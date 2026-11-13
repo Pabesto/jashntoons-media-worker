@@ -1,56 +1,56 @@
 {
   "format": 1,
-  "applicationCommit": "dd2740a5940dead1898b4eae89ccd8139a055f3b",
+  "applicationCommit": "1fa426d0d35d3de340f0fc68808a36830ca282aa",
   "repository": "Pabesto/jashntoons-media-worker",
   "branch": "jashntoons-web-source",
   "archive": {
     "storageOrigin": "https://jashntoons.jocoseavocet1.chatgpt.site",
-    "commit": "dd2740a5940dead1898b4eae89ccd8139a055f3b",
-    "sha256": "8e8f8ab02011be8e31e3c2ef4034b2e08f5ecd4bd900bd5c8922157d87b13882",
-    "size": 446300774,
+    "commit": "1fa426d0d35d3de340f0fc68808a36830ca282aa",
+    "sha256": "52ce5ca51703f2874de1b47c58e082b35b252942e13280e3e206d4320cabc56c",
+    "size": 448173707,
     "chunks": [
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-0",
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-0",
         "size": 60000000,
-        "sha256": "46338077c690debf4b930f81382b122042dcaea15bdde469fa6e62998d8a46ce"
+        "sha256": "34c64c3b593040983a2a25d5d5c278c1b55c410a1ff8c68d9c874065aa9a7846"
       },
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-1",
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-1",
         "size": 60000000,
-        "sha256": "40d1d22f7213602776e5a9313ee4393984c95c7b13ce936ea02d97f77bace368"
+        "sha256": "898176425211d15c77508ca401fe434edd43a9be3275d6b5480da9b3df1d8b56"
       },
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-2",
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-2",
         "size": 60000000,
-        "sha256": "de27b7a1ae7892b0c841b4a06bf0216a5e7fb00fb98f8bdba52fe5a361f7dfd3"
+        "sha256": "cc862feff407432192fd479d355336fd872e1d2d041261d217021515c2dc2caf"
       },
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-3",
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-3",
         "size": 60000000,
-        "sha256": "b5fdc1e2087b455f9b1fa8aa06a27d2cedfbfed3933dea250bd2845ec8c909b5"
+        "sha256": "9b68ad6f0554d6c745e002705d93f6cbbf9275639ad17d98811bbf1fffacbc10"
       },
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-4",
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-4",
         "size": 60000000,
-        "sha256": "01e42c3aa180676a18195f32818eafb3313baec38cb442be3bae27699023b1e1"
+        "sha256": "c5cbd789d7e4b2be2377de225fa4de5dbfad17311773dbca5b21cb5596f06722"
       },
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-5",
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-5",
         "size": 60000000,
-        "sha256": "93cdf5c7c302a94b4f7e8ddaff414424aec05354bd44f42522dd6875821548d5"
+        "sha256": "d89a1ceb3b62a012ee6a7af69678da79fd168528eb43dc78cd621558a89af51e"
       },
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-6",
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-6",
         "size": 60000000,
-        "sha256": "91ed88338c84fb8906dd499fe11797c998506d20d318a2ad94f4d734abbceb07"
+        "sha256": "c60514a03f6a9d9fefdf172afa16b795c1f990f4e28262390d94f47cbba85740"
       },
       {
-        "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/part-7",
-        "size": 26300774,
-        "sha256": "82327aa13dd1ee12e16bad88ed750bcf217d36449e4b3482012b932fbcfed2ff"
+        "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/part-7",
+        "size": 28173707,
+        "sha256": "9822b23bc66adbd4c7a2d443426ea36477b7d3975aeefb1992de3bcda0d32ddc"
       }
     ],
-    "key": "releases/dd2740a5940dead1898b4eae89ccd8139a055f3b/manifest.json"
+    "key": "releases/1fa426d0d35d3de340f0fc68808a36830ca282aa/manifest.json"
   },
   "binaryAssets": [
     {
@@ -466,6 +466,66 @@
       "mode": "100644",
       "sha": "bebf5276919dfd1b86174222f4bd6a5979a91ec1",
       "size": 236472
+    },
+    {
+      "path": "public/home-demos/anime-cinema.webp",
+      "mode": "100644",
+      "sha": "3902b093bce61d65123e76a16da8f915bdfcca36",
+      "size": 174176
+    },
+    {
+      "path": "public/home-demos/cinematic-real.webp",
+      "mode": "100644",
+      "sha": "4f65687ce990b45ae96c42965d0518232b529a56",
+      "size": 187888
+    },
+    {
+      "path": "public/home-demos/clay-animation.webp",
+      "mode": "100644",
+      "sha": "51ed488a4d8d163cba10964713c9b375c128522a",
+      "size": 171276
+    },
+    {
+      "path": "public/home-demos/ink-and-gold.webp",
+      "mode": "100644",
+      "sha": "432d97bc09941a2aa25588bdce87f73587f47551",
+      "size": 198182
+    },
+    {
+      "path": "public/home-demos/paper-craft.webp",
+      "mode": "100644",
+      "sha": "680cbcdcb7a3487a9a10dc18612089144bf828e2",
+      "size": 179254
+    },
+    {
+      "path": "public/home-demos/premium-3d.webp",
+      "mode": "100644",
+      "sha": "17d7564f52046390f15f6c7edf279f8b30b11c03",
+      "size": 188256
+    },
+    {
+      "path": "public/home-demos/royal-miniature.webp",
+      "mode": "100644",
+      "sha": "2549a5567423326333e944f4e894a1fbff3a861d",
+      "size": 264774
+    },
+    {
+      "path": "public/home-demos/storybook.webp",
+      "mode": "100644",
+      "sha": "d9e274b534087f5318817a091de281d17a899fba",
+      "size": 153714
+    },
+    {
+      "path": "public/home-demos/vintage-film.webp",
+      "mode": "100644",
+      "sha": "7418c5ee22424ec2d62bc12fd0e325abf9e9f605",
+      "size": 126668
+    },
+    {
+      "path": "public/home-demos/watercolor.webp",
+      "mode": "100644",
+      "sha": "5a6165893edf7a53c8782a6e85a4d764e1451089",
+      "size": 210346
     },
     {
       "path": "public/invitation-studio/afterglow.mp4",
